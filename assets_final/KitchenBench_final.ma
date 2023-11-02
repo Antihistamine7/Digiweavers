@@ -1,6 +1,6 @@
 //Maya ASCII 2023 scene
 //Name: KitchenBench_final.ma
-//Last modified: Fri, Nov 03, 2023 10:09:25 AM
+//Last modified: Fri, Nov 03, 2023 10:11:39 AM
 //Codeset: 1252
 requires maya "2023";
 requires "stereoCamera" "10.0";
@@ -12,13 +12,13 @@ fileInfo "product" "Maya 2023";
 fileInfo "version" "2023";
 fileInfo "cutIdentifier" "202208031415-1dee56799d";
 fileInfo "osv" "Windows 10 Education v2009 (Build: 19045)";
-fileInfo "UUID" "EC61EF16-4407-2CD9-6726-6AB2E65B00B7";
+fileInfo "UUID" "71D2D8D3-4EEC-61ED-E412-1C9490807108";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "74EDD77C-4335-091F-9C99-FAA104DEB4F2";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -150.00422228429119 377.21455462150169 1098.4914573183264 ;
-	setAttr ".r" -type "double3" 702.59999999993704 1798.7999999996302 1.2426767119852174e-16 ;
+	setAttr ".t" -type "double3" -221.87819650831821 500.28516100186403 -278.75694193539778 ;
+	setAttr ".r" -type "double3" 661.19999999989784 1651.9999999996187 0 ;
 	setAttr ".rpt" -type "double3" 2.4241533888359765e-14 -3.4456070283790653e-14 5.8199993568704268e-14 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "D424F2BB-4C65-4273-1391-0B8A31F313C8";
@@ -26,7 +26,7 @@ createNode camera -s -n "perspShape" -p "persp";
 	setAttr ".rnd" no;
 	setAttr ".pze" yes;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 1181.8118806901045;
+	setAttr ".coi" 570.76634498578483;
 	setAttr ".ow" 39.821870876467024;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
@@ -103,11 +103,11 @@ createNode camera -n "backShape" -p "back";
 	setAttr ".hc" -type "string" "viewSet -b %camera";
 	setAttr ".o" yes;
 	setAttr ".ai_translator" -type "string" "orthographic";
-createNode transform -n "counterC_geoShape";
+createNode transform -n "kitchenBench_geo";
 	rename -uid "0322234F-4722-3197-7C95-749AD182D203";
-	setAttr ".rp" -type "double3" 0 -0.025570869445800781 3.2084638627642761 ;
-	setAttr ".sp" -type "double3" 0 -0.025570869445800781 3.2084638627642761 ;
-createNode mesh -n "counterC_geoShapeShape" -p "counterC_geoShape";
+	setAttr ".rp" -type "double3" 0 -0.025570869445800781 -30 ;
+	setAttr ".sp" -type "double3" 0 -0.025570869445800781 -30 ;
+createNode mesh -n "kitchenBench_geoShape" -p "kitchenBench_geo";
 	rename -uid "C1BC6E35-4999-9757-5A18-6FAC5D961F46";
 	setAttr -k off ".v";
 	setAttr ".iog[0].og[0].gcl" -type "componentList" 1 "f[0:11168]";
@@ -35698,8 +35698,8 @@ select -ne :hardwareRenderGlobals;
 	setAttr ".btrs" 512;
 select -ne :ikSystem;
 	setAttr -s 4 ".sol";
-connectAttr "groupId1.id" "counterC_geoShapeShape.iog.og[0].gid";
-connectAttr ":initialShadingGroup.mwc" "counterC_geoShapeShape.iog.og[0].gco";
+connectAttr "groupId1.id" "kitchenBench_geoShape.iog.og[0].gid";
+connectAttr ":initialShadingGroup.mwc" "kitchenBench_geoShape.iog.og[0].gco";
 relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" "HumanBody:humanBodySG.message" ":defaultLightSet.message";
@@ -35787,6 +35787,6 @@ connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
 connectAttr "HumanBody:ReflectionMap.msg" ":defaultTextureList1.tx" -na;
 connectAttr "AnatomyHandHumanMale:ReflectionMap.msg" ":defaultTextureList1.tx" -na
 		;
-connectAttr "counterC_geoShapeShape.iog.og[0]" ":initialShadingGroup.dsm" -na;
+connectAttr "kitchenBench_geoShape.iog.og[0]" ":initialShadingGroup.dsm" -na;
 connectAttr "groupId1.msg" ":initialShadingGroup.gn" -na;
 // End of KitchenBench_final.ma
