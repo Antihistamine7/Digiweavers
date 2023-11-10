@@ -1,6 +1,6 @@
 //Maya ASCII 2023 scene
 //Name: WallArt_final.ma
-//Last modified: Fri, Nov 10, 2023 02:36:29 PM
+//Last modified: Fri, Nov 10, 2023 02:54:03 PM
 //Codeset: 1252
 requires maya "2023";
 requires "stereoCamera" "10.0";
@@ -14,18 +14,18 @@ fileInfo "product" "Maya 2023";
 fileInfo "version" "2023";
 fileInfo "cutIdentifier" "202208031415-1dee56799d";
 fileInfo "osv" "Windows 10 Education v2009 (Build: 19045)";
-fileInfo "UUID" "0EDF9AC4-43D6-2D08-36B6-C8A6C327038D";
+fileInfo "UUID" "8A3A2190-4D86-834B-D284-648B316AD309";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "C0EB937D-456B-CF1F-D1BA-FFB2B640D4FA";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 28.30494803527225 46.817378263411854 166.05520180974216 ;
-	setAttr ".r" -type "double3" 356.66164726973187 1093.8000000002182 -1.023466433551046e-16 ;
+	setAttr ".t" -type "double3" 54.550404021349792 45.164747542806545 154.56820640084106 ;
+	setAttr ".r" -type "double3" 356.66164726972352 1103.8000000001971 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "38DB5D46-47D1-310C-967C-03872C556998";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 169.18793680372374;
+	setAttr ".coi" 167.38328268029818;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -82,8 +82,6 @@ createNode camera -s -n "sideShape" -p "side";
 	setAttr ".ai_translator" -type "string" "orthographic";
 createNode transform -n "wallart_low";
 	rename -uid "5F9D297F-47FE-62F1-04B9-D2AAB6437119";
-	setAttr ".rp" -type "double3" 0 0 4.2592584249731207 ;
-	setAttr ".sp" -type "double3" 0 0 4.2592584249731207 ;
 createNode mesh -n "wallart_lowShape" -p "wallart_low";
 	rename -uid "6431E382-419B-9F1E-E532-6281F17A7AFF";
 	setAttr -k off ".v";
@@ -121,21 +119,22 @@ createNode mesh -n "wallart_lowShape" -p "wallart_low";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr -s 40 ".pt[0:39]" -type "float3"  -48.347466 0.74593544 3.0074811 
-		-47.75745 0.5 3.0074811 -47.75745 0.74593544 3.5390682 -47.75745 1.3396699 3.7592573 
-		-48.347466 1.3396699 3.5390682 -48.591866 1.3396699 3.0074811 -0.74439621 0.74593544 
-		3.0074811 -0.5 1.3396699 3.0074811 -0.74439621 1.3396699 3.5390682 -1.3344163 1.3396699 
-		3.7592573 -1.3344163 0.74593544 3.5390682 -1.3344163 0.5 3.0074811 -48.347466 69.682739 
-		3.0074811 -48.591866 69.089005 3.0074811 -48.347466 69.089005 3.5390682 -47.75745 
-		69.089005 3.7592573 -47.75745 69.682739 3.5390682 -47.75745 69.92868 3.0074811 -0.74439621 
-		69.682739 3.0074811 -1.3344163 69.92868 3.0074811 -1.3344163 69.682739 3.5390682 
-		-1.3344163 69.089005 3.7592573 -0.74439621 69.089005 3.5390682 -0.5 69.089005 3.0074811 
-		-48.591866 69.089005 -3.7592573 -48.347466 69.682739 -3.7592573 -47.75745 69.92868 
-		-3.7592573 -1.3344163 69.92868 -3.7592573 -0.74439621 69.682739 -3.7592573 -0.5 69.089005 
-		-3.7592573 -47.75745 0.5 -3.7592573 -48.347466 0.74593544 -3.7592573 -48.591866 1.3396699 
-		-3.7592573 -0.5 1.3396699 -3.7592573 -0.74439621 0.74593544 -3.7592573 -1.3344163 
-		0.5 -3.7592573 -48.239033 0.85505754 3.4413683 -0.85283303 0.85505754 3.4413683 -48.239033 
-		69.573631 3.4413683 -0.85283303 69.573631 3.4413683;
+	setAttr -s 40 ".pt[0:39]" -type "float3"  -48.347466 0.74593544 -1.2517772 
+		-47.75745 0.5 -1.2517772 -47.75745 0.74593544 -0.72019005 -47.75745 1.3396699 -0.50000095 
+		-48.347466 1.3396699 -0.72019005 -48.591866 1.3396699 -1.2517772 -0.74439621 0.74593544 
+		-1.2517772 -0.5 1.3396699 -1.2517772 -0.74439621 1.3396699 -0.72019005 -1.3344163 
+		1.3396699 -0.50000095 -1.3344163 0.74593544 -0.72019005 -1.3344163 0.5 -1.2517772 
+		-48.347466 69.682739 -1.2517772 -48.591866 69.089005 -1.2517772 -48.347466 69.089005 
+		-0.72019005 -47.75745 69.089005 -0.50000095 -47.75745 69.682739 -0.72019005 -47.75745 
+		69.92868 -1.2517772 -0.74439621 69.682739 -1.2517772 -1.3344163 69.92868 -1.2517772 
+		-1.3344163 69.682739 -0.72019005 -1.3344163 69.089005 -0.50000095 -0.74439621 69.089005 
+		-0.72019005 -0.5 69.089005 -1.2517772 -48.591866 69.089005 -8.0185156 -48.347466 
+		69.682739 -8.0185156 -47.75745 69.92868 -8.0185156 -1.3344163 69.92868 -8.0185156 
+		-0.74439621 69.682739 -8.0185156 -0.5 69.089005 -8.0185156 -47.75745 0.5 -8.0185156 
+		-48.347466 0.74593544 -8.0185156 -48.591866 1.3396699 -8.0185156 -0.5 1.3396699 -8.0185156 
+		-0.74439621 0.74593544 -8.0185156 -1.3344163 0.5 -8.0185156 -48.239033 0.85505754 
+		-0.81788993 -0.85283303 0.85505754 -0.81788993 -48.239033 69.573631 -0.81788993 -0.85283303 
+		69.573631 -0.81788993;
 	setAttr -s 40 ".vt[0:39]"  -0.49491805 -0.49645773 0.4000099 -0.48264956 -0.5 0.4000099
 		 -0.48264956 -0.49645773 0.47071362 -0.48264956 -0.48790601 0.49999985 -0.49491805 -0.48790601 0.47071362
 		 -0.5 -0.48790601 0.4000099 0.49491814 -0.49645773 0.4000099 0.5 -0.48790601 0.4000099
@@ -230,20 +229,20 @@ createNode mesh -n "wallart_lowShape" -p "wallart_low";
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 	setAttr ".dr" 1;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "959ED8A2-4E58-CA08-8C55-F68612CA7B82";
-	setAttr -s 4 ".lnk";
-	setAttr -s 4 ".slnk";
+	rename -uid "5F7EB4E2-449C-A7D9-7EF2-A0A0034C6EC9";
+	setAttr -s 5 ".lnk";
+	setAttr -s 5 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "9B9A5108-422D-0BEC-275C-ED926595176E";
+	rename -uid "9BD3F539-46EE-622B-210B-FC81F569830A";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "95D36087-49A7-07BD-8B14-6F893AF18C4E";
+	rename -uid "01577A03-4B6E-8E43-9270-7D8B5CEE5212";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "470AAEB1-4E93-D261-106D-12B0F86A4983";
+	rename -uid "8316D594-4F9C-F3C5-51E0-7E8EFF235B12";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "A6CDDB10-4055-0C3A-059A-7092A0570A33";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "CF0C8C51-4E93-BED4-BE47-DC942B85BE7B";
+	rename -uid "714ED113-4998-17FD-1F13-81B118FC2DD8";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "53A65D60-4CA3-8038-5362-FD982345A82B";
 	setAttr ".g" yes;
@@ -597,6 +596,14 @@ createNode shadingEngine -n "HumanBody:blinn1SG";
 	setAttr ".ro" yes;
 createNode materialInfo -n "HumanBody:materialInfo2";
 	rename -uid "8085D127-4D82-8645-0256-BC92B245DC3F";
+createNode lambert -n "M_WallArt";
+	rename -uid "1ABB5633-45D4-1FDA-3FF9-56BD4788542B";
+createNode shadingEngine -n "lambert2SG";
+	rename -uid "6C2715A9-46A8-84FB-3A3C-C39E274FB2F8";
+	setAttr ".ihi" 0;
+	setAttr ".ro" yes;
+createNode materialInfo -n "materialInfo1";
+	rename -uid "74625820-4E20-E821-49B0-BEA0D124FDC3";
 select -ne :time1;
 	setAttr ".o" 0;
 select -ne :hardwareRenderingGlobals;
@@ -606,10 +613,10 @@ select -ne :hardwareRenderingGlobals;
 		 0 0 0 0 ;
 	setAttr ".fprt" yes;
 select -ne :renderPartition;
-	setAttr -s 4 ".st";
+	setAttr -s 5 ".st";
 select -ne :renderGlobalsList1;
 select -ne :defaultShaderList1;
-	setAttr -s 6 ".s";
+	setAttr -s 7 ".s";
 select -ne :postProcessList1;
 	setAttr -s 2 ".p";
 select -ne :defaultRenderUtilityList1;
@@ -646,10 +653,12 @@ relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLigh
 relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" "HumanBody:humanBodySG.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" "HumanBody:blinn1SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "lambert2SG.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" "HumanBody:humanBodySG.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" "HumanBody:blinn1SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "lambert2SG.message" ":defaultLightSet.message";
 connectAttr "layerManager.dli[0]" "defaultLayer.id";
 connectAttr "renderLayerManager.rlmi[0]" "defaultRenderLayer.rlid";
 connectAttr ":defaultArnoldDisplayDriver.msg" ":defaultArnoldRenderOptions.drivers"
@@ -681,9 +690,15 @@ connectAttr ":defaultColorMgtGlobals.wsn" "HumanBody:ReflectionMap.ws";
 connectAttr "HumanBody:blinn1.oc" "HumanBody:blinn1SG.ss";
 connectAttr "HumanBody:blinn1SG.msg" "HumanBody:materialInfo2.sg";
 connectAttr "HumanBody:blinn1.msg" "HumanBody:materialInfo2.m";
+connectAttr "M_WallArt.oc" "lambert2SG.ss";
+connectAttr "wallart_lowShape.iog" "lambert2SG.dsm" -na;
+connectAttr "lambert2SG.msg" "materialInfo1.sg";
+connectAttr "M_WallArt.msg" "materialInfo1.m";
 connectAttr "HumanBody:humanBodySG.pa" ":renderPartition.st" -na;
 connectAttr "HumanBody:blinn1SG.pa" ":renderPartition.st" -na;
+connectAttr "lambert2SG.pa" ":renderPartition.st" -na;
 connectAttr "HumanBody:blinn1.msg" ":defaultShaderList1.s" -na;
+connectAttr "M_WallArt.msg" ":defaultShaderList1.s" -na;
 connectAttr "HumanBody:place2dTexture1.msg" ":defaultRenderUtilityList1.u" -na;
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
 connectAttr ":rmanGlobals.msg" ":defaultRenderingList1.r" -na;
@@ -692,5 +707,4 @@ connectAttr ":rmanBakingGlobals.msg" ":defaultRenderingList1.r" -na;
 connectAttr ":bake_PxrPathTracer.msg" ":defaultRenderingList1.r" -na;
 connectAttr "d_openexr.msg" ":defaultRenderingList1.r" -na;
 connectAttr "HumanBody:ReflectionMap.msg" ":defaultTextureList1.tx" -na;
-connectAttr "wallart_lowShape.iog" ":initialShadingGroup.dsm" -na;
 // End of WallArt_final.ma
