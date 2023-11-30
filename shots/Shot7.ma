@@ -1,6 +1,6 @@
 //Maya ASCII 2023 scene
-//Name: Shot5_2.ma
-//Last modified: Thu, Nov 30, 2023 10:49:24 PM
+//Name: Shot7.ma
+//Last modified: Thu, Nov 30, 2023 11:55:43 PM
 //Codeset: 1252
 file -rdi 1 -ns "TallLamp_final" -rfn "TallLamp_finalRN" -op "VERS|2023|UVER|undef|MADE|undef|CHNG|Thu, Nov 23, 2023 01:56:54 PM|ICON|undef|INFO|undef|OBJN|86|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|TDUR|141120000|"
 		 -typ "mayaBinary" "C:/Users/Ethan/Documents/GitHub/Digiweavers/assets_final/House/TallLamp_final.mb";
@@ -229,13 +229,13 @@ fileInfo "product" "Maya 2023";
 fileInfo "version" "2023";
 fileInfo "cutIdentifier" "202211021031-847a9f9623";
 fileInfo "osv" "Windows 11 Education v2009 (Build: 22621)";
-fileInfo "UUID" "0014AF18-4FFA-86BC-842A-FBA02EC9887D";
+fileInfo "UUID" "5800A5F6-4FBC-D722-5563-67849A98B21C";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "0D5EE9D7-48D2-E25E-C65F-E0A4BFFA56E2";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -224.29344463968104 189.63226369502075 -229.75377227327093 ;
-	setAttr ".r" -type "double3" -730.79999999993925 3232.0000000018504 -1.0036911916345153e-16 ;
+	setAttr ".t" -type "double3" -260.58752219968198 166.4335370453899 -150.31767242895688 ;
+	setAttr ".r" -type "double3" -745.79999999997256 3241.2000000001212 0 ;
 	setAttr ".rpt" -type "double3" -2.6394587538360765e-14 -1.104559499299723e-14 6.6674861939978568e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "A6400B2D-4E1F-C482-39CA-4A98A97B81C2";
@@ -243,7 +243,7 @@ createNode camera -s -n "perspShape" -p "persp";
 	setAttr ".rnd" no;
 	setAttr ".fl" 13.61113541482076;
 	setAttr ".ncp" 0.5;
-	setAttr ".coi" 128.44035274319756;
+	setAttr ".coi" 215.24538581006323;
 	setAttr ".ow" 571.19857474993626;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
@@ -301,48 +301,28 @@ createNode camera -s -n "sideShape" -p "side";
 	setAttr ".hc" -type "string" "viewSet -s %camera";
 	setAttr ".o" yes;
 	setAttr ".ai_translator" -type "string" "orthographic";
-createNode transform -n "Shot5_RENDER";
-	rename -uid "CB376FE4-478B-7EA0-5CE9-DFB372E001AC";
-	setAttr ".t" -type "double3" -127 153.42451142865477 -125.40041693290735 ;
-	setAttr -l on ".ty";
-	setAttr ".r" -type "double3" 5 -0.39999999999999364 0 ;
-	setAttr -l on ".rx";
-createNode camera -n "Shot5_RENDERShape" -p "Shot5_RENDER";
-	rename -uid "4FAB207D-47B1-55E8-34DC-AF855C76ACA9";
-	setAttr -k off ".v";
-	setAttr ".rnd" no;
-	setAttr ".cap" -type "double2" 1.41732 0.94488 ;
-	setAttr ".ff" 0;
-	setAttr ".ovr" 1.3;
-	setAttr -l on ".coi" 227.62467987772226;
-	setAttr -l on ".ow" 30;
-	setAttr ".imn" -type "string" "camera1";
-	setAttr ".den" -type "string" "camera1_depth";
-	setAttr ".man" -type "string" "camera1_mask";
-	setAttr ".lls" 10;
-	setAttr ".dr" yes;
-createNode transform -n "Shot5_2_RENDER";
-	rename -uid "4D6821DD-45AC-4053-BDF9-7697308D2FF6";
-	setAttr ".t" -type "double3" -358.339 153.38743830723828 -162 ;
+createNode transform -n "Shot7_RENDER";
+	rename -uid "6829D13A-477D-EC8D-8B78-0C86C55C0915";
+	setAttr ".t" -type "double3" -217.87830038506328 134.39461328165936 105.9122728148561 ;
 	setAttr -l on ".tx";
 	setAttr -l on ".ty";
+	setAttr -l on ".tz";
+	setAttr ".r" -type "double3" 3.0000000000000009 0.80000000000000027 3.1063132220754493e-18 ;
+	setAttr -l on ".rx";
+	setAttr -l on ".ry";
 	setAttr -l on ".rz";
-	setAttr ".rp" -type "double3" 0 -12.340537773815809 -141.05299219891657 ;
-	setAttr ".rpt" -type "double3" 0 12.340537773815788 -0.53879951520245806 ;
-	setAttr ".sp" -type "double3" 0 -12.340537773815809 -141.05299219891657 ;
-createNode camera -n "Shot5_2_RENDERShape" -p "Shot5_2_RENDER";
-	rename -uid "4CBC5501-4B64-DA57-7B9B-BD95EDB5A6A0";
+createNode camera -n "Shot7_RENDERShape" -p "Shot7_RENDER";
+	rename -uid "EAF831AC-4C59-A83C-8E36-4D82C681441D";
 	setAttr -k off ".v";
 	setAttr ".rnd" no;
 	setAttr ".cap" -type "double2" 1.41732 0.94488 ;
 	setAttr ".ff" 0;
 	setAttr ".ovr" 1.3;
-	setAttr -l on ".coi" 227.62467987750824;
+	setAttr -l on ".coi" 111.71239800765726;
 	setAttr -l on ".ow" 30;
 	setAttr ".imn" -type "string" "camera1";
 	setAttr ".den" -type "string" "camera1_depth";
 	setAttr ".man" -type "string" "camera1_mask";
-	setAttr ".lls" 10;
 	setAttr ".dr" yes;
 createNode transform -n "CeilingLights_grp";
 	rename -uid "3BC35460-4FF5-4FB3-CDA6-EF9BCFCC5E0E";
@@ -11121,7 +11101,7 @@ createNode rmanBakingGlobals -s -n "rmanBakingGlobals";
 	setAttr ".ri_maxDiffuseDepth" 1;
 	setAttr ".init" 0;
 createNode rmanDisplay -n "rmanDefaultBakeDisplay";
-	rename -uid "597540A1-4C39-6FD0-E9FF-4DB70B4CB5F5";
+	rename -uid "ABEFD20F-4B5D-D355-B87A-AE9D6D647360";
 	setAttr ".cch" no;
 	setAttr ".fzn" no;
 	setAttr ".ihi" 2;
@@ -11136,7 +11116,7 @@ createNode rmanDisplay -n "rmanDefaultBakeDisplay";
 	setAttr -s 2 ".displayChannels";
 	setAttr ".name" -type "string" "";
 createNode rmanDisplayChannel -n "diffuse";
-	rename -uid "58FB1187-46AD-1D42-F26D-0AB88FC0055E";
+	rename -uid "7920D4FC-432E-1670-AD24-D288CD0E5BB6";
 	setAttr ".cch" no;
 	setAttr ".fzn" no;
 	setAttr ".ihi" 2;
@@ -11155,7 +11135,7 @@ createNode rmanDisplayChannel -n "diffuse";
 	setAttr ".remapSmoothness" 0;
 	setAttr ".name" -type "string" "diffuse";
 createNode rmanDisplayChannel -n "a";
-	rename -uid "A8A39C5D-44CD-F894-CEFF-ECB11094DF66";
+	rename -uid "DFAD90A4-48D1-19D1-040A-E198F25D6126";
 	setAttr ".cch" no;
 	setAttr ".fzn" no;
 	setAttr ".ihi" 2;
@@ -11205,10 +11185,10 @@ createNode PxrPathTracer -s -n "bake_PxrPathTracer";
 	setAttr ".jointSampling" no;
 	setAttr ".jointScatteringBias" 0.5;
 createNode rmanVolumeAggregateSet -s -n "globalVolumeAggregate";
-	rename -uid "1AEE7900-4436-716B-7B91-CC909FA84007";
+	rename -uid "D2AF1021-4454-5DB2-9B66-2D8D625B7794";
 lockNode -l 1 ;
 createNode rmanDisplay -n "rmanDefaultBakeDisplay1";
-	rename -uid "DED622D7-44FA-657D-9C5F-92A073112F30";
+	rename -uid "597540A1-4C39-6FD0-E9FF-4DB70B4CB5F5";
 	setAttr ".cch" no;
 	setAttr ".fzn" no;
 	setAttr ".ihi" 2;
@@ -11222,7 +11202,7 @@ createNode rmanDisplay -n "rmanDefaultBakeDisplay1";
 	setAttr ".remapSmoothness" 0;
 	setAttr ".name" -type "string" "";
 createNode rmanDisplayChannel -n "diffuse1";
-	rename -uid "1D425720-48D7-A168-6A8B-1E9464D75165";
+	rename -uid "58FB1187-46AD-1D42-F26D-0AB88FC0055E";
 	setAttr ".cch" no;
 	setAttr ".fzn" no;
 	setAttr ".ihi" 2;
@@ -11241,7 +11221,7 @@ createNode rmanDisplayChannel -n "diffuse1";
 	setAttr ".remapSmoothness" 0;
 	setAttr ".name" -type "string" "diffuse";
 createNode rmanDisplayChannel -n "a1";
-	rename -uid "4E8C7140-417B-1EDB-1EAE-C99730790EDB";
+	rename -uid "A8A39C5D-44CD-F894-CEFF-ECB11094DF66";
 	setAttr ".cch" no;
 	setAttr ".fzn" no;
 	setAttr ".ihi" 2;
@@ -11260,7 +11240,7 @@ createNode rmanDisplayChannel -n "a1";
 	setAttr ".remapSmoothness" 0;
 	setAttr ".name" -type "string" "a";
 createNode rmanDisplay -n "rmanDefaultBakeDisplay2";
-	rename -uid "7477792D-41E9-A033-9F9F-658C4CF2338F";
+	rename -uid "DED622D7-44FA-657D-9C5F-92A073112F30";
 	setAttr ".cch" no;
 	setAttr ".fzn" no;
 	setAttr ".ihi" 2;
@@ -11274,7 +11254,7 @@ createNode rmanDisplay -n "rmanDefaultBakeDisplay2";
 	setAttr ".remapSmoothness" 0;
 	setAttr ".name" -type "string" "";
 createNode rmanDisplayChannel -n "diffuse2";
-	rename -uid "B8493242-40ED-A13F-BB2D-15A1B288A9C0";
+	rename -uid "1D425720-48D7-A168-6A8B-1E9464D75165";
 	setAttr ".cch" no;
 	setAttr ".fzn" no;
 	setAttr ".ihi" 2;
@@ -11293,7 +11273,7 @@ createNode rmanDisplayChannel -n "diffuse2";
 	setAttr ".remapSmoothness" 0;
 	setAttr ".name" -type "string" "diffuse";
 createNode rmanDisplayChannel -n "a2";
-	rename -uid "7BA73D52-4174-91C3-21EF-BC8A890A632C";
+	rename -uid "4E8C7140-417B-1EDB-1EAE-C99730790EDB";
 	setAttr ".cch" no;
 	setAttr ".fzn" no;
 	setAttr ".ihi" 2;
@@ -11312,7 +11292,7 @@ createNode rmanDisplayChannel -n "a2";
 	setAttr ".remapSmoothness" 0;
 	setAttr ".name" -type "string" "a";
 createNode rmanDisplay -n "rmanDefaultBakeDisplay3";
-	rename -uid "479E74F3-4FE1-53CB-0B13-BD839A12B8C3";
+	rename -uid "7477792D-41E9-A033-9F9F-658C4CF2338F";
 	setAttr ".cch" no;
 	setAttr ".fzn" no;
 	setAttr ".ihi" 2;
@@ -11326,7 +11306,7 @@ createNode rmanDisplay -n "rmanDefaultBakeDisplay3";
 	setAttr ".remapSmoothness" 0;
 	setAttr ".name" -type "string" "";
 createNode rmanDisplayChannel -n "diffuse3";
-	rename -uid "6D82BB46-40C3-21EF-8512-2AA938E34ED6";
+	rename -uid "B8493242-40ED-A13F-BB2D-15A1B288A9C0";
 	setAttr ".cch" no;
 	setAttr ".fzn" no;
 	setAttr ".ihi" 2;
@@ -11345,6 +11325,58 @@ createNode rmanDisplayChannel -n "diffuse3";
 	setAttr ".remapSmoothness" 0;
 	setAttr ".name" -type "string" "diffuse";
 createNode rmanDisplayChannel -n "a3";
+	rename -uid "7BA73D52-4174-91C3-21EF-BC8A890A632C";
+	setAttr ".cch" no;
+	setAttr ".fzn" no;
+	setAttr ".ihi" 2;
+	setAttr ".nds" 0;
+	setAttr ".enable" yes;
+	setAttr ".channelType" -type "string" "float";
+	setAttr ".channelSource" -type "string" "a";
+	setAttr ".lpeLightGroup" -type "string" "";
+	setAttr ".filter" -type "string" "inherit from display";
+	setAttr ".filterwidth" -type "float2" -1 -1 ;
+	setAttr ".statistics" -type "string" "";
+	setAttr ".relativepixelvariance" -1;
+	setAttr ".shadowthreshold" 0.0099999997764825821;
+	setAttr ".remapBreakPoint" 0;
+	setAttr ".remapMaxValue" 0;
+	setAttr ".remapSmoothness" 0;
+	setAttr ".name" -type "string" "a";
+createNode rmanDisplay -n "rmanDefaultBakeDisplay4";
+	rename -uid "479E74F3-4FE1-53CB-0B13-BD839A12B8C3";
+	setAttr ".cch" no;
+	setAttr ".fzn" no;
+	setAttr ".ihi" 2;
+	setAttr ".nds" 0;
+	setAttr ".enable" yes;
+	setAttr ".denoise" no;
+	setAttr ".frameMode" 0;
+	setAttr ".opticalFlow" no;
+	setAttr ".remapBreakPoint" 0;
+	setAttr ".remapMaxValue" 0;
+	setAttr ".remapSmoothness" 0;
+	setAttr ".name" -type "string" "";
+createNode rmanDisplayChannel -n "diffuse4";
+	rename -uid "6D82BB46-40C3-21EF-8512-2AA938E34ED6";
+	setAttr ".cch" no;
+	setAttr ".fzn" no;
+	setAttr ".ihi" 2;
+	setAttr ".nds" 0;
+	setAttr ".enable" yes;
+	setAttr ".channelType" -type "string" "color";
+	setAttr ".channelSource" -type "string" "lpe:C(D[DS]*[LO])|[LO]";
+	setAttr ".lpeLightGroup" -type "string" "";
+	setAttr ".filter" -type "string" "inherit from display";
+	setAttr ".filterwidth" -type "float2" -1 -1 ;
+	setAttr ".statistics" -type "string" "";
+	setAttr ".relativepixelvariance" -1;
+	setAttr ".shadowthreshold" 0.0099999997764825821;
+	setAttr ".remapBreakPoint" 0;
+	setAttr ".remapMaxValue" 0;
+	setAttr ".remapSmoothness" 0;
+	setAttr ".name" -type "string" "diffuse";
+createNode rmanDisplayChannel -n "a4";
 	rename -uid "78B6B9D8-47E6-DE37-B0EB-028567D4C2A6";
 	setAttr ".cch" no;
 	setAttr ".fzn" no;
@@ -11366,7 +11398,7 @@ createNode rmanDisplayChannel -n "a3";
 createNode rmanVolumeAggregateSet -n "globalVolumeAggregate1";
 	rename -uid "7D4DB7B3-4AC6-563B-9522-68BDD887FD21";
 lockNode -l 1 ;
-createNode rmanDisplay -n "rmanDefaultBakeDisplay4";
+createNode rmanDisplay -n "rmanDefaultBakeDisplay5";
 	rename -uid "3755886C-4EA8-6D60-A21A-E8ABF9C9475E";
 	setAttr ".cch" no;
 	setAttr ".fzn" no;
@@ -11380,7 +11412,7 @@ createNode rmanDisplay -n "rmanDefaultBakeDisplay4";
 	setAttr ".remapMaxValue" 0;
 	setAttr ".remapSmoothness" 0;
 	setAttr ".name" -type "string" "";
-createNode rmanDisplayChannel -n "diffuse4";
+createNode rmanDisplayChannel -n "diffuse5";
 	rename -uid "EB8CCCBA-42B5-D551-4BC3-BEA87B39F762";
 	setAttr ".cch" no;
 	setAttr ".fzn" no;
@@ -11399,7 +11431,7 @@ createNode rmanDisplayChannel -n "diffuse4";
 	setAttr ".remapMaxValue" 0;
 	setAttr ".remapSmoothness" 0;
 	setAttr ".name" -type "string" "diffuse1";
-createNode rmanDisplayChannel -n "a4";
+createNode rmanDisplayChannel -n "a5";
 	rename -uid "98CEE1BA-4AAA-8546-A9C4-658153324B54";
 	setAttr ".cch" no;
 	setAttr ".fzn" no;
@@ -11421,7 +11453,7 @@ createNode rmanDisplayChannel -n "a4";
 createNode rmanVolumeAggregateSet -n "globalVolumeAggregate2";
 	rename -uid "94BDD009-41AA-DB9A-F27B-B8A780527800";
 lockNode -l 1 ;
-createNode rmanDisplay -n "rmanDefaultBakeDisplay5";
+createNode rmanDisplay -n "rmanDefaultBakeDisplay6";
 	rename -uid "834367AF-4F6E-4214-73E9-6DAA6A8B607E";
 	setAttr ".cch" no;
 	setAttr ".fzn" no;
@@ -11435,7 +11467,7 @@ createNode rmanDisplay -n "rmanDefaultBakeDisplay5";
 	setAttr ".remapMaxValue" 0;
 	setAttr ".remapSmoothness" 0;
 	setAttr ".name" -type "string" "";
-createNode rmanDisplayChannel -n "diffuse5";
+createNode rmanDisplayChannel -n "diffuse6";
 	rename -uid "62CEA219-401E-7936-CB94-3AB199DA5C03";
 	setAttr ".cch" no;
 	setAttr ".fzn" no;
@@ -11454,7 +11486,7 @@ createNode rmanDisplayChannel -n "diffuse5";
 	setAttr ".remapMaxValue" 0;
 	setAttr ".remapSmoothness" 0;
 	setAttr ".name" -type "string" "diffuse2";
-createNode rmanDisplayChannel -n "a5";
+createNode rmanDisplayChannel -n "a6";
 	rename -uid "07C370BD-4F9B-30AC-CF89-F7A2410ED7A2";
 	setAttr ".cch" no;
 	setAttr ".fzn" no;
@@ -11476,7 +11508,7 @@ createNode rmanDisplayChannel -n "a5";
 createNode rmanVolumeAggregateSet -n "globalVolumeAggregate3";
 	rename -uid "943E162C-4F44-09A7-8F48-7B956504F021";
 lockNode -l 1 ;
-createNode rmanDisplay -n "rmanDefaultBakeDisplay6";
+createNode rmanDisplay -n "rmanDefaultBakeDisplay7";
 	rename -uid "B06764D1-4F3D-1412-7F79-A08326276C05";
 	setAttr ".cch" no;
 	setAttr ".fzn" no;
@@ -11490,7 +11522,7 @@ createNode rmanDisplay -n "rmanDefaultBakeDisplay6";
 	setAttr ".remapMaxValue" 0;
 	setAttr ".remapSmoothness" 0;
 	setAttr ".name" -type "string" "";
-createNode rmanDisplayChannel -n "diffuse6";
+createNode rmanDisplayChannel -n "diffuse7";
 	rename -uid "202E0ACF-4AC8-6F68-98FF-D78F0A80748F";
 	setAttr ".cch" no;
 	setAttr ".fzn" no;
@@ -11509,7 +11541,7 @@ createNode rmanDisplayChannel -n "diffuse6";
 	setAttr ".remapMaxValue" 0;
 	setAttr ".remapSmoothness" 0;
 	setAttr ".name" -type "string" "diffuse3";
-createNode rmanDisplayChannel -n "a6";
+createNode rmanDisplayChannel -n "a7";
 	rename -uid "A001E9CE-446D-7989-2635-9C8114501597";
 	setAttr ".cch" no;
 	setAttr ".fzn" no;
@@ -11528,7 +11560,7 @@ createNode rmanDisplayChannel -n "a6";
 	setAttr ".remapMaxValue" 0;
 	setAttr ".remapSmoothness" 0;
 	setAttr ".name" -type "string" "a";
-createNode rmanDisplay -n "rmanDefaultBakeDisplay7";
+createNode rmanDisplay -n "rmanDefaultBakeDisplay8";
 	rename -uid "DE6CE0F5-4515-CDD3-365D-5EA434B9F8FD";
 	setAttr ".cch" no;
 	setAttr ".fzn" no;
@@ -11542,7 +11574,7 @@ createNode rmanDisplay -n "rmanDefaultBakeDisplay7";
 	setAttr ".remapMaxValue" 0;
 	setAttr ".remapSmoothness" 0;
 	setAttr ".name" -type "string" "";
-createNode rmanDisplayChannel -n "diffuse7";
+createNode rmanDisplayChannel -n "diffuse8";
 	rename -uid "D2186344-4F45-7D77-9502-D4969F9465E6";
 	setAttr ".cch" no;
 	setAttr ".fzn" no;
@@ -11561,7 +11593,7 @@ createNode rmanDisplayChannel -n "diffuse7";
 	setAttr ".remapMaxValue" 0;
 	setAttr ".remapSmoothness" 0;
 	setAttr ".name" -type "string" "diffuse4";
-createNode rmanDisplayChannel -n "a7";
+createNode rmanDisplayChannel -n "a8";
 	rename -uid "2C935662-4A31-9B90-DBCB-4DAC5F5919BC";
 	setAttr ".cch" no;
 	setAttr ".fzn" no;
@@ -11580,7 +11612,7 @@ createNode rmanDisplayChannel -n "a7";
 	setAttr ".remapMaxValue" 0;
 	setAttr ".remapSmoothness" 0;
 	setAttr ".name" -type "string" "a";
-createNode rmanDisplay -n "rmanDefaultBakeDisplay8";
+createNode rmanDisplay -n "rmanDefaultBakeDisplay9";
 	rename -uid "2DC5CFBA-4E93-2000-51FC-5CA2C83567B7";
 	setAttr ".cch" no;
 	setAttr ".fzn" no;
@@ -11594,7 +11626,7 @@ createNode rmanDisplay -n "rmanDefaultBakeDisplay8";
 	setAttr ".remapMaxValue" 0;
 	setAttr ".remapSmoothness" 0;
 	setAttr ".name" -type "string" "";
-createNode rmanDisplayChannel -n "diffuse8";
+createNode rmanDisplayChannel -n "diffuse9";
 	rename -uid "3758822B-47B8-FF2E-1F57-3CB87B0C4B7A";
 	setAttr ".cch" no;
 	setAttr ".fzn" no;
@@ -11613,7 +11645,7 @@ createNode rmanDisplayChannel -n "diffuse8";
 	setAttr ".remapMaxValue" 0;
 	setAttr ".remapSmoothness" 0;
 	setAttr ".name" -type "string" "diffuse5";
-createNode rmanDisplayChannel -n "a8";
+createNode rmanDisplayChannel -n "a9";
 	rename -uid "E2CB38BA-4C90-8DCA-53E3-39AE8F5B08FD";
 	setAttr ".cch" no;
 	setAttr ".fzn" no;
@@ -11635,7 +11667,7 @@ createNode rmanDisplayChannel -n "a8";
 createNode rmanVolumeAggregateSet -n "globalVolumeAggregate4";
 	rename -uid "A971E1D6-427C-ABDF-90D6-8C91934098DB";
 lockNode -l 1 ;
-createNode rmanDisplay -n "rmanDefaultBakeDisplay9";
+createNode rmanDisplay -n "rmanDefaultBakeDisplay10";
 	rename -uid "182690A9-432E-9DA9-913E-8F917B727523";
 	setAttr ".cch" no;
 	setAttr ".fzn" no;
@@ -11649,7 +11681,7 @@ createNode rmanDisplay -n "rmanDefaultBakeDisplay9";
 	setAttr ".remapMaxValue" 0;
 	setAttr ".remapSmoothness" 0;
 	setAttr ".name" -type "string" "";
-createNode rmanDisplayChannel -n "diffuse9";
+createNode rmanDisplayChannel -n "diffuse10";
 	rename -uid "E0FAB83D-4C1C-AAA3-0937-E5833E4B3398";
 	setAttr ".cch" no;
 	setAttr ".fzn" no;
@@ -11668,7 +11700,7 @@ createNode rmanDisplayChannel -n "diffuse9";
 	setAttr ".remapMaxValue" 0;
 	setAttr ".remapSmoothness" 0;
 	setAttr ".name" -type "string" "diffuse6";
-createNode rmanDisplayChannel -n "a9";
+createNode rmanDisplayChannel -n "a10";
 	rename -uid "AC096634-4D62-9F18-BA57-5A80FCF89BCA";
 	setAttr ".cch" no;
 	setAttr ".fzn" no;
@@ -11690,7 +11722,7 @@ createNode rmanDisplayChannel -n "a9";
 createNode rmanVolumeAggregateSet -n "globalVolumeAggregate5";
 	rename -uid "3CF511AF-4966-51AC-8045-00BB4D1526E2";
 lockNode -l 1 ;
-createNode rmanDisplay -n "rmanDefaultBakeDisplay10";
+createNode rmanDisplay -n "rmanDefaultBakeDisplay11";
 	rename -uid "E69040CA-4CAD-936B-F7EE-AE9D871319DA";
 	setAttr ".cch" no;
 	setAttr ".fzn" no;
@@ -11704,7 +11736,7 @@ createNode rmanDisplay -n "rmanDefaultBakeDisplay10";
 	setAttr ".remapMaxValue" 0;
 	setAttr ".remapSmoothness" 0;
 	setAttr ".name" -type "string" "";
-createNode rmanDisplayChannel -n "diffuse10";
+createNode rmanDisplayChannel -n "diffuse11";
 	rename -uid "DE24B91C-4798-7F73-849F-9F8409AEC1C9";
 	setAttr ".cch" no;
 	setAttr ".fzn" no;
@@ -11723,7 +11755,7 @@ createNode rmanDisplayChannel -n "diffuse10";
 	setAttr ".remapMaxValue" 0;
 	setAttr ".remapSmoothness" 0;
 	setAttr ".name" -type "string" "diffuse7";
-createNode rmanDisplayChannel -n "a10";
+createNode rmanDisplayChannel -n "a11";
 	rename -uid "EDFBF81E-420F-6E44-E71D-E98D19690C14";
 	setAttr ".cch" no;
 	setAttr ".fzn" no;
@@ -11745,7 +11777,7 @@ createNode rmanDisplayChannel -n "a10";
 createNode rmanVolumeAggregateSet -n "globalVolumeAggregate6";
 	rename -uid "3E6732F6-4C10-3E93-F73D-3BA7C56C2AB7";
 lockNode -l 1 ;
-createNode rmanDisplay -n "rmanDefaultBakeDisplay11";
+createNode rmanDisplay -n "rmanDefaultBakeDisplay12";
 	rename -uid "4A86EAA6-4EF2-1CD2-622B-DF998D501BBA";
 	setAttr ".cch" no;
 	setAttr ".fzn" no;
@@ -11759,7 +11791,7 @@ createNode rmanDisplay -n "rmanDefaultBakeDisplay11";
 	setAttr ".remapMaxValue" 0;
 	setAttr ".remapSmoothness" 0;
 	setAttr ".name" -type "string" "";
-createNode rmanDisplayChannel -n "diffuse11";
+createNode rmanDisplayChannel -n "diffuse12";
 	rename -uid "C66BB8DE-440C-2C26-C9AC-D5B24EF328B1";
 	setAttr ".cch" no;
 	setAttr ".fzn" no;
@@ -11778,7 +11810,7 @@ createNode rmanDisplayChannel -n "diffuse11";
 	setAttr ".remapMaxValue" 0;
 	setAttr ".remapSmoothness" 0;
 	setAttr ".name" -type "string" "diffuse8";
-createNode rmanDisplayChannel -n "a11";
+createNode rmanDisplayChannel -n "a12";
 	rename -uid "4A131CBC-41B0-0896-34AC-29AC60420147";
 	setAttr ".cch" no;
 	setAttr ".fzn" no;
@@ -11800,7 +11832,7 @@ createNode rmanDisplayChannel -n "a11";
 createNode rmanVolumeAggregateSet -n "globalVolumeAggregate7";
 	rename -uid "8C0F89B4-415B-C426-19FA-639E49FBAA80";
 lockNode -l 1 ;
-createNode rmanDisplay -n "rmanDefaultBakeDisplay12";
+createNode rmanDisplay -n "rmanDefaultBakeDisplay13";
 	rename -uid "0357AA44-434A-ABF4-7A37-0AAF494A72FF";
 	setAttr ".cch" no;
 	setAttr ".fzn" no;
@@ -11814,7 +11846,7 @@ createNode rmanDisplay -n "rmanDefaultBakeDisplay12";
 	setAttr ".remapMaxValue" 0;
 	setAttr ".remapSmoothness" 0;
 	setAttr ".name" -type "string" "";
-createNode rmanDisplayChannel -n "diffuse12";
+createNode rmanDisplayChannel -n "diffuse13";
 	rename -uid "BF110357-4434-C7CA-E1D5-DBB070BA174F";
 	setAttr ".cch" no;
 	setAttr ".fzn" no;
@@ -11833,7 +11865,7 @@ createNode rmanDisplayChannel -n "diffuse12";
 	setAttr ".remapMaxValue" 0;
 	setAttr ".remapSmoothness" 0;
 	setAttr ".name" -type "string" "diffuse9";
-createNode rmanDisplayChannel -n "a12";
+createNode rmanDisplayChannel -n "a13";
 	rename -uid "94839F85-486F-A7E6-2599-7AA65B6A3577";
 	setAttr ".cch" no;
 	setAttr ".fzn" no;
@@ -11855,7 +11887,7 @@ createNode rmanDisplayChannel -n "a12";
 createNode rmanVolumeAggregateSet -n "globalVolumeAggregate8";
 	rename -uid "4BA1017E-479F-756E-A196-B0904790A317";
 lockNode -l 1 ;
-createNode rmanDisplay -n "rmanDefaultBakeDisplay13";
+createNode rmanDisplay -n "rmanDefaultBakeDisplay14";
 	rename -uid "E1C10D88-41DA-79C7-3464-79A465D5E91F";
 	setAttr ".cch" no;
 	setAttr ".fzn" no;
@@ -11869,7 +11901,7 @@ createNode rmanDisplay -n "rmanDefaultBakeDisplay13";
 	setAttr ".remapMaxValue" 0;
 	setAttr ".remapSmoothness" 0;
 	setAttr ".name" -type "string" "";
-createNode rmanDisplayChannel -n "diffuse13";
+createNode rmanDisplayChannel -n "diffuse14";
 	rename -uid "C1B3E12B-4045-DB1C-30A9-089A5F628146";
 	setAttr ".cch" no;
 	setAttr ".fzn" no;
@@ -11888,7 +11920,7 @@ createNode rmanDisplayChannel -n "diffuse13";
 	setAttr ".remapMaxValue" 0;
 	setAttr ".remapSmoothness" 0;
 	setAttr ".name" -type "string" "diffuse10";
-createNode rmanDisplayChannel -n "a13";
+createNode rmanDisplayChannel -n "a14";
 	rename -uid "22C11359-459E-11CB-29FA-CBBB1D520826";
 	setAttr ".cch" no;
 	setAttr ".fzn" no;
@@ -11910,7 +11942,7 @@ createNode rmanDisplayChannel -n "a13";
 createNode rmanVolumeAggregateSet -n "globalVolumeAggregate9";
 	rename -uid "C3DB3CC1-4EBE-0441-5860-A7880BDF49E6";
 lockNode -l 1 ;
-createNode rmanDisplay -n "rmanDefaultBakeDisplay14";
+createNode rmanDisplay -n "rmanDefaultBakeDisplay15";
 	rename -uid "6115A182-41A1-EDF4-6B1E-FA83507EED79";
 	setAttr ".cch" no;
 	setAttr ".fzn" no;
@@ -11924,7 +11956,7 @@ createNode rmanDisplay -n "rmanDefaultBakeDisplay14";
 	setAttr ".remapMaxValue" 0;
 	setAttr ".remapSmoothness" 0;
 	setAttr ".name" -type "string" "";
-createNode rmanDisplayChannel -n "diffuse14";
+createNode rmanDisplayChannel -n "diffuse15";
 	rename -uid "6FDEDE39-46E2-A448-321A-8EA24C353EF8";
 	setAttr ".cch" no;
 	setAttr ".fzn" no;
@@ -11943,7 +11975,7 @@ createNode rmanDisplayChannel -n "diffuse14";
 	setAttr ".remapMaxValue" 0;
 	setAttr ".remapSmoothness" 0;
 	setAttr ".name" -type "string" "diffuse11";
-createNode rmanDisplayChannel -n "a14";
+createNode rmanDisplayChannel -n "a15";
 	rename -uid "1511CCC2-4A35-6BF0-EB53-C7AD11346B88";
 	setAttr ".cch" no;
 	setAttr ".fzn" no;
@@ -11965,7 +11997,7 @@ createNode rmanDisplayChannel -n "a14";
 createNode rmanVolumeAggregateSet -n "globalVolumeAggregate10";
 	rename -uid "EA268D59-4FF7-2879-F783-148792D7E629";
 lockNode -l 1 ;
-createNode rmanDisplay -n "rmanDefaultBakeDisplay15";
+createNode rmanDisplay -n "rmanDefaultBakeDisplay16";
 	rename -uid "1388DAF9-43D5-C2EF-DE9D-349599488CD0";
 	setAttr ".cch" no;
 	setAttr ".fzn" no;
@@ -11979,7 +12011,7 @@ createNode rmanDisplay -n "rmanDefaultBakeDisplay15";
 	setAttr ".remapMaxValue" 0;
 	setAttr ".remapSmoothness" 0;
 	setAttr ".name" -type "string" "";
-createNode rmanDisplayChannel -n "diffuse15";
+createNode rmanDisplayChannel -n "diffuse16";
 	rename -uid "F4EA8D61-4369-A5C8-9421-50B1ACDBD56B";
 	setAttr ".cch" no;
 	setAttr ".fzn" no;
@@ -11998,7 +12030,7 @@ createNode rmanDisplayChannel -n "diffuse15";
 	setAttr ".remapMaxValue" 0;
 	setAttr ".remapSmoothness" 0;
 	setAttr ".name" -type "string" "diffuse12";
-createNode rmanDisplayChannel -n "a15";
+createNode rmanDisplayChannel -n "a16";
 	rename -uid "F7198DFE-4F7D-89FC-7CEF-DDB60F2F49DC";
 	setAttr ".cch" no;
 	setAttr ".fzn" no;
@@ -12020,7 +12052,7 @@ createNode rmanDisplayChannel -n "a15";
 createNode rmanVolumeAggregateSet -n "globalVolumeAggregate11";
 	rename -uid "4180E7A4-4CCC-BC80-E557-8A959A952C69";
 lockNode -l 1 ;
-createNode rmanDisplay -n "rmanDefaultBakeDisplay16";
+createNode rmanDisplay -n "rmanDefaultBakeDisplay17";
 	rename -uid "78F874F1-4C8F-37A7-6A11-F3A4F47A4844";
 	setAttr ".cch" no;
 	setAttr ".fzn" no;
@@ -12034,7 +12066,7 @@ createNode rmanDisplay -n "rmanDefaultBakeDisplay16";
 	setAttr ".remapMaxValue" 0;
 	setAttr ".remapSmoothness" 0;
 	setAttr ".name" -type "string" "";
-createNode rmanDisplayChannel -n "diffuse16";
+createNode rmanDisplayChannel -n "diffuse17";
 	rename -uid "99B758E0-4548-7F7A-8CA4-CEAFEB3C79DB";
 	setAttr ".cch" no;
 	setAttr ".fzn" no;
@@ -12053,7 +12085,7 @@ createNode rmanDisplayChannel -n "diffuse16";
 	setAttr ".remapMaxValue" 0;
 	setAttr ".remapSmoothness" 0;
 	setAttr ".name" -type "string" "diffuse13";
-createNode rmanDisplayChannel -n "a16";
+createNode rmanDisplayChannel -n "a17";
 	rename -uid "6244C4BD-4B41-3C89-18FE-B5AD7C15ECCC";
 	setAttr ".cch" no;
 	setAttr ".fzn" no;
@@ -12075,7 +12107,7 @@ createNode rmanDisplayChannel -n "a16";
 createNode rmanVolumeAggregateSet -n "globalVolumeAggregate12";
 	rename -uid "C08B9385-4A5C-CDAF-4425-56A69EAF0D50";
 lockNode -l 1 ;
-createNode rmanDisplay -n "rmanDefaultBakeDisplay17";
+createNode rmanDisplay -n "rmanDefaultBakeDisplay18";
 	rename -uid "5A7D114F-413B-5B33-39A7-9BB751E18A8D";
 	setAttr ".cch" no;
 	setAttr ".fzn" no;
@@ -12089,7 +12121,7 @@ createNode rmanDisplay -n "rmanDefaultBakeDisplay17";
 	setAttr ".remapMaxValue" 0;
 	setAttr ".remapSmoothness" 0;
 	setAttr ".name" -type "string" "";
-createNode rmanDisplayChannel -n "diffuse17";
+createNode rmanDisplayChannel -n "diffuse18";
 	rename -uid "27171238-40B9-BA98-B493-29A67ED9DF59";
 	setAttr ".cch" no;
 	setAttr ".fzn" no;
@@ -12108,7 +12140,7 @@ createNode rmanDisplayChannel -n "diffuse17";
 	setAttr ".remapMaxValue" 0;
 	setAttr ".remapSmoothness" 0;
 	setAttr ".name" -type "string" "diffuse14";
-createNode rmanDisplayChannel -n "a17";
+createNode rmanDisplayChannel -n "a18";
 	rename -uid "58F795E3-4B7A-003B-E695-F19A8E807FFC";
 	setAttr ".cch" no;
 	setAttr ".fzn" no;
@@ -12130,7 +12162,7 @@ createNode rmanDisplayChannel -n "a17";
 createNode rmanVolumeAggregateSet -n "globalVolumeAggregate13";
 	rename -uid "D2DE758B-4CD6-A95F-552E-59B2B5843DA3";
 lockNode -l 1 ;
-createNode rmanDisplay -n "rmanDefaultBakeDisplay18";
+createNode rmanDisplay -n "rmanDefaultBakeDisplay19";
 	rename -uid "70E31A06-4D7C-38D7-46E8-F7A0FB304EEC";
 	setAttr ".cch" no;
 	setAttr ".fzn" no;
@@ -12144,7 +12176,7 @@ createNode rmanDisplay -n "rmanDefaultBakeDisplay18";
 	setAttr ".remapMaxValue" 0;
 	setAttr ".remapSmoothness" 0;
 	setAttr ".name" -type "string" "";
-createNode rmanDisplayChannel -n "diffuse18";
+createNode rmanDisplayChannel -n "diffuse19";
 	rename -uid "B35E9726-4D15-244D-DEA2-B9A40439131B";
 	setAttr ".cch" no;
 	setAttr ".fzn" no;
@@ -12163,7 +12195,7 @@ createNode rmanDisplayChannel -n "diffuse18";
 	setAttr ".remapMaxValue" 0;
 	setAttr ".remapSmoothness" 0;
 	setAttr ".name" -type "string" "diffuse15";
-createNode rmanDisplayChannel -n "a18";
+createNode rmanDisplayChannel -n "a19";
 	rename -uid "545506CF-4EC9-0F51-8DDB-85999144C2CD";
 	setAttr ".cch" no;
 	setAttr ".fzn" no;
@@ -12186,18 +12218,18 @@ createNode rmanVolumeAggregateSet -n "globalVolumeAggregate14";
 	rename -uid "9519C729-43AB-5728-7197-B2A623D403FC";
 lockNode -l 1 ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "1CE20715-4BB7-5E03-30DF-97BE828E59D9";
+	rename -uid "3CE51F3B-4A48-1EB5-40D1-6387705B39C5";
 	setAttr -s 351 ".lnk";
 	setAttr -s 351 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "E90F17CE-48C2-A2BF-D339-4A81EBE6A13E";
+	rename -uid "826E834A-4775-79A7-B5EB-73AB8EA24716";
 	setAttr ".bsdt[0].bscd" -type "Int32Array" 2 0 1 ;
 	setAttr -s 2 ".bspr";
 	setAttr -s 2 ".obsv";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "CB791A48-4305-A3DB-94D1-BABCB9610DAE";
+	rename -uid "D5E56AEB-4230-48D4-AD39-ABA1C7499A5C";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "2BE252DF-41F1-605A-0D6F-6FB6B6032949";
+	rename -uid "3963A7E1-4BA2-DAE1-DFBD-A29109453F3E";
 	setAttr ".cdl" 2;
 	setAttr -s 3 ".dli[1:2]"  1 2;
 	setAttr -s 3 ".dli";
@@ -12205,7 +12237,7 @@ createNode displayLayer -n "defaultLayer";
 	rename -uid "82522776-487E-A527-5F74-2FBA23C1F35E";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "566FAF99-485F-EF77-E830-57A0F6FE39A3";
+	rename -uid "52C1D0F2-4D46-3056-A192-B8AC1B6F495A";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "0AFF99AD-4C94-F2D7-B02F-54A39D0DD1ED";
 	setAttr ".g" yes;
@@ -12236,7 +12268,7 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Front View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Front View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|front\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n"
 		+ "            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n"
 		+ "            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n"
-		+ "            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n"
+		+ "            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|Shot7_RENDER\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n"
 		+ "            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 1\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n"
 		+ "            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n"
 		+ "            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 2789\n            -height 1074\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" != $panelName) {\n"
@@ -12261,18 +12293,21 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"renderWindowPanel\" (localizedPanelLabel(\"Render View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Render View\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"shapePanel\" (localizedPanelLabel(\"Shape Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tshapePanel -edit -l (localizedPanelLabel(\"Shape Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"posePanel\" (localizedPanelLabel(\"Pose Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tposePanel -edit -l (localizedPanelLabel(\"Pose Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n"
 		+ "\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynRelEdPanel\" (localizedPanelLabel(\"Dynamic Relationships\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dynamic Relationships\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"relationshipPanel\" (localizedPanelLabel(\"Relationship Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Relationship Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"referenceEditorPanel\" (localizedPanelLabel(\"Reference Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Reference Editor\")) -mbv $menusOkayInPanels  $panelName;\n"
 		+ "\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynPaintScriptedPanelType\" (localizedPanelLabel(\"Paint Effects\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Paint Effects\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"scriptEditorPanel\" (localizedPanelLabel(\"Script Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Script Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"profilerPanel\" (localizedPanelLabel(\"Profiler Tool\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Profiler Tool\")) -mbv $menusOkayInPanels  $panelName;\n"
-		+ "\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"contentBrowserPanel\" (localizedPanelLabel(\"Content Browser\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Content Browser\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"Stereo\" (localizedPanelLabel(\"Stereo\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Stereo\")) -mbv $menusOkayInPanels  $panelName;\n{ string $editorName = ($panelName+\"Editor\");\n            stereoCameraView -e \n                -camera \"|Shot5_RENDER\" \n                -useInteractiveMode 0\n                -displayLights \"default\" \n                -displayAppearance \"wireframe\" \n                -activeOnly 0\n                -ignorePanZoom 0\n                -wireframeOnShaded 0\n"
-		+ "                -headsUpDisplay 1\n                -holdOuts 1\n                -selectionHiliteDisplay 1\n                -useDefaultMaterial 0\n                -bufferMode \"double\" \n                -twoSidedLighting 1\n                -backfaceCulling 0\n                -xray 0\n                -jointXray 0\n                -activeComponentsXray 0\n                -displayTextures 0\n                -smoothWireframe 0\n                -lineWidth 1\n                -textureAnisotropic 0\n                -textureHilight 1\n                -textureSampling 2\n                -textureDisplay \"modulate\" \n                -textureMaxSize 32768\n                -fogging 0\n                -fogSource \"fragment\" \n                -fogMode \"linear\" \n                -fogStart 0\n                -fogEnd 100\n                -fogDensity 0.1\n                -fogColor 0.5 0.5 0.5 1 \n                -depthOfFieldPreview 1\n                -maxConstantTransparency 1\n                -objectFilterShowInHUD 1\n                -isFiltered 0\n                -colorResolution 4 4 \n"
-		+ "                -bumpResolution 4 4 \n                -textureCompression 0\n                -transparencyAlgorithm \"frontAndBackCull\" \n                -transpInShadows 0\n                -cullingOverride \"none\" \n                -lowQualityLighting 0\n                -maximumNumHardwareLights 0\n                -occlusionCulling 0\n                -shadingModel 0\n                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -controllers 1\n                -nurbsCurves 1\n                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n                -lights 1\n                -cameras 1\n                -controlVertices 1\n                -hulls 1\n                -grid 1\n                -imagePlane 1\n                -joints 1\n                -ikHandles 1\n"
-		+ "                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -bluePencil 1\n                -greasePencils 0\n                -shadows 0\n                -captureSequenceNumber -1\n                -width 0\n                -height 0\n                -sceneRenderFilter 0\n                -displayMode \"centerEye\" \n                -viewColor 0 0 0 1 \n                -useCustomBackground 1\n                $editorName;\n            stereoCameraView -e -viewSelected 0 $editorName;\n            stereoCameraView -e \n"
-		+ "                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n                $editorName; };\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"vacantCell.xP:/\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Persp View\")) \n\t\t\t\t\t\"modelPanel\"\n"
-		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 1\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 2789\\n    -height 1074\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
-		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 1\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 2789\\n    -height 1074\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"contentBrowserPanel\" (localizedPanelLabel(\"Content Browser\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Content Browser\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"Stereo\" (localizedPanelLabel(\"Stereo\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Stereo\")) -mbv $menusOkayInPanels  $panelName;\n{ string $editorName = ($panelName+\"Editor\");\n            stereoCameraView -e \n                -useInteractiveMode 0\n                -displayLights \"default\" \n                -displayAppearance \"wireframe\" \n                -activeOnly 0\n                -ignorePanZoom 0\n                -wireframeOnShaded 0\n                -headsUpDisplay 1\n"
+		+ "                -holdOuts 1\n                -selectionHiliteDisplay 1\n                -useDefaultMaterial 0\n                -bufferMode \"double\" \n                -twoSidedLighting 1\n                -backfaceCulling 0\n                -xray 0\n                -jointXray 0\n                -activeComponentsXray 0\n                -displayTextures 0\n                -smoothWireframe 0\n                -lineWidth 1\n                -textureAnisotropic 0\n                -textureHilight 1\n                -textureSampling 2\n                -textureDisplay \"modulate\" \n                -textureMaxSize 32768\n                -fogging 0\n                -fogSource \"fragment\" \n                -fogMode \"linear\" \n                -fogStart 0\n                -fogEnd 100\n                -fogDensity 0.1\n                -fogColor 0.5 0.5 0.5 1 \n                -depthOfFieldPreview 1\n                -maxConstantTransparency 1\n                -objectFilterShowInHUD 1\n                -isFiltered 0\n                -colorResolution 4 4 \n                -bumpResolution 4 4 \n"
+		+ "                -textureCompression 0\n                -transparencyAlgorithm \"frontAndBackCull\" \n                -transpInShadows 0\n                -cullingOverride \"none\" \n                -lowQualityLighting 0\n                -maximumNumHardwareLights 0\n                -occlusionCulling 0\n                -shadingModel 0\n                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -controllers 1\n                -nurbsCurves 1\n                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n                -lights 1\n                -cameras 1\n                -controlVertices 1\n                -hulls 1\n                -grid 1\n                -imagePlane 1\n                -joints 1\n                -ikHandles 1\n                -deformers 1\n"
+		+ "                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -bluePencil 1\n                -greasePencils 0\n                -shadows 0\n                -captureSequenceNumber -1\n                -width 0\n                -height 0\n                -sceneRenderFilter 0\n                -displayMode \"centerEye\" \n                -viewColor 0 0 0 1 \n                -useCustomBackground 1\n                $editorName;\n            stereoCameraView -e -viewSelected 0 $editorName;\n            stereoCameraView -e \n"
+		+ "                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n                $editorName; };\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 1\n            -smoothWireframe 0\n"
+		+ "            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n"
+		+ "            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n"
+		+ "            -greasePencils 0\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 2554\n            -height 1325\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"vacantCell.xP:/\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Persp View\")) \n\t\t\t\t\t\"modelPanel\"\n"
+		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"|Shot7_RENDER\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 1\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 2789\\n    -height 1074\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"|Shot7_RENDER\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 1\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 2789\\n    -height 1074\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
 		+ "\t\t\t\t$configName;\n\n            setNamedPanelLayout (localizedPanelLabel(\"Current Layout\"));\n        }\n\n        panelHistory -e -clear mainPanelHistory;\n        sceneUIReplacement -clear;\n\t}\n\n\ngrid -spacing 1000 -size 1000 -divisions 10 -displayAxes yes -displayGridLines yes -displayDivisionLines yes -displayPerspectiveLabels yes -displayOrthographicLabels yes -displayAxesBold yes -perspectiveLabelPosition edge -orthographicLabelPosition edge;\nviewManip -drawCompass 0 -compassAngle 0 -frontParameters \"\" -homeParameters \"\" -selectionLockParameters \"\";\n}\n");
 	setAttr ".st" 3;
 createNode script -n "sceneConfigurationScriptNode";
 	rename -uid "8C2C098C-45F3-2EEF-8571-CEA9104992D3";
-	setAttr ".b" -type "string" "playbackOptions -min 1 -max 130 -ast 1 -aet 400 ";
+	setAttr ".b" -type "string" "playbackOptions -min 1 -max 32 -ast 1 -aet 400 ";
 	setAttr ".st" 6;
 createNode lambert -n "floor_mat";
 	rename -uid "4735EB50-4E00-A170-8A5C-9A8424EECD4B";
@@ -12551,15 +12586,10 @@ createNode d_openexr -n "d_openexr2";
 	setAttr ".metadatacount" 0;
 createNode reference -n "KitchenCabinets_finalRN";
 	rename -uid "5CEEF2E7-4705-0E92-9117-DC8DEFD99F93";
-	setAttr -s 9 ".phl";
+	setAttr -s 4 ".phl";
 	setAttr ".phl[1]" 0;
 	setAttr ".phl[3]" 0;
 	setAttr ".phl[4]" 0;
-	setAttr ".phl[5]" 0;
-	setAttr ".phl[6]" 0;
-	setAttr ".phl[7]" 0;
-	setAttr ".phl[8]" 0;
-	setAttr ".phl[9]" 0;
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"KitchenCabinets_finalRN"
 		"KitchenCabinets_finalRN" 1
@@ -12574,6 +12604,16 @@ createNode reference -n "KitchenCabinets_finalRN";
 		
 		2 "|KitchenCabinets_final:masterCabinet_ctrl" "scalePivot" " -type \"double3\" -45.27888535974693696 237.7912327350771875 0"
 		
+		2 "|KitchenCabinets_final:masterCabinet_ctrl|KitchenCabinets_final:cabinetB_crtl" 
+		"OpenDoor" " -k 1 0"
+		2 "|KitchenCabinets_final:masterCabinet_ctrl|KitchenCabinets_final:cabinetC_crtl" 
+		"OpenDoor" " -k 1 0"
+		2 "|KitchenCabinets_final:masterCabinet_ctrl|KitchenCabinets_final:cabinetD_crtl" 
+		"OpenDoor" " -k 1 0"
+		2 "|KitchenCabinets_final:masterCabinet_ctrl|KitchenCabinets_final:cabinetE_crtl" 
+		"OpenDoor" " -k 1 0"
+		2 "|KitchenCabinets_final:masterCabinet_ctrl|KitchenCabinets_final:cabinetF_crtl" 
+		"open" " -k 1 0"
 		2 "|KitchenCabinets_final:cabinet_geo|KitchenCabinets_final:shelfTopLarge_geo|KitchenCabinets_final:cabinetCnD_geo|KitchenCabinets_final:cabinetDoorC_geo|KitchenCabinets_final:cabinetDoorC_geoShape" 
 		"dispResolution" " 1"
 		2 "|KitchenCabinets_final:cabinet_geo|KitchenCabinets_final:shelfTopLarge_geo|KitchenCabinets_final:cabinetCnD_geo|KitchenCabinets_final:cabinetDoorC_geo|KitchenCabinets_final:cabinetDoorC_geoShape" 
@@ -12584,20 +12624,10 @@ createNode reference -n "KitchenCabinets_finalRN";
 		"displaySmoothMesh" " 0"
 		2 "|KitchenCabinets_final:cabinet_geo|KitchenCabinets_final:shelfTopLarge_geo|KitchenCabinets_final:smallCabinet_geo|KitchenCabinets_final:smallCabinetGlass_geo" 
 		"visibility" " 0"
-		5 4 "KitchenCabinets_finalRN" "|KitchenCabinets_final:masterCabinet_ctrl|KitchenCabinets_final:cabinetB_crtl.OpenDoor" 
-		"KitchenCabinets_finalRN.placeHolderList[3]" ""
-		5 4 "KitchenCabinets_finalRN" "|KitchenCabinets_final:masterCabinet_ctrl|KitchenCabinets_final:cabinetC_crtl.OpenDoor" 
-		"KitchenCabinets_finalRN.placeHolderList[4]" ""
-		5 4 "KitchenCabinets_finalRN" "|KitchenCabinets_final:masterCabinet_ctrl|KitchenCabinets_final:cabinetD_crtl.OpenDoor" 
-		"KitchenCabinets_finalRN.placeHolderList[5]" ""
 		5 0 "KitchenCabinets_finalRN" "KitchenCabinets_final:arrowH01_CTL5_rotateY.output" 
 		"|KitchenCabinets_final:masterCabinet_ctrl|KitchenCabinets_final:cabinetE_crtl.rotateY" 
-		"KitchenCabinets_finalRN.placeHolderList[6]" "KitchenCabinets_finalRN.placeHolderList[7]" 
-		""
-		5 4 "KitchenCabinets_finalRN" "|KitchenCabinets_final:masterCabinet_ctrl|KitchenCabinets_final:cabinetE_crtl.OpenDoor" 
-		"KitchenCabinets_finalRN.placeHolderList[8]" ""
-		5 4 "KitchenCabinets_finalRN" "|KitchenCabinets_final:masterCabinet_ctrl|KitchenCabinets_final:cabinetF_crtl.open" 
-		"KitchenCabinets_finalRN.placeHolderList[9]" "";
+		"KitchenCabinets_finalRN.placeHolderList[3]" "KitchenCabinets_finalRN.placeHolderList[4]" 
+		"";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "TV_finalRN";
@@ -16460,7 +16490,7 @@ createNode rmanDisplayChannel -n "Ci";
 	setAttr ".remapMaxValue" 0;
 	setAttr ".remapSmoothness" 0;
 	setAttr ".name" -type "string" "Ci";
-createNode rmanDisplayChannel -n "a19";
+createNode rmanDisplayChannel -n "a20";
 	rename -uid "39D7A8F8-4234-5319-3C05-E295A93B26F9";
 	setAttr ".cch" no;
 	setAttr ".fzn" no;
@@ -16509,7 +16539,7 @@ createNode d_openexr -n "d_openexr13";
 	setAttr ".metadatacount" 0;
 createNode reference -n "characterSam_RIG_finalRN";
 	rename -uid "80CA2F4C-4E3B-0AD8-8371-C3AF3E57F94B";
-	setAttr -s 354 ".phl";
+	setAttr -s 217 ".phl";
 	setAttr ".phl[1]" 0;
 	setAttr ".phl[2]" 0;
 	setAttr ".phl[3]" 0;
@@ -16727,147 +16757,10 @@ createNode reference -n "characterSam_RIG_finalRN";
 	setAttr ".phl[215]" 0;
 	setAttr ".phl[216]" 0;
 	setAttr ".phl[217]" 0;
-	setAttr ".phl[218]" 0;
-	setAttr ".phl[219]" 0;
-	setAttr ".phl[220]" 0;
-	setAttr ".phl[221]" 0;
-	setAttr ".phl[222]" 0;
-	setAttr ".phl[223]" 0;
-	setAttr ".phl[224]" 0;
-	setAttr ".phl[225]" 0;
-	setAttr ".phl[226]" 0;
-	setAttr ".phl[227]" 0;
-	setAttr ".phl[228]" 0;
-	setAttr ".phl[229]" 0;
-	setAttr ".phl[230]" 0;
-	setAttr ".phl[231]" 0;
-	setAttr ".phl[232]" 0;
-	setAttr ".phl[233]" 0;
-	setAttr ".phl[234]" 0;
-	setAttr ".phl[235]" 0;
-	setAttr ".phl[236]" 0;
-	setAttr ".phl[237]" 0;
-	setAttr ".phl[238]" 0;
-	setAttr ".phl[239]" 0;
-	setAttr ".phl[240]" 0;
-	setAttr ".phl[241]" 0;
-	setAttr ".phl[242]" 0;
-	setAttr ".phl[243]" 0;
-	setAttr ".phl[244]" 0;
-	setAttr ".phl[245]" 0;
-	setAttr ".phl[246]" 0;
-	setAttr ".phl[247]" 0;
-	setAttr ".phl[248]" 0;
-	setAttr ".phl[249]" 0;
-	setAttr ".phl[250]" 0;
-	setAttr ".phl[251]" 0;
-	setAttr ".phl[252]" 0;
-	setAttr ".phl[253]" 0;
-	setAttr ".phl[254]" 0;
-	setAttr ".phl[255]" 0;
-	setAttr ".phl[256]" 0;
-	setAttr ".phl[257]" 0;
-	setAttr ".phl[258]" 0;
-	setAttr ".phl[259]" 0;
-	setAttr ".phl[260]" 0;
-	setAttr ".phl[261]" 0;
-	setAttr ".phl[262]" 0;
-	setAttr ".phl[263]" 0;
-	setAttr ".phl[264]" 0;
-	setAttr ".phl[265]" 0;
-	setAttr ".phl[266]" 0;
-	setAttr ".phl[267]" 0;
-	setAttr ".phl[268]" 0;
-	setAttr ".phl[269]" 0;
-	setAttr ".phl[270]" 0;
-	setAttr ".phl[271]" 0;
-	setAttr ".phl[272]" 0;
-	setAttr ".phl[273]" 0;
-	setAttr ".phl[274]" 0;
-	setAttr ".phl[275]" 0;
-	setAttr ".phl[276]" 0;
-	setAttr ".phl[277]" 0;
-	setAttr ".phl[278]" 0;
-	setAttr ".phl[279]" 0;
-	setAttr ".phl[280]" 0;
-	setAttr ".phl[281]" 0;
-	setAttr ".phl[282]" 0;
-	setAttr ".phl[283]" 0;
-	setAttr ".phl[284]" 0;
-	setAttr ".phl[285]" 0;
-	setAttr ".phl[286]" 0;
-	setAttr ".phl[287]" 0;
-	setAttr ".phl[288]" 0;
-	setAttr ".phl[289]" 0;
-	setAttr ".phl[290]" 0;
-	setAttr ".phl[291]" 0;
-	setAttr ".phl[292]" 0;
-	setAttr ".phl[293]" 0;
-	setAttr ".phl[294]" 0;
-	setAttr ".phl[295]" 0;
-	setAttr ".phl[296]" 0;
-	setAttr ".phl[297]" 0;
-	setAttr ".phl[298]" 0;
-	setAttr ".phl[299]" 0;
-	setAttr ".phl[300]" 0;
-	setAttr ".phl[301]" 0;
-	setAttr ".phl[302]" 0;
-	setAttr ".phl[303]" 0;
-	setAttr ".phl[304]" 0;
-	setAttr ".phl[305]" 0;
-	setAttr ".phl[306]" 0;
-	setAttr ".phl[307]" 0;
-	setAttr ".phl[308]" 0;
-	setAttr ".phl[309]" 0;
-	setAttr ".phl[310]" 0;
-	setAttr ".phl[311]" 0;
-	setAttr ".phl[312]" 0;
-	setAttr ".phl[313]" 0;
-	setAttr ".phl[314]" 0;
-	setAttr ".phl[315]" 0;
-	setAttr ".phl[316]" 0;
-	setAttr ".phl[317]" 0;
-	setAttr ".phl[318]" 0;
-	setAttr ".phl[319]" 0;
-	setAttr ".phl[320]" 0;
-	setAttr ".phl[321]" 0;
-	setAttr ".phl[322]" 0;
-	setAttr ".phl[323]" 0;
-	setAttr ".phl[324]" 0;
-	setAttr ".phl[325]" 0;
-	setAttr ".phl[326]" 0;
-	setAttr ".phl[327]" 0;
-	setAttr ".phl[328]" 0;
-	setAttr ".phl[329]" 0;
-	setAttr ".phl[330]" 0;
-	setAttr ".phl[331]" 0;
-	setAttr ".phl[332]" 0;
-	setAttr ".phl[333]" 0;
-	setAttr ".phl[334]" 0;
-	setAttr ".phl[335]" 0;
-	setAttr ".phl[336]" 0;
-	setAttr ".phl[337]" 0;
-	setAttr ".phl[338]" 0;
-	setAttr ".phl[339]" 0;
-	setAttr ".phl[340]" 0;
-	setAttr ".phl[341]" 0;
-	setAttr ".phl[342]" 0;
-	setAttr ".phl[343]" 0;
-	setAttr ".phl[344]" 0;
-	setAttr ".phl[345]" 0;
-	setAttr ".phl[346]" 0;
-	setAttr ".phl[347]" 0;
-	setAttr ".phl[348]" 0;
-	setAttr ".phl[349]" 0;
-	setAttr ".phl[350]" 0;
-	setAttr ".phl[351]" 0;
-	setAttr ".phl[352]" 0;
-	setAttr ".phl[353]" 0;
-	setAttr ".phl[354]" 0;
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"characterSam_RIG_finalRN"
 		"characterSam_RIG_finalRN" 0
-		"characterSam_RIG_finalRN" 368
+		"characterSam_RIG_finalRN" 301
 		1 characterSam_RIG_final:file9 "txm_id" "txm_id" " -ci 1 -h 1 -dt \"string\""
 		
 		1 characterSam_RIG_final:file11 "txm_id" "txm_id" " -ci 1 -h 1 -dt \"string\""
@@ -16878,16 +16771,160 @@ createNode reference -n "characterSam_RIG_finalRN";
 		
 		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl" 
 		"translate" " -type \"double3\" 0 0 0"
-		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl" 
-		"visibility" " 1"
-		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl" 
-		"rotate" " -type \"double3\" 0 0 0"
-		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl" 
-		"scale" " -type \"double3\" 1 1 1"
+		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samNeck_ctrl|characterSam_RIG_final:samHead_ctrl" 
+		"samExpression_Happy" " -k 1"
+		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samNeck_ctrl|characterSam_RIG_final:samHead_ctrl" 
+		"samExpressionHelp_Happy" " -k 1"
+		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samNeck_ctrl|characterSam_RIG_final:samHead_ctrl" 
+		"samExpression_Shock" " -k 1"
+		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samNeck_ctrl|characterSam_RIG_final:samHead_ctrl" 
+		"samExpression_Neutral" " -k 1"
 		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samNeck_ctrl|characterSam_RIG_final:samHead_ctrl|characterSam_RIG_final:eye01_CTL" 
 		"translate" " -type \"double3\" 0 0 0"
+		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samNeck_ctrl|characterSam_RIG_final:samHead_ctrl|characterSam_RIG_final:eye01_CTL" 
+		"rotate" " -type \"double3\" 0 0 0"
+		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL6" 
+		"visibility" " 1"
+		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL6" 
+		"translate" " -type \"double3\" 0 0 0"
+		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL6" 
+		"scale" " -type \"double3\" 0.99999999999999967 0.99999999999999978 0.99999999999999956"
+		
+		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL6|characterSam_RIG_final:circle01_CTL7" 
+		"visibility" " 1"
+		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL6|characterSam_RIG_final:circle01_CTL7" 
+		"translate" " -type \"double3\" 0 0 0"
+		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL6|characterSam_RIG_final:circle01_CTL7" 
+		"rotate" " -type \"double3\" 0 0 -20.04183277451375389"
+		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL6|characterSam_RIG_final:circle01_CTL7" 
+		"scale" " -type \"double3\" 1 1 1"
+		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL6|characterSam_RIG_final:circle01_CTL7|characterSam_RIG_final:circle01_CTL8" 
+		"visibility" " 1"
+		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL6|characterSam_RIG_final:circle01_CTL7|characterSam_RIG_final:circle01_CTL8" 
+		"translate" " -type \"double3\" 0 0 0"
+		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL6|characterSam_RIG_final:circle01_CTL7|characterSam_RIG_final:circle01_CTL8" 
+		"rotate" " -type \"double3\" 0 0 -16.09149199848708633"
+		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL6|characterSam_RIG_final:circle01_CTL7|characterSam_RIG_final:circle01_CTL8" 
+		"scale" " -type \"double3\" 1 1 1"
+		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL3" 
+		"visibility" " 1"
+		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL3" 
+		"translate" " -type \"double3\" 0 0 0"
+		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL3" 
+		"rotate" " -type \"double3\" 0 0 -11.99082239659898974"
+		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL3" 
+		"scale" " -type \"double3\" 0.99999999999999967 0.99999999999999978 0.99999999999999956"
+		
+		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL3|characterSam_RIG_final:circle01_CTL4" 
+		"visibility" " 1"
+		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL3|characterSam_RIG_final:circle01_CTL4" 
+		"translate" " -type \"double3\" 0 0 0"
+		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL3|characterSam_RIG_final:circle01_CTL4" 
+		"rotate" " -type \"double3\" 0 0 -4.10534532936324492"
+		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL3|characterSam_RIG_final:circle01_CTL4" 
+		"scale" " -type \"double3\" 1 1 1"
+		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL3|characterSam_RIG_final:circle01_CTL4|characterSam_RIG_final:circle01_CTL5" 
+		"visibility" " 1"
+		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL3|characterSam_RIG_final:circle01_CTL4|characterSam_RIG_final:circle01_CTL5" 
+		"translate" " -type \"double3\" 0 0 0"
+		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL3|characterSam_RIG_final:circle01_CTL4|characterSam_RIG_final:circle01_CTL5" 
+		"rotate" " -type \"double3\" 0 0 -8.03759260366693873"
+		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL3|characterSam_RIG_final:circle01_CTL4|characterSam_RIG_final:circle01_CTL5" 
+		"scale" " -type \"double3\" 1 1 1"
+		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL9" 
+		"visibility" " 1"
+		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL9" 
+		"translate" " -type \"double3\" 0 0 0"
+		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL9" 
+		"scale" " -type \"double3\" 0.99999999999999967 0.99999999999999978 0.99999999999999956"
+		
+		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL9|characterSam_RIG_final:circle01_CTL1" 
+		"visibility" " 1"
+		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL9|characterSam_RIG_final:circle01_CTL1" 
+		"translate" " -type \"double3\" 0 0 0"
+		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL9|characterSam_RIG_final:circle01_CTL1" 
+		"scale" " -type \"double3\" 1 1 1"
+		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL9|characterSam_RIG_final:circle01_CTL1|characterSam_RIG_final:circle01_CTL2" 
+		"visibility" " 1"
+		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL9|characterSam_RIG_final:circle01_CTL1|characterSam_RIG_final:circle01_CTL2" 
+		"translate" " -type \"double3\" 0 0 0"
+		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL9|characterSam_RIG_final:circle01_CTL1|characterSam_RIG_final:circle01_CTL2" 
+		"rotate" " -type \"double3\" 0 0 -9.07128229728357738"
+		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL9|characterSam_RIG_final:circle01_CTL1|characterSam_RIG_final:circle01_CTL2" 
+		"scale" " -type \"double3\" 1 1 1"
+		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL15" 
+		"visibility" " 1"
+		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL15" 
+		"translate" " -type \"double3\" 0 0 0"
+		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL15" 
+		"rotate" " -type \"double3\" -5.32031920136680991 -6.60654019534159254 20.69084694030567917"
+		
+		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL15" 
+		"scale" " -type \"double3\" 1 1 1"
+		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL15|characterSam_RIG_final:circle01_CTL16" 
+		"visibility" " 1"
+		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL15|characterSam_RIG_final:circle01_CTL16" 
+		"translate" " -type \"double3\" 0 0 0"
+		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL15|characterSam_RIG_final:circle01_CTL16" 
+		"rotate" " -type \"double3\" 0 0 -8.59168965658631834"
+		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL15|characterSam_RIG_final:circle01_CTL16" 
+		"scale" " -type \"double3\" 1 1 1"
+		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL15|characterSam_RIG_final:circle01_CTL16|characterSam_RIG_final:circle01_CTL17" 
+		"visibility" " 1"
+		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL15|characterSam_RIG_final:circle01_CTL16|characterSam_RIG_final:circle01_CTL17" 
+		"translate" " -type \"double3\" 0 0 0"
+		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL15|characterSam_RIG_final:circle01_CTL16|characterSam_RIG_final:circle01_CTL17" 
+		"rotate" " -type \"double3\" 0 0 0"
+		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL15|characterSam_RIG_final:circle01_CTL16|characterSam_RIG_final:circle01_CTL17" 
+		"scale" " -type \"double3\" 1 1 1"
+		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL12" 
+		"visibility" " 1"
+		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL12" 
+		"translate" " -type \"double3\" 0 0 0"
+		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL12" 
+		"rotate" " -type \"double3\" 0 0 34.22247045290089318"
+		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL12" 
+		"scale" " -type \"double3\" 1 1 1"
+		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL12|characterSam_RIG_final:circle01_CTL13" 
+		"visibility" " 1"
+		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL12|characterSam_RIG_final:circle01_CTL13" 
+		"translate" " -type \"double3\" 0 0 0"
+		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL12|characterSam_RIG_final:circle01_CTL13" 
+		"rotate" " -type \"double3\" 0 0 -24.05318522077267929"
+		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL12|characterSam_RIG_final:circle01_CTL13" 
+		"scale" " -type \"double3\" 1 1 1"
+		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL12|characterSam_RIG_final:circle01_CTL13|characterSam_RIG_final:circle01_CTL14" 
+		"visibility" " 1"
+		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL12|characterSam_RIG_final:circle01_CTL13|characterSam_RIG_final:circle01_CTL14" 
+		"translate" " -type \"double3\" 0 0 0"
+		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL12|characterSam_RIG_final:circle01_CTL13|characterSam_RIG_final:circle01_CTL14" 
+		"rotate" " -type \"double3\" 0 0 -19.17806960763762802"
+		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL12|characterSam_RIG_final:circle01_CTL13|characterSam_RIG_final:circle01_CTL14" 
+		"scale" " -type \"double3\" 1 1 1"
+		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL" 
+		"visibility" " 1"
+		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL" 
+		"translate" " -type \"double3\" 0 0 0"
+		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL" 
+		"scale" " -type \"double3\" 1 1 1"
+		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL|characterSam_RIG_final:circle01_CTL10" 
+		"visibility" " 1"
+		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL|characterSam_RIG_final:circle01_CTL10" 
+		"translate" " -type \"double3\" 0 0 0"
+		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL|characterSam_RIG_final:circle01_CTL10" 
+		"rotate" " -type \"double3\" 0 0 27.34665792370935122"
+		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL|characterSam_RIG_final:circle01_CTL10" 
+		"scale" " -type \"double3\" 1 1 1"
+		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL|characterSam_RIG_final:circle01_CTL10|characterSam_RIG_final:circle01_CTL11" 
+		"visibility" " 1"
+		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL|characterSam_RIG_final:circle01_CTL10|characterSam_RIG_final:circle01_CTL11" 
+		"translate" " -type \"double3\" 0 0 0"
+		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL|characterSam_RIG_final:circle01_CTL10|characterSam_RIG_final:circle01_CTL11" 
+		"rotate" " -type \"double3\" 0 0 0"
+		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL|characterSam_RIG_final:circle01_CTL10|characterSam_RIG_final:circle01_CTL11" 
+		"scale" " -type \"double3\" 1 1 1"
+		2 "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samFoot_L_ctrl" 
+		"peelHeel" " -k 1"
 		2 "characterSam_RIG_final:file9" "txm_id" " -type \"string\" \"characterSam_RIG_final:file9\""
 		
 		2 "characterSam_RIG_final:file11" "txm_id" " -type \"string\" \"characterSam_RIG_final:file11\""
@@ -16916,1486 +16953,596 @@ createNode reference -n "characterSam_RIG_finalRN";
 		"characterSam_RIG_finalRN.placeHolderList[9]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl.visibility" 
 		"characterSam_RIG_finalRN.placeHolderList[10]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl.translateX" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl.translateX" 
 		"characterSam_RIG_finalRN.placeHolderList[11]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl.translateY" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl.translateY" 
 		"characterSam_RIG_finalRN.placeHolderList[12]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl.translateZ" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl.translateZ" 
 		"characterSam_RIG_finalRN.placeHolderList[13]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl.rotateX" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl.rotateX" 
 		"characterSam_RIG_finalRN.placeHolderList[14]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl.rotateY" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl.rotateY" 
 		"characterSam_RIG_finalRN.placeHolderList[15]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl.rotateZ" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl.rotateZ" 
 		"characterSam_RIG_finalRN.placeHolderList[16]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl.scaleX" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl.scaleX" 
 		"characterSam_RIG_finalRN.placeHolderList[17]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl.scaleY" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl.scaleY" 
 		"characterSam_RIG_finalRN.placeHolderList[18]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl.scaleZ" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl.scaleZ" 
 		"characterSam_RIG_finalRN.placeHolderList[19]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl.visibility" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl.visibility" 
 		"characterSam_RIG_finalRN.placeHolderList[20]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl.translateX" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl.translateX" 
 		"characterSam_RIG_finalRN.placeHolderList[21]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl.translateY" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl.translateY" 
 		"characterSam_RIG_finalRN.placeHolderList[22]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl.translateZ" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl.translateZ" 
 		"characterSam_RIG_finalRN.placeHolderList[23]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl.rotateY" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl.rotateX" 
 		"characterSam_RIG_finalRN.placeHolderList[24]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl.rotateX" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl.rotateY" 
 		"characterSam_RIG_finalRN.placeHolderList[25]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl.rotateZ" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl.rotateZ" 
 		"characterSam_RIG_finalRN.placeHolderList[26]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl.scaleX" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl.scaleX" 
 		"characterSam_RIG_finalRN.placeHolderList[27]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl.scaleY" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl.scaleY" 
 		"characterSam_RIG_finalRN.placeHolderList[28]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl.scaleZ" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl.scaleZ" 
 		"characterSam_RIG_finalRN.placeHolderList[29]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl.visibility" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl.visibility" 
 		"characterSam_RIG_finalRN.placeHolderList[30]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl.translateX" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl.translateX" 
 		"characterSam_RIG_finalRN.placeHolderList[31]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl.translateY" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl.translateY" 
 		"characterSam_RIG_finalRN.placeHolderList[32]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl.translateZ" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl.translateZ" 
 		"characterSam_RIG_finalRN.placeHolderList[33]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl.rotateY" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl.rotateY" 
 		"characterSam_RIG_finalRN.placeHolderList[34]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl.rotateX" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl.rotateX" 
 		"characterSam_RIG_finalRN.placeHolderList[35]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl.rotateZ" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl.rotateZ" 
 		"characterSam_RIG_finalRN.placeHolderList[36]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl.scaleX" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl.scaleX" 
 		"characterSam_RIG_finalRN.placeHolderList[37]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl.scaleY" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl.scaleY" 
 		"characterSam_RIG_finalRN.placeHolderList[38]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl.scaleZ" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl.scaleZ" 
 		"characterSam_RIG_finalRN.placeHolderList[39]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl.visibility" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl.visibility" 
 		"characterSam_RIG_finalRN.placeHolderList[40]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samNeck_ctrl|characterSam_RIG_final:samHead_ctrl.samExpression_Happy" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl.translateX" 
 		"characterSam_RIG_finalRN.placeHolderList[41]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samNeck_ctrl|characterSam_RIG_final:samHead_ctrl.samExpressionHelp_Happy" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl.translateY" 
 		"characterSam_RIG_finalRN.placeHolderList[42]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samNeck_ctrl|characterSam_RIG_final:samHead_ctrl.samExpression_Shock" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl.translateZ" 
 		"characterSam_RIG_finalRN.placeHolderList[43]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samNeck_ctrl|characterSam_RIG_final:samHead_ctrl.samExpression_Neutral" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl.rotateY" 
 		"characterSam_RIG_finalRN.placeHolderList[44]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samNeck_ctrl|characterSam_RIG_final:samHead_ctrl.translateX" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl.rotateX" 
 		"characterSam_RIG_finalRN.placeHolderList[45]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samNeck_ctrl|characterSam_RIG_final:samHead_ctrl.translateY" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl.rotateZ" 
 		"characterSam_RIG_finalRN.placeHolderList[46]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samNeck_ctrl|characterSam_RIG_final:samHead_ctrl.translateZ" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl.scaleX" 
 		"characterSam_RIG_finalRN.placeHolderList[47]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samNeck_ctrl|characterSam_RIG_final:samHead_ctrl.rotateY" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl.scaleY" 
 		"characterSam_RIG_finalRN.placeHolderList[48]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samNeck_ctrl|characterSam_RIG_final:samHead_ctrl.rotateX" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl.scaleZ" 
 		"characterSam_RIG_finalRN.placeHolderList[49]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samNeck_ctrl|characterSam_RIG_final:samHead_ctrl.rotateZ" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl.visibility" 
 		"characterSam_RIG_finalRN.placeHolderList[50]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samNeck_ctrl|characterSam_RIG_final:samHead_ctrl.scaleX" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samNeck_ctrl|characterSam_RIG_final:samHead_ctrl.samExpression_Happy" 
 		"characterSam_RIG_finalRN.placeHolderList[51]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samNeck_ctrl|characterSam_RIG_final:samHead_ctrl.scaleY" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samNeck_ctrl|characterSam_RIG_final:samHead_ctrl.samExpressionHelp_Happy" 
 		"characterSam_RIG_finalRN.placeHolderList[52]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samNeck_ctrl|characterSam_RIG_final:samHead_ctrl.scaleZ" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samNeck_ctrl|characterSam_RIG_final:samHead_ctrl.samExpression_Shock" 
 		"characterSam_RIG_finalRN.placeHolderList[53]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samNeck_ctrl|characterSam_RIG_final:samHead_ctrl.visibility" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samNeck_ctrl|characterSam_RIG_final:samHead_ctrl.samExpression_Neutral" 
 		"characterSam_RIG_finalRN.placeHolderList[54]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl.translateX" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samNeck_ctrl|characterSam_RIG_final:samHead_ctrl.translateX" 
 		"characterSam_RIG_finalRN.placeHolderList[55]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl.translateY" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samNeck_ctrl|characterSam_RIG_final:samHead_ctrl.translateY" 
 		"characterSam_RIG_finalRN.placeHolderList[56]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl.translateZ" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samNeck_ctrl|characterSam_RIG_final:samHead_ctrl.translateZ" 
 		"characterSam_RIG_finalRN.placeHolderList[57]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl.rotateY" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samNeck_ctrl|characterSam_RIG_final:samHead_ctrl.rotateY" 
 		"characterSam_RIG_finalRN.placeHolderList[58]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl.rotateX" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samNeck_ctrl|characterSam_RIG_final:samHead_ctrl.rotateX" 
 		"characterSam_RIG_finalRN.placeHolderList[59]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl.rotateZ" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samNeck_ctrl|characterSam_RIG_final:samHead_ctrl.rotateZ" 
 		"characterSam_RIG_finalRN.placeHolderList[60]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl.scaleX" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samNeck_ctrl|characterSam_RIG_final:samHead_ctrl.scaleX" 
 		"characterSam_RIG_finalRN.placeHolderList[61]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl.scaleY" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samNeck_ctrl|characterSam_RIG_final:samHead_ctrl.scaleY" 
 		"characterSam_RIG_finalRN.placeHolderList[62]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl.scaleZ" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samNeck_ctrl|characterSam_RIG_final:samHead_ctrl.scaleZ" 
 		"characterSam_RIG_finalRN.placeHolderList[63]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl.visibility" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samNeck_ctrl|characterSam_RIG_final:samHead_ctrl.visibility" 
 		"characterSam_RIG_finalRN.placeHolderList[64]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl.translateX" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl.translateX" 
 		"characterSam_RIG_finalRN.placeHolderList[65]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl.translateY" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl.translateY" 
 		"characterSam_RIG_finalRN.placeHolderList[66]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl.translateZ" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl.translateZ" 
 		"characterSam_RIG_finalRN.placeHolderList[67]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl.rotateY" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl.rotateY" 
 		"characterSam_RIG_finalRN.placeHolderList[68]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl.rotateX" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl.rotateX" 
 		"characterSam_RIG_finalRN.placeHolderList[69]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl.rotateZ" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl.rotateZ" 
 		"characterSam_RIG_finalRN.placeHolderList[70]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl.scaleX" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl.scaleX" 
 		"characterSam_RIG_finalRN.placeHolderList[71]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl.scaleY" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl.scaleY" 
 		"characterSam_RIG_finalRN.placeHolderList[72]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl.scaleZ" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl.scaleZ" 
 		"characterSam_RIG_finalRN.placeHolderList[73]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl.visibility" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl.visibility" 
 		"characterSam_RIG_finalRN.placeHolderList[74]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl.translateX" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl.translateX" 
 		"characterSam_RIG_finalRN.placeHolderList[75]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl.translateY" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl.translateY" 
 		"characterSam_RIG_finalRN.placeHolderList[76]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl.translateZ" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl.translateZ" 
 		"characterSam_RIG_finalRN.placeHolderList[77]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl.rotateX" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl.rotateY" 
 		"characterSam_RIG_finalRN.placeHolderList[78]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl.rotateY" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl.rotateX" 
 		"characterSam_RIG_finalRN.placeHolderList[79]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl.rotateZ" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl.rotateZ" 
 		"characterSam_RIG_finalRN.placeHolderList[80]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl.scaleX" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl.scaleX" 
 		"characterSam_RIG_finalRN.placeHolderList[81]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl.scaleY" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl.scaleY" 
 		"characterSam_RIG_finalRN.placeHolderList[82]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl.scaleZ" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl.scaleZ" 
 		"characterSam_RIG_finalRN.placeHolderList[83]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl.visibility" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl.visibility" 
 		"characterSam_RIG_finalRN.placeHolderList[84]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL19.translateX" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl.translateX" 
 		"characterSam_RIG_finalRN.placeHolderList[85]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL19.translateY" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl.translateY" 
 		"characterSam_RIG_finalRN.placeHolderList[86]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL19.translateZ" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl.translateZ" 
 		"characterSam_RIG_finalRN.placeHolderList[87]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL19.rotateX" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl.rotateX" 
 		"characterSam_RIG_finalRN.placeHolderList[88]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL19.rotateY" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl.rotateY" 
 		"characterSam_RIG_finalRN.placeHolderList[89]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL19.rotateZ" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl.rotateZ" 
 		"characterSam_RIG_finalRN.placeHolderList[90]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL19.scaleX" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl.scaleX" 
 		"characterSam_RIG_finalRN.placeHolderList[91]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL19.scaleY" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl.scaleY" 
 		"characterSam_RIG_finalRN.placeHolderList[92]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL19.scaleZ" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl.scaleZ" 
 		"characterSam_RIG_finalRN.placeHolderList[93]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL19.visibility" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl.visibility" 
 		"characterSam_RIG_finalRN.placeHolderList[94]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL19|characterSam_RIG_final:circle01_CTL23.translateX" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL19.translateX" 
 		"characterSam_RIG_finalRN.placeHolderList[95]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL19|characterSam_RIG_final:circle01_CTL23.translateY" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL19.translateY" 
 		"characterSam_RIG_finalRN.placeHolderList[96]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL19|characterSam_RIG_final:circle01_CTL23.translateZ" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL19.translateZ" 
 		"characterSam_RIG_finalRN.placeHolderList[97]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL19|characterSam_RIG_final:circle01_CTL23.rotateX" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL19.rotateX" 
 		"characterSam_RIG_finalRN.placeHolderList[98]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL19|characterSam_RIG_final:circle01_CTL23.rotateY" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL19.rotateY" 
 		"characterSam_RIG_finalRN.placeHolderList[99]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL19|characterSam_RIG_final:circle01_CTL23.rotateZ" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL19.rotateZ" 
 		"characterSam_RIG_finalRN.placeHolderList[100]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL19|characterSam_RIG_final:circle01_CTL23.scaleX" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL19.scaleX" 
 		"characterSam_RIG_finalRN.placeHolderList[101]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL19|characterSam_RIG_final:circle01_CTL23.scaleY" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL19.scaleY" 
 		"characterSam_RIG_finalRN.placeHolderList[102]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL19|characterSam_RIG_final:circle01_CTL23.scaleZ" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL19.scaleZ" 
 		"characterSam_RIG_finalRN.placeHolderList[103]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL19|characterSam_RIG_final:circle01_CTL23.visibility" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL19.visibility" 
 		"characterSam_RIG_finalRN.placeHolderList[104]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL19|characterSam_RIG_final:circle01_CTL23|characterSam_RIG_final:circle01_CTL24.translateX" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL19|characterSam_RIG_final:circle01_CTL23.translateX" 
 		"characterSam_RIG_finalRN.placeHolderList[105]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL19|characterSam_RIG_final:circle01_CTL23|characterSam_RIG_final:circle01_CTL24.translateY" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL19|characterSam_RIG_final:circle01_CTL23.translateY" 
 		"characterSam_RIG_finalRN.placeHolderList[106]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL19|characterSam_RIG_final:circle01_CTL23|characterSam_RIG_final:circle01_CTL24.translateZ" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL19|characterSam_RIG_final:circle01_CTL23.translateZ" 
 		"characterSam_RIG_finalRN.placeHolderList[107]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL19|characterSam_RIG_final:circle01_CTL23|characterSam_RIG_final:circle01_CTL24.rotateX" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL19|characterSam_RIG_final:circle01_CTL23.rotateX" 
 		"characterSam_RIG_finalRN.placeHolderList[108]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL19|characterSam_RIG_final:circle01_CTL23|characterSam_RIG_final:circle01_CTL24.rotateY" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL19|characterSam_RIG_final:circle01_CTL23.rotateY" 
 		"characterSam_RIG_finalRN.placeHolderList[109]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL19|characterSam_RIG_final:circle01_CTL23|characterSam_RIG_final:circle01_CTL24.rotateZ" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL19|characterSam_RIG_final:circle01_CTL23.rotateZ" 
 		"characterSam_RIG_finalRN.placeHolderList[110]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL19|characterSam_RIG_final:circle01_CTL23|characterSam_RIG_final:circle01_CTL24.scaleX" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL19|characterSam_RIG_final:circle01_CTL23.scaleX" 
 		"characterSam_RIG_finalRN.placeHolderList[111]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL19|characterSam_RIG_final:circle01_CTL23|characterSam_RIG_final:circle01_CTL24.scaleY" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL19|characterSam_RIG_final:circle01_CTL23.scaleY" 
 		"characterSam_RIG_finalRN.placeHolderList[112]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL19|characterSam_RIG_final:circle01_CTL23|characterSam_RIG_final:circle01_CTL24.scaleZ" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL19|characterSam_RIG_final:circle01_CTL23.scaleZ" 
 		"characterSam_RIG_finalRN.placeHolderList[113]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL19|characterSam_RIG_final:circle01_CTL23|characterSam_RIG_final:circle01_CTL24.visibility" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL19|characterSam_RIG_final:circle01_CTL23.visibility" 
 		"characterSam_RIG_finalRN.placeHolderList[114]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL6.translateX" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL19|characterSam_RIG_final:circle01_CTL23|characterSam_RIG_final:circle01_CTL24.translateX" 
 		"characterSam_RIG_finalRN.placeHolderList[115]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL6.translateY" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL19|characterSam_RIG_final:circle01_CTL23|characterSam_RIG_final:circle01_CTL24.translateY" 
 		"characterSam_RIG_finalRN.placeHolderList[116]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL6.translateZ" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL19|characterSam_RIG_final:circle01_CTL23|characterSam_RIG_final:circle01_CTL24.translateZ" 
 		"characterSam_RIG_finalRN.placeHolderList[117]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL6.rotateZ" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL19|characterSam_RIG_final:circle01_CTL23|characterSam_RIG_final:circle01_CTL24.rotateX" 
 		"characterSam_RIG_finalRN.placeHolderList[118]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL6.rotateY" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL19|characterSam_RIG_final:circle01_CTL23|characterSam_RIG_final:circle01_CTL24.rotateY" 
 		"characterSam_RIG_finalRN.placeHolderList[119]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL6.rotateX" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL19|characterSam_RIG_final:circle01_CTL23|characterSam_RIG_final:circle01_CTL24.rotateZ" 
 		"characterSam_RIG_finalRN.placeHolderList[120]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL6.scaleX" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL19|characterSam_RIG_final:circle01_CTL23|characterSam_RIG_final:circle01_CTL24.scaleX" 
 		"characterSam_RIG_finalRN.placeHolderList[121]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL6.scaleY" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL19|characterSam_RIG_final:circle01_CTL23|characterSam_RIG_final:circle01_CTL24.scaleY" 
 		"characterSam_RIG_finalRN.placeHolderList[122]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL6.scaleZ" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL19|characterSam_RIG_final:circle01_CTL23|characterSam_RIG_final:circle01_CTL24.scaleZ" 
 		"characterSam_RIG_finalRN.placeHolderList[123]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL6.visibility" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL19|characterSam_RIG_final:circle01_CTL23|characterSam_RIG_final:circle01_CTL24.visibility" 
 		"characterSam_RIG_finalRN.placeHolderList[124]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL6|characterSam_RIG_final:circle01_CTL7.translateX" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL6.rotateZ" 
 		"characterSam_RIG_finalRN.placeHolderList[125]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL6|characterSam_RIG_final:circle01_CTL7.translateY" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL6.rotateY" 
 		"characterSam_RIG_finalRN.placeHolderList[126]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL6|characterSam_RIG_final:circle01_CTL7.translateZ" 
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL6.rotateX" 
 		"characterSam_RIG_finalRN.placeHolderList[127]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL6|characterSam_RIG_final:circle01_CTL7.rotateZ" 
 		"characterSam_RIG_finalRN.placeHolderList[128]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL6|characterSam_RIG_final:circle01_CTL7.rotateX" 
-		"characterSam_RIG_finalRN.placeHolderList[129]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL6|characterSam_RIG_final:circle01_CTL7.rotateY" 
-		"characterSam_RIG_finalRN.placeHolderList[130]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL6|characterSam_RIG_final:circle01_CTL7.scaleX" 
-		"characterSam_RIG_finalRN.placeHolderList[131]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL6|characterSam_RIG_final:circle01_CTL7.scaleY" 
-		"characterSam_RIG_finalRN.placeHolderList[132]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL6|characterSam_RIG_final:circle01_CTL7.scaleZ" 
-		"characterSam_RIG_finalRN.placeHolderList[133]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL6|characterSam_RIG_final:circle01_CTL7.visibility" 
-		"characterSam_RIG_finalRN.placeHolderList[134]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL6|characterSam_RIG_final:circle01_CTL7|characterSam_RIG_final:circle01_CTL8.translateX" 
-		"characterSam_RIG_finalRN.placeHolderList[135]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL6|characterSam_RIG_final:circle01_CTL7|characterSam_RIG_final:circle01_CTL8.translateY" 
-		"characterSam_RIG_finalRN.placeHolderList[136]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL6|characterSam_RIG_final:circle01_CTL7|characterSam_RIG_final:circle01_CTL8.translateZ" 
-		"characterSam_RIG_finalRN.placeHolderList[137]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL6|characterSam_RIG_final:circle01_CTL7|characterSam_RIG_final:circle01_CTL8.rotateZ" 
-		"characterSam_RIG_finalRN.placeHolderList[138]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL6|characterSam_RIG_final:circle01_CTL7|characterSam_RIG_final:circle01_CTL8.rotateX" 
-		"characterSam_RIG_finalRN.placeHolderList[139]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL6|characterSam_RIG_final:circle01_CTL7|characterSam_RIG_final:circle01_CTL8.rotateY" 
-		"characterSam_RIG_finalRN.placeHolderList[140]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL6|characterSam_RIG_final:circle01_CTL7|characterSam_RIG_final:circle01_CTL8.scaleX" 
-		"characterSam_RIG_finalRN.placeHolderList[141]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL6|characterSam_RIG_final:circle01_CTL7|characterSam_RIG_final:circle01_CTL8.scaleY" 
-		"characterSam_RIG_finalRN.placeHolderList[142]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL6|characterSam_RIG_final:circle01_CTL7|characterSam_RIG_final:circle01_CTL8.scaleZ" 
-		"characterSam_RIG_finalRN.placeHolderList[143]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL6|characterSam_RIG_final:circle01_CTL7|characterSam_RIG_final:circle01_CTL8.visibility" 
-		"characterSam_RIG_finalRN.placeHolderList[144]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL3.translateX" 
-		"characterSam_RIG_finalRN.placeHolderList[145]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL3.translateY" 
-		"characterSam_RIG_finalRN.placeHolderList[146]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL3.translateZ" 
-		"characterSam_RIG_finalRN.placeHolderList[147]" ""
+		"characterSam_RIG_finalRN.placeHolderList[129]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL3.rotateZ" 
-		"characterSam_RIG_finalRN.placeHolderList[148]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL3.rotateX" 
-		"characterSam_RIG_finalRN.placeHolderList[149]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL3.rotateY" 
-		"characterSam_RIG_finalRN.placeHolderList[150]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL3.scaleX" 
-		"characterSam_RIG_finalRN.placeHolderList[151]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL3.scaleY" 
-		"characterSam_RIG_finalRN.placeHolderList[152]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL3.scaleZ" 
-		"characterSam_RIG_finalRN.placeHolderList[153]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL3.visibility" 
-		"characterSam_RIG_finalRN.placeHolderList[154]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL3|characterSam_RIG_final:circle01_CTL4.translateX" 
-		"characterSam_RIG_finalRN.placeHolderList[155]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL3|characterSam_RIG_final:circle01_CTL4.translateY" 
-		"characterSam_RIG_finalRN.placeHolderList[156]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL3|characterSam_RIG_final:circle01_CTL4.translateZ" 
-		"characterSam_RIG_finalRN.placeHolderList[157]" ""
+		"characterSam_RIG_finalRN.placeHolderList[130]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL3|characterSam_RIG_final:circle01_CTL4.rotateZ" 
-		"characterSam_RIG_finalRN.placeHolderList[158]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL3|characterSam_RIG_final:circle01_CTL4.rotateX" 
-		"characterSam_RIG_finalRN.placeHolderList[159]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL3|characterSam_RIG_final:circle01_CTL4.rotateY" 
-		"characterSam_RIG_finalRN.placeHolderList[160]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL3|characterSam_RIG_final:circle01_CTL4.scaleX" 
-		"characterSam_RIG_finalRN.placeHolderList[161]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL3|characterSam_RIG_final:circle01_CTL4.scaleY" 
-		"characterSam_RIG_finalRN.placeHolderList[162]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL3|characterSam_RIG_final:circle01_CTL4.scaleZ" 
-		"characterSam_RIG_finalRN.placeHolderList[163]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL3|characterSam_RIG_final:circle01_CTL4.visibility" 
-		"characterSam_RIG_finalRN.placeHolderList[164]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL3|characterSam_RIG_final:circle01_CTL4|characterSam_RIG_final:circle01_CTL5.translateX" 
-		"characterSam_RIG_finalRN.placeHolderList[165]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL3|characterSam_RIG_final:circle01_CTL4|characterSam_RIG_final:circle01_CTL5.translateY" 
-		"characterSam_RIG_finalRN.placeHolderList[166]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL3|characterSam_RIG_final:circle01_CTL4|characterSam_RIG_final:circle01_CTL5.translateZ" 
-		"characterSam_RIG_finalRN.placeHolderList[167]" ""
+		"characterSam_RIG_finalRN.placeHolderList[131]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL3|characterSam_RIG_final:circle01_CTL4|characterSam_RIG_final:circle01_CTL5.rotateZ" 
-		"characterSam_RIG_finalRN.placeHolderList[168]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL3|characterSam_RIG_final:circle01_CTL4|characterSam_RIG_final:circle01_CTL5.rotateX" 
-		"characterSam_RIG_finalRN.placeHolderList[169]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL3|characterSam_RIG_final:circle01_CTL4|characterSam_RIG_final:circle01_CTL5.rotateY" 
-		"characterSam_RIG_finalRN.placeHolderList[170]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL3|characterSam_RIG_final:circle01_CTL4|characterSam_RIG_final:circle01_CTL5.scaleX" 
-		"characterSam_RIG_finalRN.placeHolderList[171]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL3|characterSam_RIG_final:circle01_CTL4|characterSam_RIG_final:circle01_CTL5.scaleY" 
-		"characterSam_RIG_finalRN.placeHolderList[172]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL3|characterSam_RIG_final:circle01_CTL4|characterSam_RIG_final:circle01_CTL5.scaleZ" 
-		"characterSam_RIG_finalRN.placeHolderList[173]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL3|characterSam_RIG_final:circle01_CTL4|characterSam_RIG_final:circle01_CTL5.visibility" 
-		"characterSam_RIG_finalRN.placeHolderList[174]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL9.translateX" 
-		"characterSam_RIG_finalRN.placeHolderList[175]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL9.translateY" 
-		"characterSam_RIG_finalRN.placeHolderList[176]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL9.translateZ" 
-		"characterSam_RIG_finalRN.placeHolderList[177]" ""
+		"characterSam_RIG_finalRN.placeHolderList[132]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL9.rotateZ" 
-		"characterSam_RIG_finalRN.placeHolderList[178]" ""
+		"characterSam_RIG_finalRN.placeHolderList[133]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL9.rotateX" 
-		"characterSam_RIG_finalRN.placeHolderList[179]" ""
+		"characterSam_RIG_finalRN.placeHolderList[134]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL9.rotateY" 
-		"characterSam_RIG_finalRN.placeHolderList[180]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL9.scaleX" 
-		"characterSam_RIG_finalRN.placeHolderList[181]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL9.scaleY" 
-		"characterSam_RIG_finalRN.placeHolderList[182]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL9.scaleZ" 
-		"characterSam_RIG_finalRN.placeHolderList[183]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL9.visibility" 
-		"characterSam_RIG_finalRN.placeHolderList[184]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL9|characterSam_RIG_final:circle01_CTL1.translateX" 
-		"characterSam_RIG_finalRN.placeHolderList[185]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL9|characterSam_RIG_final:circle01_CTL1.translateY" 
-		"characterSam_RIG_finalRN.placeHolderList[186]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL9|characterSam_RIG_final:circle01_CTL1.translateZ" 
-		"characterSam_RIG_finalRN.placeHolderList[187]" ""
+		"characterSam_RIG_finalRN.placeHolderList[135]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL9|characterSam_RIG_final:circle01_CTL1.rotateZ" 
-		"characterSam_RIG_finalRN.placeHolderList[188]" ""
+		"characterSam_RIG_finalRN.placeHolderList[136]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL9|characterSam_RIG_final:circle01_CTL1.rotateX" 
-		"characterSam_RIG_finalRN.placeHolderList[189]" ""
+		"characterSam_RIG_finalRN.placeHolderList[137]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL9|characterSam_RIG_final:circle01_CTL1.rotateY" 
-		"characterSam_RIG_finalRN.placeHolderList[190]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL9|characterSam_RIG_final:circle01_CTL1.scaleX" 
-		"characterSam_RIG_finalRN.placeHolderList[191]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL9|characterSam_RIG_final:circle01_CTL1.scaleY" 
-		"characterSam_RIG_finalRN.placeHolderList[192]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL9|characterSam_RIG_final:circle01_CTL1.scaleZ" 
-		"characterSam_RIG_finalRN.placeHolderList[193]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL9|characterSam_RIG_final:circle01_CTL1.visibility" 
-		"characterSam_RIG_finalRN.placeHolderList[194]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL9|characterSam_RIG_final:circle01_CTL1|characterSam_RIG_final:circle01_CTL2.translateX" 
-		"characterSam_RIG_finalRN.placeHolderList[195]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL9|characterSam_RIG_final:circle01_CTL1|characterSam_RIG_final:circle01_CTL2.translateY" 
-		"characterSam_RIG_finalRN.placeHolderList[196]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL9|characterSam_RIG_final:circle01_CTL1|characterSam_RIG_final:circle01_CTL2.translateZ" 
-		"characterSam_RIG_finalRN.placeHolderList[197]" ""
+		"characterSam_RIG_finalRN.placeHolderList[138]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL9|characterSam_RIG_final:circle01_CTL1|characterSam_RIG_final:circle01_CTL2.rotateZ" 
-		"characterSam_RIG_finalRN.placeHolderList[198]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL9|characterSam_RIG_final:circle01_CTL1|characterSam_RIG_final:circle01_CTL2.rotateX" 
-		"characterSam_RIG_finalRN.placeHolderList[199]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL9|characterSam_RIG_final:circle01_CTL1|characterSam_RIG_final:circle01_CTL2.rotateY" 
-		"characterSam_RIG_finalRN.placeHolderList[200]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL9|characterSam_RIG_final:circle01_CTL1|characterSam_RIG_final:circle01_CTL2.scaleX" 
-		"characterSam_RIG_finalRN.placeHolderList[201]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL9|characterSam_RIG_final:circle01_CTL1|characterSam_RIG_final:circle01_CTL2.scaleY" 
-		"characterSam_RIG_finalRN.placeHolderList[202]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL9|characterSam_RIG_final:circle01_CTL1|characterSam_RIG_final:circle01_CTL2.scaleZ" 
-		"characterSam_RIG_finalRN.placeHolderList[203]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_R_ctrl|characterSam_RIG_final:samShoulder_R_ctrl|characterSam_RIG_final:samForearm_R_ctrl|characterSam_RIG_final:samHand_R_ctrl|characterSam_RIG_final:circle01_CTL9|characterSam_RIG_final:circle01_CTL1|characterSam_RIG_final:circle01_CTL2.visibility" 
-		"characterSam_RIG_finalRN.placeHolderList[204]" ""
+		"characterSam_RIG_finalRN.placeHolderList[139]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl.translateX" 
-		"characterSam_RIG_finalRN.placeHolderList[205]" ""
+		"characterSam_RIG_finalRN.placeHolderList[140]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl.translateY" 
-		"characterSam_RIG_finalRN.placeHolderList[206]" ""
+		"characterSam_RIG_finalRN.placeHolderList[141]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl.translateZ" 
-		"characterSam_RIG_finalRN.placeHolderList[207]" ""
+		"characterSam_RIG_finalRN.placeHolderList[142]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl.rotateX" 
-		"characterSam_RIG_finalRN.placeHolderList[208]" ""
+		"characterSam_RIG_finalRN.placeHolderList[143]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl.rotateY" 
-		"characterSam_RIG_finalRN.placeHolderList[209]" ""
+		"characterSam_RIG_finalRN.placeHolderList[144]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl.rotateZ" 
-		"characterSam_RIG_finalRN.placeHolderList[210]" ""
+		"characterSam_RIG_finalRN.placeHolderList[145]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl.scaleX" 
-		"characterSam_RIG_finalRN.placeHolderList[211]" ""
+		"characterSam_RIG_finalRN.placeHolderList[146]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl.scaleY" 
-		"characterSam_RIG_finalRN.placeHolderList[212]" ""
+		"characterSam_RIG_finalRN.placeHolderList[147]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl.scaleZ" 
-		"characterSam_RIG_finalRN.placeHolderList[213]" ""
+		"characterSam_RIG_finalRN.placeHolderList[148]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl.visibility" 
-		"characterSam_RIG_finalRN.placeHolderList[214]" ""
+		"characterSam_RIG_finalRN.placeHolderList[149]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl.translateX" 
-		"characterSam_RIG_finalRN.placeHolderList[215]" ""
+		"characterSam_RIG_finalRN.placeHolderList[150]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl.translateY" 
-		"characterSam_RIG_finalRN.placeHolderList[216]" ""
+		"characterSam_RIG_finalRN.placeHolderList[151]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl.translateZ" 
-		"characterSam_RIG_finalRN.placeHolderList[217]" ""
+		"characterSam_RIG_finalRN.placeHolderList[152]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl.rotateY" 
-		"characterSam_RIG_finalRN.placeHolderList[218]" ""
+		"characterSam_RIG_finalRN.placeHolderList[153]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl.rotateX" 
-		"characterSam_RIG_finalRN.placeHolderList[219]" ""
+		"characterSam_RIG_finalRN.placeHolderList[154]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl.rotateZ" 
-		"characterSam_RIG_finalRN.placeHolderList[220]" ""
+		"characterSam_RIG_finalRN.placeHolderList[155]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl.scaleX" 
-		"characterSam_RIG_finalRN.placeHolderList[221]" ""
+		"characterSam_RIG_finalRN.placeHolderList[156]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl.scaleY" 
-		"characterSam_RIG_finalRN.placeHolderList[222]" ""
+		"characterSam_RIG_finalRN.placeHolderList[157]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl.scaleZ" 
-		"characterSam_RIG_finalRN.placeHolderList[223]" ""
+		"characterSam_RIG_finalRN.placeHolderList[158]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl.visibility" 
-		"characterSam_RIG_finalRN.placeHolderList[224]" ""
+		"characterSam_RIG_finalRN.placeHolderList[159]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl.translateX" 
-		"characterSam_RIG_finalRN.placeHolderList[225]" ""
+		"characterSam_RIG_finalRN.placeHolderList[160]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl.translateY" 
-		"characterSam_RIG_finalRN.placeHolderList[226]" ""
+		"characterSam_RIG_finalRN.placeHolderList[161]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl.translateZ" 
-		"characterSam_RIG_finalRN.placeHolderList[227]" ""
+		"characterSam_RIG_finalRN.placeHolderList[162]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl.rotateZ" 
-		"characterSam_RIG_finalRN.placeHolderList[228]" ""
+		"characterSam_RIG_finalRN.placeHolderList[163]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl.rotateX" 
-		"characterSam_RIG_finalRN.placeHolderList[229]" ""
+		"characterSam_RIG_finalRN.placeHolderList[164]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl.rotateY" 
-		"characterSam_RIG_finalRN.placeHolderList[230]" ""
+		"characterSam_RIG_finalRN.placeHolderList[165]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl.scaleX" 
-		"characterSam_RIG_finalRN.placeHolderList[231]" ""
+		"characterSam_RIG_finalRN.placeHolderList[166]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl.scaleY" 
-		"characterSam_RIG_finalRN.placeHolderList[232]" ""
+		"characterSam_RIG_finalRN.placeHolderList[167]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl.scaleZ" 
-		"characterSam_RIG_finalRN.placeHolderList[233]" ""
+		"characterSam_RIG_finalRN.placeHolderList[168]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl.visibility" 
-		"characterSam_RIG_finalRN.placeHolderList[234]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL15.translateX" 
-		"characterSam_RIG_finalRN.placeHolderList[235]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL15.translateY" 
-		"characterSam_RIG_finalRN.placeHolderList[236]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL15.translateZ" 
-		"characterSam_RIG_finalRN.placeHolderList[237]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL15.rotateX" 
-		"characterSam_RIG_finalRN.placeHolderList[238]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL15.rotateY" 
-		"characterSam_RIG_finalRN.placeHolderList[239]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL15.rotateZ" 
-		"characterSam_RIG_finalRN.placeHolderList[240]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL15.scaleX" 
-		"characterSam_RIG_finalRN.placeHolderList[241]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL15.scaleY" 
-		"characterSam_RIG_finalRN.placeHolderList[242]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL15.scaleZ" 
-		"characterSam_RIG_finalRN.placeHolderList[243]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL15.visibility" 
-		"characterSam_RIG_finalRN.placeHolderList[244]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL15|characterSam_RIG_final:circle01_CTL16.translateX" 
-		"characterSam_RIG_finalRN.placeHolderList[245]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL15|characterSam_RIG_final:circle01_CTL16.translateY" 
-		"characterSam_RIG_finalRN.placeHolderList[246]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL15|characterSam_RIG_final:circle01_CTL16.translateZ" 
-		"characterSam_RIG_finalRN.placeHolderList[247]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL15|characterSam_RIG_final:circle01_CTL16.rotateX" 
-		"characterSam_RIG_finalRN.placeHolderList[248]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL15|characterSam_RIG_final:circle01_CTL16.rotateY" 
-		"characterSam_RIG_finalRN.placeHolderList[249]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL15|characterSam_RIG_final:circle01_CTL16.rotateZ" 
-		"characterSam_RIG_finalRN.placeHolderList[250]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL15|characterSam_RIG_final:circle01_CTL16.scaleX" 
-		"characterSam_RIG_finalRN.placeHolderList[251]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL15|characterSam_RIG_final:circle01_CTL16.scaleY" 
-		"characterSam_RIG_finalRN.placeHolderList[252]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL15|characterSam_RIG_final:circle01_CTL16.scaleZ" 
-		"characterSam_RIG_finalRN.placeHolderList[253]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL15|characterSam_RIG_final:circle01_CTL16.visibility" 
-		"characterSam_RIG_finalRN.placeHolderList[254]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL15|characterSam_RIG_final:circle01_CTL16|characterSam_RIG_final:circle01_CTL17.translateX" 
-		"characterSam_RIG_finalRN.placeHolderList[255]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL15|characterSam_RIG_final:circle01_CTL16|characterSam_RIG_final:circle01_CTL17.translateY" 
-		"characterSam_RIG_finalRN.placeHolderList[256]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL15|characterSam_RIG_final:circle01_CTL16|characterSam_RIG_final:circle01_CTL17.translateZ" 
-		"characterSam_RIG_finalRN.placeHolderList[257]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL15|characterSam_RIG_final:circle01_CTL16|characterSam_RIG_final:circle01_CTL17.rotateX" 
-		"characterSam_RIG_finalRN.placeHolderList[258]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL15|characterSam_RIG_final:circle01_CTL16|characterSam_RIG_final:circle01_CTL17.rotateY" 
-		"characterSam_RIG_finalRN.placeHolderList[259]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL15|characterSam_RIG_final:circle01_CTL16|characterSam_RIG_final:circle01_CTL17.rotateZ" 
-		"characterSam_RIG_finalRN.placeHolderList[260]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL15|characterSam_RIG_final:circle01_CTL16|characterSam_RIG_final:circle01_CTL17.scaleX" 
-		"characterSam_RIG_finalRN.placeHolderList[261]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL15|characterSam_RIG_final:circle01_CTL16|characterSam_RIG_final:circle01_CTL17.scaleY" 
-		"characterSam_RIG_finalRN.placeHolderList[262]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL15|characterSam_RIG_final:circle01_CTL16|characterSam_RIG_final:circle01_CTL17.scaleZ" 
-		"characterSam_RIG_finalRN.placeHolderList[263]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL15|characterSam_RIG_final:circle01_CTL16|characterSam_RIG_final:circle01_CTL17.visibility" 
-		"characterSam_RIG_finalRN.placeHolderList[264]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL12.translateX" 
-		"characterSam_RIG_finalRN.placeHolderList[265]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL12.translateY" 
-		"characterSam_RIG_finalRN.placeHolderList[266]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL12.translateZ" 
-		"characterSam_RIG_finalRN.placeHolderList[267]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL12.rotateX" 
-		"characterSam_RIG_finalRN.placeHolderList[268]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL12.rotateY" 
-		"characterSam_RIG_finalRN.placeHolderList[269]" ""
+		"characterSam_RIG_finalRN.placeHolderList[169]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL12.rotateZ" 
-		"characterSam_RIG_finalRN.placeHolderList[270]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL12.scaleX" 
-		"characterSam_RIG_finalRN.placeHolderList[271]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL12.scaleY" 
-		"characterSam_RIG_finalRN.placeHolderList[272]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL12.scaleZ" 
-		"characterSam_RIG_finalRN.placeHolderList[273]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL12.visibility" 
-		"characterSam_RIG_finalRN.placeHolderList[274]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL12|characterSam_RIG_final:circle01_CTL13.translateX" 
-		"characterSam_RIG_finalRN.placeHolderList[275]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL12|characterSam_RIG_final:circle01_CTL13.translateY" 
-		"characterSam_RIG_finalRN.placeHolderList[276]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL12|characterSam_RIG_final:circle01_CTL13.translateZ" 
-		"characterSam_RIG_finalRN.placeHolderList[277]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL12|characterSam_RIG_final:circle01_CTL13.rotateX" 
-		"characterSam_RIG_finalRN.placeHolderList[278]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL12|characterSam_RIG_final:circle01_CTL13.rotateY" 
-		"characterSam_RIG_finalRN.placeHolderList[279]" ""
+		"characterSam_RIG_finalRN.placeHolderList[170]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL12|characterSam_RIG_final:circle01_CTL13.rotateZ" 
-		"characterSam_RIG_finalRN.placeHolderList[280]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL12|characterSam_RIG_final:circle01_CTL13.scaleX" 
-		"characterSam_RIG_finalRN.placeHolderList[281]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL12|characterSam_RIG_final:circle01_CTL13.scaleY" 
-		"characterSam_RIG_finalRN.placeHolderList[282]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL12|characterSam_RIG_final:circle01_CTL13.scaleZ" 
-		"characterSam_RIG_finalRN.placeHolderList[283]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL12|characterSam_RIG_final:circle01_CTL13.visibility" 
-		"characterSam_RIG_finalRN.placeHolderList[284]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL12|characterSam_RIG_final:circle01_CTL13|characterSam_RIG_final:circle01_CTL14.translateX" 
-		"characterSam_RIG_finalRN.placeHolderList[285]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL12|characterSam_RIG_final:circle01_CTL13|characterSam_RIG_final:circle01_CTL14.translateY" 
-		"characterSam_RIG_finalRN.placeHolderList[286]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL12|characterSam_RIG_final:circle01_CTL13|characterSam_RIG_final:circle01_CTL14.translateZ" 
-		"characterSam_RIG_finalRN.placeHolderList[287]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL12|characterSam_RIG_final:circle01_CTL13|characterSam_RIG_final:circle01_CTL14.rotateX" 
-		"characterSam_RIG_finalRN.placeHolderList[288]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL12|characterSam_RIG_final:circle01_CTL13|characterSam_RIG_final:circle01_CTL14.rotateY" 
-		"characterSam_RIG_finalRN.placeHolderList[289]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL12|characterSam_RIG_final:circle01_CTL13|characterSam_RIG_final:circle01_CTL14.rotateZ" 
-		"characterSam_RIG_finalRN.placeHolderList[290]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL12|characterSam_RIG_final:circle01_CTL13|characterSam_RIG_final:circle01_CTL14.scaleX" 
-		"characterSam_RIG_finalRN.placeHolderList[291]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL12|characterSam_RIG_final:circle01_CTL13|characterSam_RIG_final:circle01_CTL14.scaleY" 
-		"characterSam_RIG_finalRN.placeHolderList[292]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL12|characterSam_RIG_final:circle01_CTL13|characterSam_RIG_final:circle01_CTL14.scaleZ" 
-		"characterSam_RIG_finalRN.placeHolderList[293]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL12|characterSam_RIG_final:circle01_CTL13|characterSam_RIG_final:circle01_CTL14.visibility" 
-		"characterSam_RIG_finalRN.placeHolderList[294]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL.translateX" 
-		"characterSam_RIG_finalRN.placeHolderList[295]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL.translateY" 
-		"characterSam_RIG_finalRN.placeHolderList[296]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL.translateZ" 
-		"characterSam_RIG_finalRN.placeHolderList[297]" ""
+		"characterSam_RIG_finalRN.placeHolderList[171]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL.rotateX" 
-		"characterSam_RIG_finalRN.placeHolderList[298]" ""
+		"characterSam_RIG_finalRN.placeHolderList[172]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL.rotateY" 
-		"characterSam_RIG_finalRN.placeHolderList[299]" ""
+		"characterSam_RIG_finalRN.placeHolderList[173]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL.rotateZ" 
-		"characterSam_RIG_finalRN.placeHolderList[300]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL.scaleX" 
-		"characterSam_RIG_finalRN.placeHolderList[301]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL.scaleY" 
-		"characterSam_RIG_finalRN.placeHolderList[302]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL.scaleZ" 
-		"characterSam_RIG_finalRN.placeHolderList[303]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL.visibility" 
-		"characterSam_RIG_finalRN.placeHolderList[304]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL|characterSam_RIG_final:circle01_CTL10.translateX" 
-		"characterSam_RIG_finalRN.placeHolderList[305]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL|characterSam_RIG_final:circle01_CTL10.translateY" 
-		"characterSam_RIG_finalRN.placeHolderList[306]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL|characterSam_RIG_final:circle01_CTL10.translateZ" 
-		"characterSam_RIG_finalRN.placeHolderList[307]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL|characterSam_RIG_final:circle01_CTL10.rotateX" 
-		"characterSam_RIG_finalRN.placeHolderList[308]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL|characterSam_RIG_final:circle01_CTL10.rotateY" 
-		"characterSam_RIG_finalRN.placeHolderList[309]" ""
+		"characterSam_RIG_finalRN.placeHolderList[174]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL|characterSam_RIG_final:circle01_CTL10.rotateZ" 
-		"characterSam_RIG_finalRN.placeHolderList[310]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL|characterSam_RIG_final:circle01_CTL10.scaleX" 
-		"characterSam_RIG_finalRN.placeHolderList[311]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL|characterSam_RIG_final:circle01_CTL10.scaleY" 
-		"characterSam_RIG_finalRN.placeHolderList[312]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL|characterSam_RIG_final:circle01_CTL10.scaleZ" 
-		"characterSam_RIG_finalRN.placeHolderList[313]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL|characterSam_RIG_final:circle01_CTL10.visibility" 
-		"characterSam_RIG_finalRN.placeHolderList[314]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL|characterSam_RIG_final:circle01_CTL10|characterSam_RIG_final:circle01_CTL11.translateX" 
-		"characterSam_RIG_finalRN.placeHolderList[315]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL|characterSam_RIG_final:circle01_CTL10|characterSam_RIG_final:circle01_CTL11.translateY" 
-		"characterSam_RIG_finalRN.placeHolderList[316]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL|characterSam_RIG_final:circle01_CTL10|characterSam_RIG_final:circle01_CTL11.translateZ" 
-		"characterSam_RIG_finalRN.placeHolderList[317]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL|characterSam_RIG_final:circle01_CTL10|characterSam_RIG_final:circle01_CTL11.rotateX" 
-		"characterSam_RIG_finalRN.placeHolderList[318]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL|characterSam_RIG_final:circle01_CTL10|characterSam_RIG_final:circle01_CTL11.rotateY" 
-		"characterSam_RIG_finalRN.placeHolderList[319]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL|characterSam_RIG_final:circle01_CTL10|characterSam_RIG_final:circle01_CTL11.rotateZ" 
-		"characterSam_RIG_finalRN.placeHolderList[320]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL|characterSam_RIG_final:circle01_CTL10|characterSam_RIG_final:circle01_CTL11.scaleX" 
-		"characterSam_RIG_finalRN.placeHolderList[321]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL|characterSam_RIG_final:circle01_CTL10|characterSam_RIG_final:circle01_CTL11.scaleY" 
-		"characterSam_RIG_finalRN.placeHolderList[322]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL|characterSam_RIG_final:circle01_CTL10|characterSam_RIG_final:circle01_CTL11.scaleZ" 
-		"characterSam_RIG_finalRN.placeHolderList[323]" ""
-		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL|characterSam_RIG_final:circle01_CTL10|characterSam_RIG_final:circle01_CTL11.visibility" 
-		"characterSam_RIG_finalRN.placeHolderList[324]" ""
+		"characterSam_RIG_finalRN.placeHolderList[175]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL18.translateX" 
-		"characterSam_RIG_finalRN.placeHolderList[325]" ""
+		"characterSam_RIG_finalRN.placeHolderList[176]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL18.translateY" 
-		"characterSam_RIG_finalRN.placeHolderList[326]" ""
+		"characterSam_RIG_finalRN.placeHolderList[177]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL18.translateZ" 
-		"characterSam_RIG_finalRN.placeHolderList[327]" ""
+		"characterSam_RIG_finalRN.placeHolderList[178]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL18.rotateX" 
-		"characterSam_RIG_finalRN.placeHolderList[328]" ""
+		"characterSam_RIG_finalRN.placeHolderList[179]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL18.rotateY" 
-		"characterSam_RIG_finalRN.placeHolderList[329]" ""
+		"characterSam_RIG_finalRN.placeHolderList[180]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL18.rotateZ" 
-		"characterSam_RIG_finalRN.placeHolderList[330]" ""
+		"characterSam_RIG_finalRN.placeHolderList[181]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL18.scaleX" 
-		"characterSam_RIG_finalRN.placeHolderList[331]" ""
+		"characterSam_RIG_finalRN.placeHolderList[182]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL18.scaleY" 
-		"characterSam_RIG_finalRN.placeHolderList[332]" ""
+		"characterSam_RIG_finalRN.placeHolderList[183]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL18.scaleZ" 
-		"characterSam_RIG_finalRN.placeHolderList[333]" ""
+		"characterSam_RIG_finalRN.placeHolderList[184]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL18.visibility" 
-		"characterSam_RIG_finalRN.placeHolderList[334]" ""
+		"characterSam_RIG_finalRN.placeHolderList[185]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL18|characterSam_RIG_final:circle01_CTL10.translateX" 
-		"characterSam_RIG_finalRN.placeHolderList[335]" ""
+		"characterSam_RIG_finalRN.placeHolderList[186]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL18|characterSam_RIG_final:circle01_CTL10.translateY" 
-		"characterSam_RIG_finalRN.placeHolderList[336]" ""
+		"characterSam_RIG_finalRN.placeHolderList[187]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL18|characterSam_RIG_final:circle01_CTL10.translateZ" 
-		"characterSam_RIG_finalRN.placeHolderList[337]" ""
+		"characterSam_RIG_finalRN.placeHolderList[188]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL18|characterSam_RIG_final:circle01_CTL10.rotateX" 
-		"characterSam_RIG_finalRN.placeHolderList[338]" ""
+		"characterSam_RIG_finalRN.placeHolderList[189]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL18|characterSam_RIG_final:circle01_CTL10.rotateY" 
-		"characterSam_RIG_finalRN.placeHolderList[339]" ""
+		"characterSam_RIG_finalRN.placeHolderList[190]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL18|characterSam_RIG_final:circle01_CTL10.rotateZ" 
-		"characterSam_RIG_finalRN.placeHolderList[340]" ""
+		"characterSam_RIG_finalRN.placeHolderList[191]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL18|characterSam_RIG_final:circle01_CTL10.scaleX" 
-		"characterSam_RIG_finalRN.placeHolderList[341]" ""
+		"characterSam_RIG_finalRN.placeHolderList[192]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL18|characterSam_RIG_final:circle01_CTL10.scaleY" 
-		"characterSam_RIG_finalRN.placeHolderList[342]" ""
+		"characterSam_RIG_finalRN.placeHolderList[193]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL18|characterSam_RIG_final:circle01_CTL10.scaleZ" 
-		"characterSam_RIG_finalRN.placeHolderList[343]" ""
+		"characterSam_RIG_finalRN.placeHolderList[194]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL18|characterSam_RIG_final:circle01_CTL10.visibility" 
-		"characterSam_RIG_finalRN.placeHolderList[344]" ""
+		"characterSam_RIG_finalRN.placeHolderList[195]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL18|characterSam_RIG_final:circle01_CTL10|characterSam_RIG_final:circle01_CTL11.translateX" 
-		"characterSam_RIG_finalRN.placeHolderList[345]" ""
+		"characterSam_RIG_finalRN.placeHolderList[196]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL18|characterSam_RIG_final:circle01_CTL10|characterSam_RIG_final:circle01_CTL11.translateY" 
-		"characterSam_RIG_finalRN.placeHolderList[346]" ""
+		"characterSam_RIG_finalRN.placeHolderList[197]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL18|characterSam_RIG_final:circle01_CTL10|characterSam_RIG_final:circle01_CTL11.translateZ" 
-		"characterSam_RIG_finalRN.placeHolderList[347]" ""
+		"characterSam_RIG_finalRN.placeHolderList[198]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL18|characterSam_RIG_final:circle01_CTL10|characterSam_RIG_final:circle01_CTL11.rotateX" 
-		"characterSam_RIG_finalRN.placeHolderList[348]" ""
+		"characterSam_RIG_finalRN.placeHolderList[199]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL18|characterSam_RIG_final:circle01_CTL10|characterSam_RIG_final:circle01_CTL11.rotateY" 
-		"characterSam_RIG_finalRN.placeHolderList[349]" ""
+		"characterSam_RIG_finalRN.placeHolderList[200]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL18|characterSam_RIG_final:circle01_CTL10|characterSam_RIG_final:circle01_CTL11.rotateZ" 
-		"characterSam_RIG_finalRN.placeHolderList[350]" ""
+		"characterSam_RIG_finalRN.placeHolderList[201]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL18|characterSam_RIG_final:circle01_CTL10|characterSam_RIG_final:circle01_CTL11.scaleX" 
-		"characterSam_RIG_finalRN.placeHolderList[351]" ""
+		"characterSam_RIG_finalRN.placeHolderList[202]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL18|characterSam_RIG_final:circle01_CTL10|characterSam_RIG_final:circle01_CTL11.scaleY" 
-		"characterSam_RIG_finalRN.placeHolderList[352]" ""
+		"characterSam_RIG_finalRN.placeHolderList[203]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL18|characterSam_RIG_final:circle01_CTL10|characterSam_RIG_final:circle01_CTL11.scaleZ" 
-		"characterSam_RIG_finalRN.placeHolderList[353]" ""
+		"characterSam_RIG_finalRN.placeHolderList[204]" ""
 		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samBase_ctrl|characterSam_RIG_final:samPelvis_ctrl|characterSam_RIG_final:samWaist_ctrl|characterSam_RIG_final:samBack_ctrl|characterSam_RIG_final:samChest_ctrl|characterSam_RIG_final:samCollarbone_L_ctrl|characterSam_RIG_final:samShoulder_L_ctrl|characterSam_RIG_final:samForearm_L_ctrl|characterSam_RIG_final:samHand_L_ctrl|characterSam_RIG_final:circle01_CTL18|characterSam_RIG_final:circle01_CTL10|characterSam_RIG_final:circle01_CTL11.visibility" 
-		"characterSam_RIG_finalRN.placeHolderList[354]" "";
+		"characterSam_RIG_finalRN.placeHolderList[205]" ""
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samFoot_L_ctrl.peelHeel" 
+		"characterSam_RIG_finalRN.placeHolderList[206]" ""
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samFoot_L_ctrl.toeTap" 
+		"characterSam_RIG_finalRN.placeHolderList[207]" ""
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samFoot_L_ctrl.translateX" 
+		"characterSam_RIG_finalRN.placeHolderList[208]" ""
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samFoot_L_ctrl.translateY" 
+		"characterSam_RIG_finalRN.placeHolderList[209]" ""
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samFoot_L_ctrl.translateZ" 
+		"characterSam_RIG_finalRN.placeHolderList[210]" ""
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samFoot_L_ctrl.visibility" 
+		"characterSam_RIG_finalRN.placeHolderList[211]" ""
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samFoot_L_ctrl.rotateX" 
+		"characterSam_RIG_finalRN.placeHolderList[212]" ""
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samFoot_L_ctrl.rotateY" 
+		"characterSam_RIG_finalRN.placeHolderList[213]" ""
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samFoot_L_ctrl.rotateZ" 
+		"characterSam_RIG_finalRN.placeHolderList[214]" ""
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samFoot_L_ctrl.scaleX" 
+		"characterSam_RIG_finalRN.placeHolderList[215]" ""
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samFoot_L_ctrl.scaleY" 
+		"characterSam_RIG_finalRN.placeHolderList[216]" ""
+		5 4 "characterSam_RIG_finalRN" "|characterSam_RIG_final:samRig_grp|characterSam_RIG_final:samRoot_ctrl|characterSam_RIG_final:samFoot_L_ctrl.scaleZ" 
+		"characterSam_RIG_finalRN.placeHolderList[217]" "";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
-createNode animCurveTL -n "Shot5_RENDER_translateX";
-	rename -uid "0D10EC6B-4D59-348B-E542-619BB5634491";
-	setAttr ".tan" 2;
-	setAttr -s 2 ".ktv[0:1]"  1 -127 130 -358.339;
-	setAttr -s 2 ".kot[1]"  1;
-	setAttr -s 2 ".kox[1]"  0.26990921081354191;
-	setAttr -s 2 ".koy[1]"  -249.38176015024806;
-createNode animCurveTA -n "Shot5_RENDER_rotateY";
-	rename -uid "E0B019BA-4042-7E7C-F7B6-719D28585370";
-	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 -0.39999999999999364 120 0;
-createNode animCurveTA -n "Shot5_RENDER_rotateZ";
-	rename -uid "7D15BABB-4524-76E4-0D13-0D82246C6B94";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 0 120 0;
 createNode animCurveTA -n "samHand_L_ctrl_rotateX";
 	rename -uid "A6E3BC74-4CA5-EA9F-8EDF-D8B38D7222D0";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 20 ".ktv[0:19]"  1 -22.395155518771485 14 0 24 -20.040082623399517
-		 34 -40.080165246799019 47 17.880963441756844 57 -36.700774372415978 65 -36.700774372415978
-		 75 -61.97175201928642 83 -70.803290703311646 91 -72.158973958214418 101 -35.978035048892913
-		 109 -37.35169005580353 119 -34.702755622750111 128 -34.725319476233167 141 -38.256861918962713
-		 152 -45.291009869049283 166 -44.62296881255493 180 -56.056842555482113 194 -95.716947817195944
-		 206 -76.013357152552643;
+	setAttr -s 2 ".ktv[0:1]"  1 -76.013357152552643 10 -76.013357152552643;
 createNode animCurveTA -n "samHand_L_ctrl_rotateY";
 	rename -uid "D12FD450-48A2-AFFA-9219-CC8E28716448";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 20 ".ktv[0:19]"  1 -1.1272631321442339 14 0 24 -3.0560050192836878
-		 34 -7.8864645658933847 47 -10.646727163956067 57 17.538337365528815 65 17.538337365528815
-		 75 6.2316983230577598 83 -21.821847652178178 91 -0.40333431933237229 101 0.19124053155514065
-		 109 14.465635797423335 119 20.565254339812608 128 19.926831025059389 141 -29.543552341398755
-		 152 13.817948738936879 166 16.297056478920652 180 17.587985755422906 194 4.5567523920099964
-		 206 10.513157290779795;
+	setAttr -s 2 ".ktv[0:1]"  1 10.513157290779795 10 10.513157290779795;
 createNode animCurveTA -n "samHand_L_ctrl_rotateZ";
 	rename -uid "09AD2707-476A-B091-BBB5-46B8966CD1C1";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 20 ".ktv[0:19]"  1 28.049231851486923 14 0 24 0.47152790720370735
-		 34 2.1555561472169495 47 7.2750019968572106 57 37.761826164555139 65 37.761826164555139
-		 75 5.3179642582660342 83 -16.576257299827702 91 -2.623647089503514 101 19.592176416674686
-		 109 8.9369651026732377 119 17.710413855647051 128 17.134380971495201 141 -27.501469493479895
-		 152 17.818982171022562 166 20.389460502960596 180 27.16622184125973 194 4.6899082392506468
-		 206 -16.907108458817135;
-createNode animCurveTU -n "samHand_L_ctrl_visibility";
-	rename -uid "07165F53-4586-C06E-0FB5-8FB6B2135103";
-	setAttr ".tan" 9;
-	setAttr ".wgt" no;
-	setAttr -s 7 ".ktv[0:6]"  14 1 24 1 34 1 47 1 57 1 65 1 128 1;
-	setAttr -s 7 ".kot[0:6]"  5 5 5 5 5 5 5;
-createNode animCurveTL -n "samHand_L_ctrl_translateX";
-	rename -uid "A893CA51-443A-7563-0D02-9892388EAF19";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 7 ".ktv[0:6]"  14 0 24 0 34 0 47 0 57 0 65 0 128 0;
-createNode animCurveTL -n "samHand_L_ctrl_translateY";
-	rename -uid "FF19B3CE-412A-7A8D-5EBC-7D9F7C6D74B0";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 7 ".ktv[0:6]"  14 0 24 0 34 0 47 0 57 0 65 0 128 0;
-createNode animCurveTL -n "samHand_L_ctrl_translateZ";
-	rename -uid "AA31004D-4B99-1C0E-4AF3-288DEE215469";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 7 ".ktv[0:6]"  14 0 24 0 34 0 47 0 57 0 65 0 128 0;
-createNode animCurveTU -n "samHand_L_ctrl_scaleX";
-	rename -uid "EEEC82B0-437D-A69B-D431-8BA7C285F519";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 7 ".ktv[0:6]"  14 1 24 1 34 1 47 1 57 1 65 1 128 1;
-createNode animCurveTU -n "samHand_L_ctrl_scaleY";
-	rename -uid "1BC4F391-47EE-BA69-05C9-0A810D3A006D";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 7 ".ktv[0:6]"  14 1 24 1 34 1 47 1 57 1 65 1 128 1;
-createNode animCurveTU -n "samHand_L_ctrl_scaleZ";
-	rename -uid "D869A93E-4F0F-64EE-44DE-C69F43EDF22C";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 7 ".ktv[0:6]"  14 1 24 1 34 1 47 1 57 1 65 1 128 1;
+	setAttr -s 2 ".ktv[0:1]"  1 -16.907108458817135 10 -16.907108458817135;
 createNode animCurveTA -n "samForearm_L_ctrl_rotateX";
 	rename -uid "724C4E9A-44D2-C094-18DB-CEA3991A94AE";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 23 ".ktv[0:22]"  1 15.319369689422128 8 -9.152283256839306
-		 14 -58.52502206059539 18 -53.563443689226865 24 -44.629710434765251 30 -22.781823704524477
-		 34 -20.028338064815852 47 -20.726304567786368 57 -19.235002817006322 65 -19.235002817006322
-		 75 -28.852329037178741 83 -23.627276840097675 91 -30.934167752687806 101 -24.444921220695743
-		 109 -58.870496097452744 119 -38.211922317650064 128 -38.402843306687259 141 -53.196999945569488
-		 152 -20.255936859815748 166 -21.440838634004962 180 -114.62563187836361 194 -71.764636879542067
-		 206 -71.928229225070467;
+	setAttr -s 3 ".ktv[0:2]"  1 -71.928229225070467 10 31.227105531566664
+		 20 26.707683453521152;
 createNode animCurveTA -n "samForearm_L_ctrl_rotateY";
 	rename -uid "5F873294-4DA4-707E-0485-FE9021E4D7AE";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 23 ".ktv[0:22]"  1 -33.636132425313669 8 -52.700777427045246
-		 14 -36.947285926389178 18 -14.056819305278438 24 -29.771879846268433 30 -45.129307793307845
-		 34 -47.526368626284608 47 -34.177499917280606 57 -26.443567851955237 65 -26.443567851955237
-		 75 -14.695811634533214 83 -21.192670636904541 91 -30.84603084182427 101 14.502310190514548
-		 109 9.8305457222234232 119 -5.547436399005818 128 -6.9998995102163821 141 -24.810277637356062
-		 152 -12.864146172867713 166 22.577973988741125 180 -60.551081881662824 194 8.4618435716059146
-		 206 -4.2656300817358108;
+	setAttr -s 3 ".ktv[0:2]"  1 -4.2656300817358108 10 -22.436180359591479
+		 20 -22.927419601054723;
 createNode animCurveTA -n "samForearm_L_ctrl_rotateZ";
 	rename -uid "3751B13F-40E8-AA23-9406-7CB2D44200F2";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 23 ".ktv[0:22]"  1 -16.027330361341001 8 -50.452161297493134
-		 14 -12.962767465123088 18 -21.618136998316309 24 -39.649137518111836 30 -44.385267556379773
-		 34 -38.343935181799814 47 -48.655270220863905 57 50.283767477366652 65 50.283767477366652
-		 75 16.470251237326362 83 12.945459936240519 91 37.933728423079074 101 26.264931336854101
-		 109 8.9312827490137341 119 68.617344931291385 128 68.543041550135897 141 56.353832352744973
-		 152 30.426122289128564 166 17.154620698632307 180 115.93016757814081 194 99.378614523225792
-		 206 90.660755155464841;
-createNode animCurveTU -n "samForearm_L_ctrl_visibility";
-	rename -uid "76462EE5-4637-CF41-84AB-1C8041D789FE";
-	setAttr ".tan" 9;
-	setAttr ".wgt" no;
-	setAttr -s 7 ".ktv[0:6]"  14 1 24 1 34 1 47 1 57 1 65 1 128 1;
-	setAttr -s 7 ".kot[0:6]"  5 5 5 5 5 5 5;
-createNode animCurveTL -n "samForearm_L_ctrl_translateX";
-	rename -uid "7630AA7C-4E90-CF8F-F404-6FA1D9A80B2B";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 7 ".ktv[0:6]"  14 0 24 0 34 0 47 0 57 0 65 0 128 0;
-createNode animCurveTL -n "samForearm_L_ctrl_translateY";
-	rename -uid "C55910C8-4D22-704E-6DDA-AF800F2C6F59";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 7 ".ktv[0:6]"  14 0 24 0 34 0 47 0 57 0 65 0 128 0;
-createNode animCurveTL -n "samForearm_L_ctrl_translateZ";
-	rename -uid "57CB7D40-45D6-F51E-9BF7-19A729DB3233";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 7 ".ktv[0:6]"  14 0 24 0 34 0 47 0 57 0 65 0 128 0;
-createNode animCurveTU -n "samForearm_L_ctrl_scaleX";
-	rename -uid "339771CC-4639-120E-6FE9-D39C732B8AD9";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 7 ".ktv[0:6]"  14 1 24 1 34 1 47 1 57 1 65 1 128 1;
-createNode animCurveTU -n "samForearm_L_ctrl_scaleY";
-	rename -uid "AA615D58-45FB-73B2-7FA4-C38831F8D139";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 7 ".ktv[0:6]"  14 1 24 1 34 1 47 1 57 1 65 1 128 1;
-createNode animCurveTU -n "samForearm_L_ctrl_scaleZ";
-	rename -uid "0985E600-4A63-0EB4-A3FA-92ACF541AFEB";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 7 ".ktv[0:6]"  14 1 24 1 34 1 47 1 57 1 65 1 128 1;
+	setAttr -s 3 ".ktv[0:2]"  1 90.660755155464841 10 64.94569868370742
+		 20 31.066747791372844;
 createNode animCurveTA -n "samShoulder_L_ctrl_rotateX";
 	rename -uid "97BDFA63-4DAC-CF42-2F69-FEACDA7ABB97";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 22 ".ktv[0:21]"  1 33.184955712778589 14 2.4112300865446303
-		 20 -55.940596649218683 24 -50.934073208793073 34 -45.628206110450854 36 -47.157926579335061
-		 47 -37.303684749926042 57 72.925036433024445 65 69.120625778904682 75 -8.562098538211826
-		 83 -13.038140570959991 91 -23.999709556616612 101 -35.249568819049479 109 -18.243776035993704
-		 119 -50.819844355619203 128 -48.861792059289151 141 102.86449285633054 152 44.365385280927384
-		 166 42.416040371425531 180 -30.553416940829713 194 22.46283822405228 206 -38.411240155945556;
+	setAttr -s 3 ".ktv[0:2]"  4 -38.411240155945556 10 58.374841921350196
+		 20 37.368069532801854;
 createNode animCurveTA -n "samShoulder_L_ctrl_rotateY";
 	rename -uid "0C5D13E6-4D97-5D5A-1C82-2294F853B309";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 21 ".ktv[0:20]"  1 -8.7176541290285421 14 -53.649664915867795
-		 20 -24.622199014799822 24 -10.597536510388199 34 -14.329435786534734 36 -19.942859665656719
-		 47 26.19667974196787 57 -6.841805228528087 65 -35.116272172394467 75 -53.898217911575081
-		 83 -34.123414060041164 91 -33.900314573641701 101 -43.766662634733635 119 -53.736583918819342
-		 128 -54.926387235560313 141 -77.41237557443165 152 -15.287108381107396 166 -6.7673020780303963
-		 180 -11.874017981745636 194 14.402140867592689 206 -58.322200419103368;
+	setAttr -s 3 ".ktv[0:2]"  4 -58.322200419103368 10 -38.601484704931877
+		 20 -18.383206489777315;
 createNode animCurveTA -n "samShoulder_L_ctrl_rotateZ";
 	rename -uid "4ED52366-4169-7530-FEFB-898406E15A9F";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 21 ".ktv[0:20]"  1 -62.863159563594017 14 -45.29935088513578
-		 20 38.704756686054488 24 31.852752223686295 34 12.794213953265441 36 14.19603934902845
-		 47 -41.033001169691481 57 -48.540602431804096 65 -38.260248099357987 75 26.781373073614358
-		 83 29.487664063427236 91 28.849505074758831 101 52.430114954339302 119 90.90979763206515
-		 128 88.723338701662598 141 -80.701804463481807 152 -53.4639800405877 166 -41.648654865901371
-		 180 40.730082991750258 194 43.163191085120928 206 57.125810236977259;
-createNode animCurveTU -n "samShoulder_L_ctrl_visibility";
-	rename -uid "44682272-4745-19D3-2152-959267B1E927";
-	setAttr ".tan" 9;
-	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  14 1 20 1 24 1 34 1 47 1 57 1 65 1 128 1;
-	setAttr -s 8 ".kot[0:7]"  5 5 5 5 5 5 5 5;
-createNode animCurveTL -n "samShoulder_L_ctrl_translateX";
-	rename -uid "BD3CE6DB-4FE5-BA7F-A2C0-51AF89FF34C2";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  14 0 20 0 24 0 34 0 47 0 57 0 65 0 128 0;
-createNode animCurveTL -n "samShoulder_L_ctrl_translateY";
-	rename -uid "10216EAF-42C9-2267-FAC7-8088499A2C86";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  14 0 20 0 24 0 34 0 47 0 57 0 65 0 128 0;
-createNode animCurveTL -n "samShoulder_L_ctrl_translateZ";
-	rename -uid "88AC4165-4C7B-5D93-2887-E88AC5FAC3EA";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  14 0 20 0 24 0 34 0 47 0 57 0 65 0 128 0;
-createNode animCurveTU -n "samShoulder_L_ctrl_scaleX";
-	rename -uid "F41E02EE-4A4E-7128-7DA9-929153AACCFA";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  14 1 20 1 24 1 34 1 47 1 57 1 65 1 128 1;
-createNode animCurveTU -n "samShoulder_L_ctrl_scaleY";
-	rename -uid "EB1CDBA4-4C9C-FC4A-FABF-5DAAF906C4FD";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  14 1 20 1 24 1 34 1 47 1 57 1 65 1 128 1;
-createNode animCurveTU -n "samShoulder_L_ctrl_scaleZ";
-	rename -uid "102B42AD-45C2-E84E-8A5E-0CBC63016F75";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  14 1 20 1 24 1 34 1 47 1 57 1 65 1 128 1;
+	setAttr -s 3 ".ktv[0:2]"  4 57.125810236977259 10 -38.903921380085116
+		 20 -57.621354360152985;
 createNode animCurveTA -n "samHand_R_ctrl_rotateX";
 	rename -uid "4235DF9B-4EA3-3824-445D-78BBBEA4DA80";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 20 ".ktv[0:19]"  1 -49.781054409369126 14 -74.826166542311853
-		 24 -48.120761328725692 34 -54.945575408236373 47 -29.958385112236027 57 -65.279848042829656
-		 65 -67.863753530798476 75 -67.863753530798476 83 -41.718213053289915 91 -12.1389828231155
-		 101 38.633735309277597 109 81.328006697082571 119 57.715848973327979 128 55.014239339084419
-		 141 18.231771966737686 152 30.629893022439596 166 -20.919579978954854 180 -68.919298625944435
-		 194 -68.919298625944435 206 -63.839431855612759;
+	setAttr ".ktv[0]"  1 -77.82889842678378;
 createNode animCurveTA -n "samHand_R_ctrl_rotateY";
 	rename -uid "A3932679-4067-0468-2E63-ED96EEBE1774";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 19 ".ktv[0:18]"  1 -24.641300354511895 14 0.26761105029893517
-		 24 -5.4156216868805096 34 -29.682556719555539 47 -12.122476055491314 57 -2.9924152980905832
-		 65 3.8703844137151515 75 3.8703844137151515 83 14.159485882192103 91 2.9001847845851527
-		 101 -4.9161495237325434 109 45.267369633888002 119 -1.8623687206289314 128 -1.3954635278879504
-		 141 34.784259779389409 152 0.48608771031027259 166 0.123704068894178 194 0.123704068894178
-		 206 -47.920904417070581;
+	setAttr ".ktv[0]"  1 -33.086427717111619;
 createNode animCurveTA -n "samHand_R_ctrl_rotateZ";
 	rename -uid "F75EE8A0-4EB5-B488-231C-D58C7E42F27F";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 19 ".ktv[0:18]"  1 13.178366674777356 14 22.824995427799674
-		 24 3.2289704082211026 34 -6.5575209397131689 47 -1.925834366975111 57 21.700611184133169
-		 65 4.1047334552726129 75 4.1047334552726129 83 -8.6683938615953284 91 23.763898514161252
-		 101 37.487419199426313 109 30.777543227928835 119 -9.1738639637571104 128 -11.189202815114248
-		 141 -22.27151737339608 152 -5.4193198159245775 166 -24.371805646573389 194 -24.371805646573389
-		 206 -7.4308895925600762;
-createNode animCurveTU -n "samHand_R_ctrl_visibility";
-	rename -uid "56B2A687-4AEB-5A87-722E-6EA70F7416AB";
-	setAttr ".tan" 9;
-	setAttr ".wgt" no;
-	setAttr -s 9 ".ktv[0:8]"  14 1 24 1 34 1 47 1 57 1 75 1 119 1 128 1
-		 194 1;
-	setAttr -s 9 ".kot[0:8]"  5 5 5 5 5 5 5 5 
-		5;
-createNode animCurveTL -n "samHand_R_ctrl_translateX";
-	rename -uid "50F03353-4969-16BB-2AED-008035EB7FCD";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 9 ".ktv[0:8]"  14 0 24 0 34 0 47 0 57 0 75 0 119 0 128 0
-		 194 0;
-createNode animCurveTL -n "samHand_R_ctrl_translateY";
-	rename -uid "C4B6D663-45F6-473C-D629-6AA3B20F42FA";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 9 ".ktv[0:8]"  14 0 24 0 34 0 47 0 57 0 75 0 119 0 128 0
-		 194 0;
-createNode animCurveTL -n "samHand_R_ctrl_translateZ";
-	rename -uid "9BD734D6-467D-E2A9-3AE9-CDA544D700D3";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 9 ".ktv[0:8]"  14 0 24 0 34 0 47 0 57 0 75 0 119 0 128 0
-		 194 0;
-createNode animCurveTU -n "samHand_R_ctrl_scaleX";
-	rename -uid "BCA98FE1-4E6B-FA35-EF8D-1499219E4D75";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 9 ".ktv[0:8]"  14 1 24 1 34 1 47 1 57 1 75 1 119 1 128 1
-		 194 1;
-createNode animCurveTU -n "samHand_R_ctrl_scaleY";
-	rename -uid "CC779DB4-4793-2DB7-FE8D-5E936CFEC994";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 9 ".ktv[0:8]"  14 1 24 1 34 1 47 1 57 1 75 1 119 1 128 1
-		 194 1;
-createNode animCurveTU -n "samHand_R_ctrl_scaleZ";
-	rename -uid "14424654-4155-F64C-F2F5-BEA7A004B64F";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 9 ".ktv[0:8]"  14 1 24 1 34 1 47 1 57 1 75 1 119 1 128 1
-		 194 1;
+	setAttr ".ktv[0]"  1 -1.0730301144611794;
 createNode animCurveTA -n "samShoulder_R_ctrl_rotateX";
 	rename -uid "FB983740-4B1E-7DEC-CF77-5C93AB10E6ED";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 23 ".ktv[0:22]"  1 -20.543423335415422 8 -40.060445296285785
-		 14 -45.493980176872718 24 -64.515485133746182 34 36.871368018635238 47 28.334356655848001
-		 52 42.949138446092441 55 -18.867640332600672 57 -85.829800128826633 65 -66.617550729750945
-		 75 -68.966146054596976 83 -3.4788624229493079 91 -42.598550344023813 101 -51.327723030889757
-		 109 -19.898301519360999 119 34.892105449486664 128 34.362427622746885 141 -6.6814449050882514
-		 152 -5.0477107864238615 166 -20.639718141188446 180 -81.770786203546749 194 -81.770786203546749
-		 206 -56.249926393496793;
+	setAttr -s 2 ".ktv[0:1]"  1 -66.103519703531219 10 -56.249926393496793;
 createNode animCurveTA -n "samShoulder_R_ctrl_rotateY";
 	rename -uid "0D8BA1BA-4A73-D69A-EFA6-67BCC3DBB250";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 23 ".ktv[0:22]"  1 35.707224192025187 8 50.801801896507371
-		 14 42.979646816420718 24 57.110358709452761 34 20.600808938552355 47 17.445820225009882
-		 52 29.408094928325323 55 49.761719671983826 57 49.340895466694079 65 24.535680077418963
-		 75 37.88589281843695 83 16.346206791809013 91 9.2929134640532869 101 -17.925126061023544
-		 109 32.112548397168659 119 62.834748451485289 128 62.126182646032404 141 7.2205718607077349
-		 152 8.440786403534581 166 74.285778427600192 180 41.090348885732659 194 41.090348885732659
-		 206 12.383423903551353;
+	setAttr -s 2 ".ktv[0:1]"  1 18.337315799756983 10 12.383423903551353;
 createNode animCurveTA -n "samShoulder_R_ctrl_rotateZ";
 	rename -uid "BD5A76D6-43C9-58DE-0608-92B23D6AFE4F";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 23 ".ktv[0:22]"  1 -28.231650781340281 8 -41.533601142963228
-		 14 -33.605533660396745 24 -57.942603364474849 34 59.818041074401464 47 62.444222455748346
-		 52 72.694069787358131 55 13.914488138009091 57 -66.077890165307522 65 -36.696995341269968
-		 75 -42.984378707692663 83 44.561752178921658 91 -57.634242189168042 101 -1.7506014773961136
-		 109 50.083990746433955 119 64.230674665788584 128 63.895769276780428 141 37.944495877357667
-		 152 49.892202192673309 166 18.975791902856319 180 -54.307974959139457 194 -54.307974959139457
-		 206 -48.546254287075833;
-createNode animCurveTU -n "samShoulder_R_ctrl_visibility";
-	rename -uid "C85BBEF3-4DB3-B823-E451-DC81B4A82EE0";
-	setAttr ".tan" 9;
-	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  14 1 24 1 34 1 47 1 57 1 119 1 128 1 194 1;
-	setAttr -s 8 ".kot[0:7]"  5 5 5 5 5 5 5 5;
-createNode animCurveTL -n "samShoulder_R_ctrl_translateX";
-	rename -uid "CB6A3514-4D28-2F62-27AE-9398923234F3";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  14 0 24 0 34 0 47 0 57 0 119 0 128 0 194 0;
-createNode animCurveTL -n "samShoulder_R_ctrl_translateY";
-	rename -uid "48EAAF53-4976-6D62-F49F-E9A10E9F6A65";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  14 0 24 0 34 0 47 0 57 0 119 0 128 0 194 0;
-createNode animCurveTL -n "samShoulder_R_ctrl_translateZ";
-	rename -uid "552A6295-49BC-EE6F-E442-EE8F8D035D1D";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  14 0 24 0 34 0 47 0 57 0 119 0 128 0 194 0;
-createNode animCurveTU -n "samShoulder_R_ctrl_scaleX";
-	rename -uid "93EBDCC9-4A05-B514-AE1F-62A738659D4F";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  14 1 24 1 34 1 47 1 57 1 119 1 128 1 194 1;
-createNode animCurveTU -n "samShoulder_R_ctrl_scaleY";
-	rename -uid "3ED943A8-4564-7D29-04C0-B091FD829B5F";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  14 1 24 1 34 1 47 1 57 1 119 1 128 1 194 1;
-createNode animCurveTU -n "samShoulder_R_ctrl_scaleZ";
-	rename -uid "747DB0B8-4482-0BED-1842-C987F96CD6A4";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  14 1 24 1 34 1 47 1 57 1 119 1 128 1 194 1;
+	setAttr -s 2 ".ktv[0:1]"  1 -48.476934583871348 10 -48.546254287075833;
 createNode animCurveTA -n "samForearm_R_ctrl_rotateX";
 	rename -uid "99BB606B-47AD-7BD4-D3F4-29BB9F9ED195";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 26 ".ktv[0:25]"  1 -47.458979311315346 4 -48.232162692248224
-		 8 -59.719579721567847 10 -71.004731960667073 14 -68.751422922617508 19 -55.998999927207365
-		 24 -52.328515507726358 34 79.381718003946617 47 -23.503388673924235 52 -1.6915448095902641
-		 55 -65.842779831752537 57 -10.933379408146592 65 9.9442209936584796 75 2.6386440224557299
-		 83 -57.43982839340471 91 -57.216043844200854 101 -115.95869653151097 109 7.8982555927382441
-		 119 -16.911857267143059 128 -17.254686422376846 141 -18.745531433409333 152 47.145668444544071
-		 166 134.58488164673568 180 1.9025851213010392 194 1.9025851213010392 206 27.518981066038883;
+	setAttr -s 2 ".ktv[0:1]"  1 27.518981066038883 10 27.518981066038883;
 createNode animCurveTA -n "samForearm_R_ctrl_rotateY";
 	rename -uid "443610AC-4A89-5F3A-5649-54A8935AA551";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 26 ".ktv[0:25]"  1 25.650384894920162 4 23.252333983526945
-		 8 42.368053376433217 10 52.624977793823021 14 60.171590791676294 19 54.211066272377238
-		 24 46.545017083179545 34 77.087984378592665 47 36.728791855712842 52 17.508621352857784
-		 55 75.562624797671319 57 17.045699289884201 65 40.185497594086627 75 32.18017285724352
-		 83 74.149768488449482 91 49.044194631646086 101 56.311264892027872 109 15.857046052759101
-		 119 61.032443717309633 128 60.600320219548308 141 27.115773834880795 152 82.655359323759157
-		 166 123.46221270068163 180 100.53580608544543 194 100.53580608544543 206 122.97405784949274;
+	setAttr -s 2 ".ktv[0:1]"  1 122.97405784949274 10 122.97405784949274;
 createNode animCurveTA -n "samForearm_R_ctrl_rotateZ";
 	rename -uid "57E10487-4D15-49A2-EFF3-35B45CC0D863";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 26 ".ktv[0:25]"  1 -20.549480587051466 4 -15.105587506765616
-		 8 -22.133849476463176 10 -31.368194852925836 14 -22.332021443775066 19 -7.4068419088660926
-		 24 -0.58205779807104774 34 76.404769261210632 47 -2.0422436809406093 52 -18.780386168950272
-		 55 -61.72996224927622 57 -10.249045187342594 65 50.761873379724882 75 36.598085173263549
-		 83 -26.315024291551804 91 -92.643979272708535 101 -112.4453493754187 109 -11.141127411535212
-		 119 12.488539215503913 128 12.280987729465533 141 -3.8018390491361163 152 59.740650868139333
-		 166 151.17716519778295 180 36.016771329438178 194 36.016771329438178 206 57.931829554507587;
-createNode animCurveTU -n "samForearm_R_ctrl_visibility";
-	rename -uid "B68F9541-4A1F-4CE5-4514-788EE01479A3";
-	setAttr ".tan" 9;
-	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  14 1 24 1 34 1 47 1 57 1 119 1 128 1 194 1;
-	setAttr -s 8 ".kot[0:7]"  5 5 5 5 5 5 5 5;
-createNode animCurveTL -n "samForearm_R_ctrl_translateX";
-	rename -uid "F16EBD63-4454-18CB-54FE-0E97AAAA8046";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  14 0 24 0 34 0 47 0 57 0 119 0 128 0 194 0;
-createNode animCurveTL -n "samForearm_R_ctrl_translateY";
-	rename -uid "5315100B-4439-EA6E-72D6-B7AC56EC5A58";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  14 0 24 0 34 0 47 0 57 0 119 0 128 0 194 0;
-createNode animCurveTL -n "samForearm_R_ctrl_translateZ";
-	rename -uid "AB32601A-46D7-1B0C-58D5-F5AE91226FD6";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  14 0 24 0 34 0 47 0 57 0 119 0 128 0 194 0;
-createNode animCurveTU -n "samForearm_R_ctrl_scaleX";
-	rename -uid "89B9F74C-4AF4-55C6-5064-AF9CD26E57DE";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  14 1 24 1 34 1 47 1 57 1 119 1 128 1 194 1;
-createNode animCurveTU -n "samForearm_R_ctrl_scaleY";
-	rename -uid "9DAA0ECD-4110-B803-99CE-7DBC5D71CE94";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  14 1 24 1 34 1 47 1 57 1 119 1 128 1 194 1;
-createNode animCurveTU -n "samForearm_R_ctrl_scaleZ";
-	rename -uid "A19088C3-4486-2B7F-CCCB-6E997F1C5417";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  14 1 24 1 34 1 47 1 57 1 119 1 128 1 194 1;
+	setAttr -s 2 ".ktv[0:1]"  1 57.931829554507587 10 57.931829554507587;
 createNode animCurveTA -n "samChest_ctrl_rotateX";
 	rename -uid "F5A539E8-4737-8CD6-36C0-48A54FE73AD2";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 18 ".ktv[0:17]"  14 0 24 -1.635892748377646 34 -4.5044116606491462
-		 47 -7.3957569833631238 57 -8.765341609911852 65 -8.6091577944185698 75 -8.672865630696112
-		 83 -8.1641749186838339 91 -6.8046372359951839 101 -10.086450488515661 109 -5.9085220831259839
-		 119 -4.0820212726771166 128 -4.0267450000508704 141 -3.7863676750327744 152 -17.923710473093223
-		 166 -12.459590857920457 180 -13.006331414554476 206 -9.4798059594551365;
+	setAttr -s 4 ".ktv[0:3]"  1 -9.4798059594551365 7 -4.7616322176780495
+		 10 -9.1882919557714313 29 -2.1233134189621476;
 createNode animCurveTA -n "samChest_ctrl_rotateY";
 	rename -uid "5CAAFC61-472E-E890-69B3-15B6C772EA75";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 19 ".ktv[0:18]"  1 11.582023813536066 14 -19.274079265922278
-		 24 -22.589437219116309 34 -7.3545699615875062 47 4.5771673966292505 57 10.923427329994247
-		 65 -1.7069154324049349 75 -7.1289173328401967 83 -7.1387316311045952 91 0.51657379374882939
-		 101 -4.5706490280525598 109 -4.725482232678762 119 -2.5822585137319694 128 -1.6720091978173131
-		 141 24.900721046753244 152 17.233566289240787 166 -7.4462897915596749 180 2.2890785546772432
-		 206 2.4907799261608305;
+	setAttr -s 3 ".ktv[0:2]"  1 2.4907799261608305 10 -2.1710349382337508
+		 29 23.195236572260356;
 createNode animCurveTA -n "samChest_ctrl_rotateZ";
 	rename -uid "71EB7752-4A1F-B747-64CD-18B3D6E1BC10";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 18 ".ktv[0:17]"  14 0 24 0 34 0 47 0 57 0 65 1.9319955909672353
-		 75 2.7580993985555455 83 -0.059211497260701088 91 -0.08468533577629743 101 0.81903055150790083
-		 109 -2.0586960628138953 119 5.7791488978337284 128 5.5998238542742778 141 -8.2957818466578548
-		 152 -6.6286171223714403 166 1.6456324540783467 180 -3.0391493694918106 206 -2.1639110581601617;
-createNode animCurveTU -n "samChest_ctrl_visibility";
-	rename -uid "E20C648E-41C6-F2B7-8F36-97B062AFBBA3";
-	setAttr ".tan" 9;
-	setAttr ".wgt" no;
-	setAttr -s 7 ".ktv[0:6]"  14 1 24 1 34 1 47 1 57 1 119 1 128 1;
-	setAttr -s 7 ".kot[0:6]"  5 5 5 5 5 5 5;
-createNode animCurveTL -n "samChest_ctrl_translateX";
-	rename -uid "AF5FF7DE-43F1-F279-26F0-068C8BCEC539";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 7 ".ktv[0:6]"  14 0 24 0 34 0 47 0 57 0 119 0 128 0;
-createNode animCurveTL -n "samChest_ctrl_translateY";
-	rename -uid "9598804B-488A-65A0-01CF-26AAC3596C5B";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 7 ".ktv[0:6]"  14 0 24 0 34 0 47 0 57 0 119 0 128 0;
-createNode animCurveTL -n "samChest_ctrl_translateZ";
-	rename -uid "220DEDD2-49C4-A1CB-DC62-8294D00B2657";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 7 ".ktv[0:6]"  14 0 24 0 34 0 47 0 57 0 119 0 128 0;
-createNode animCurveTU -n "samChest_ctrl_scaleX";
-	rename -uid "75329A7B-47B0-205A-DB4A-B3B963502899";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 7 ".ktv[0:6]"  14 1 24 1 34 1 47 1 57 1 119 1 128 1;
-createNode animCurveTU -n "samChest_ctrl_scaleY";
-	rename -uid "F1D28FB9-4D19-BDF9-4956-9DB92CEDE9A1";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 7 ".ktv[0:6]"  14 1 24 1 34 1 47 1 57 1 119 1 128 1;
-createNode animCurveTU -n "samChest_ctrl_scaleZ";
-	rename -uid "3DADD97F-4906-3BA8-CDA3-A1B9A869CCA2";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 7 ".ktv[0:6]"  14 1 24 1 34 1 47 1 57 1 119 1 128 1;
+	setAttr -s 3 ".ktv[0:2]"  1 -2.1639110581601617 10 3.0554139197747978
+		 29 0.01398445842568812;
 createNode animCurveTA -n "samBack_ctrl_rotateX";
 	rename -uid "C3F47385-4A35-62EE-88F6-C8A05AD69F0E";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 18 ".ktv[0:17]"  14 0 24 -2.1577079452600718 34 -5.9412237376463342
-		 47 -9.7548470827571556 57 -11.561300246230704 65 -11.305642302585994 75 -11.362058086968117
-		 83 -10.831701612923341 91 1.2415399412762074 101 1.2039462893859987 109 4.4998555310109314
-		 119 4.5121592417617844 128 4.5178455445918537 141 4.7060987573253401 152 4.3996422265996564
-		 166 3.9147421997817275 180 2.0835017381617318 206 2.2146853215828988;
+	setAttr -s 5 ".ktv[0:4]"  1 2.2146853215828988 5 5.5585622457854598
+		 10 0.5024041268182956 12 -1.3401672185722389 29 6.4314753432754932;
 createNode animCurveTA -n "samBack_ctrl_rotateY";
 	rename -uid "D49E1D79-40EF-6EEB-898D-8C9E84A1871A";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 19 ".ktv[0:18]"  1 18.31128913167392 14 0 24 -12.526429383361691
-		 34 -5.091764419512459 47 5.3733142038562729 57 11.786275368569765 65 2.8212071899120006
-		 75 -6.3351633393950388 83 2.2470612429122796 91 15.281332587017452 101 -5.8680247583287501
-		 109 -12.338724732905975 119 -12.740659684328214 128 -12.314236834660635 141 20.728575609347573
-		 152 11.813191910585244 166 -15.711022086036527 180 14.922552751986183 206 2.9401761820617289;
+	setAttr -s 3 ".ktv[0:2]"  1 2.9401761820617289 10 11.528153552866883
+		 29 15.701931650668993;
 createNode animCurveTA -n "samBack_ctrl_rotateZ";
 	rename -uid "DC0370B1-4CDF-6FC0-AD14-0BBB942C1B59";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 18 ".ktv[0:17]"  14 0 24 0.89821164008819743 34 2.4732153066614542
-		 47 4.0607521589103612 57 4.812743299449318 65 7.1062654253396271 75 8.940268410462954
-		 83 3.8418816023633098 91 1.1498551068814273 101 0.69948242230100643 109 1.4799263160697518
-		 119 -0.64278611843602274 128 -0.61925992210132264 141 2.0232467131296317 152 4.2234828087241212
-		 166 4.1913028874844551 180 -0.87074930686529461 206 2.4810724461631843;
-createNode animCurveTU -n "samBack_ctrl_visibility";
-	rename -uid "DEEB4933-476B-6721-1EC1-CC843BCAB23A";
-	setAttr ".tan" 9;
-	setAttr ".wgt" no;
-	setAttr -s 7 ".ktv[0:6]"  14 1 24 1 34 1 47 1 57 1 119 1 128 1;
-	setAttr -s 7 ".kot[0:6]"  5 5 5 5 5 5 5;
-createNode animCurveTL -n "samBack_ctrl_translateX";
-	rename -uid "97AC1FB2-44E8-4C31-F4CD-FB89ACE070B7";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 7 ".ktv[0:6]"  14 0 24 0 34 0 47 0 57 0 119 0 128 0;
-createNode animCurveTL -n "samBack_ctrl_translateY";
-	rename -uid "724444C6-4796-1606-AC27-F883FC73F192";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 7 ".ktv[0:6]"  14 0 24 0 34 0 47 0 57 0 119 0 128 0;
-createNode animCurveTL -n "samBack_ctrl_translateZ";
-	rename -uid "8A3BF0B6-4FD5-5440-817C-EB94467E52B4";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 7 ".ktv[0:6]"  14 0 24 0 34 0 47 0 57 0 119 0 128 0;
-createNode animCurveTU -n "samBack_ctrl_scaleX";
-	rename -uid "EE737E2D-4849-0948-4010-5C8136A625C8";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 7 ".ktv[0:6]"  14 1 24 1 34 1 47 1 57 1 119 1 128 1;
-createNode animCurveTU -n "samBack_ctrl_scaleY";
-	rename -uid "70CCA50F-43BC-A1BA-361E-94B793571E78";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 7 ".ktv[0:6]"  14 1 24 1 34 1 47 1 57 1 119 1 128 1;
-createNode animCurveTU -n "samBack_ctrl_scaleZ";
-	rename -uid "C9AD41FB-4E15-A339-BFC5-97ACB34E785F";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 7 ".ktv[0:6]"  14 1 24 1 34 1 47 1 57 1 119 1 128 1;
+	setAttr -s 3 ".ktv[0:2]"  1 2.4810724461631843 10 1.3293824111461749
+		 29 -2.6111360475735395;
 createNode animCurveTA -n "samWaist_ctrl_rotateX";
 	rename -uid "9469A756-4174-8480-29F5-C38354B5F35C";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 18 ".ktv[0:17]"  14 -1.0718287771150767 24 -1.1053703526790801
-		 34 -1.0827022894556353 47 13.868501617031239 57 28.785703428682936 65 10.673302524129163
-		 75 10.490803986487046 83 9.2839550411889391 91 22.901764401348373 101 32.181848942145741
-		 109 14.898705971408146 119 18.492268595432865 128 18.295136951470756 141 2.9570691675473131
-		 152 2.8971963447259776 166 0.8299147034001022 180 0.84889379938948673 206 0.77789214996786005;
+	setAttr -s 4 ".ktv[0:3]"  1 0.77789214996786005 3 3.1934982748726628
+		 10 -6.4897149123538078 29 0.86858223268831314;
 createNode animCurveTA -n "samWaist_ctrl_rotateY";
 	rename -uid "1E6BAA9F-4CBA-DA87-ED42-07A3DBECF71C";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 17 ".ktv[0:16]"  14 0 24 -14.149918794491709 34 -8.1265584264224255
-		 47 0.27745073130245679 57 5.4198343628103345 75 5.7679387510776658 83 16.602919505974626
-		 91 22.309087873589199 101 -21.356942863019761 109 -32.26666497498168 119 -31.671786124777082
-		 128 -30.941749495471502 141 13.425666852568117 152 6.9009644102290411 166 -24.537204196039912
-		 180 27.207709663432077 206 13.945712659395888;
+	setAttr -s 3 ".ktv[0:2]"  1 13.945712659395888 10 30.791392708773706
+		 29 29.634533920447417;
 createNode animCurveTA -n "samWaist_ctrl_rotateZ";
 	rename -uid "9EDB8C57-4D1F-2923-FFF3-5DBD3DB73464";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 17 ".ktv[0:16]"  14 0 24 0.27025027084135844 34 0.1530687862319032
-		 47 -2.1392091081325191 57 -4.2557147755827582 75 -6.1277682783072409 83 -6.362937507952994
-		 91 -11.636030080942113 101 -10.792773658348249 109 -7.6847915741446391 119 -14.391468921136889
-		 128 -14.275790036529809 141 -5.3120215827905124 152 -5.6507808973087474 166 -2.8724394862875142
-		 180 -2.1396175680883194 206 -2.340284463637389;
-createNode animCurveTU -n "samWaist_ctrl_visibility";
-	rename -uid "CD6E0DA6-4C6F-8B9B-1663-288A1B59120E";
-	setAttr ".tan" 9;
-	setAttr ".wgt" no;
-	setAttr -s 7 ".ktv[0:6]"  14 1 24 1 34 1 47 1 57 1 119 1 128 1;
-	setAttr -s 7 ".kot[0:6]"  5 5 5 5 5 5 5;
-createNode animCurveTL -n "samWaist_ctrl_translateX";
-	rename -uid "BAB2BC7A-4873-7D56-0FB5-68BC8FCEB34F";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 7 ".ktv[0:6]"  14 0 24 0 34 0 47 0 57 0 119 0 128 0;
-createNode animCurveTL -n "samWaist_ctrl_translateY";
-	rename -uid "2C9CC8AD-4431-7F7C-B6D2-BF9F0E3576ED";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 7 ".ktv[0:6]"  14 0 24 0 34 0 47 0 57 0 119 0 128 0;
-createNode animCurveTL -n "samWaist_ctrl_translateZ";
-	rename -uid "FBE13FD8-4D8B-F839-ECD9-6581127B6DB0";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 7 ".ktv[0:6]"  14 0 24 0 34 0 47 0 57 0 119 0 128 0;
-createNode animCurveTU -n "samWaist_ctrl_scaleX";
-	rename -uid "296993BE-4164-AEE3-4691-49BEC1B6AB36";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 7 ".ktv[0:6]"  14 1 24 1 34 1 47 1 57 1 119 1 128 1;
-createNode animCurveTU -n "samWaist_ctrl_scaleY";
-	rename -uid "31903556-4259-A06E-1111-878A995E78C4";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 7 ".ktv[0:6]"  14 1 24 1 34 1 47 1 57 1 119 1 128 1;
-createNode animCurveTU -n "samWaist_ctrl_scaleZ";
-	rename -uid "F484700B-487D-AC57-25E8-C99821038B74";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 7 ".ktv[0:6]"  14 1 24 1 34 1 47 1 57 1 119 1 128 1;
-createNode animCurveTA -n "samRoot_ctrl_rotateX";
-	rename -uid "03CE30AB-4CEB-C66D-FCD8-329C2E6E9C09";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  14 0 24 0 34 0 47 0 57 0 83 0 119 0 128 0;
+	setAttr -s 3 ".ktv[0:2]"  1 -2.340284463637389 10 -2.0778445542798454
+		 29 -2.0982601114366828;
 createNode animCurveTA -n "samRoot_ctrl_rotateY";
 	rename -uid "031879AF-4A01-6823-6AA9-819425AE6987";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 20 ".ktv[0:19]"  1 -146.21760766369943 14 -164.0379528266258
-		 24 -164.0379528266258 34 -164.0379528266258 47 -149.78542750662461 57 -149.78542750662461
-		 65 -178.9954200662643 75 -187.77235114226679 83 -187.77235114226679 91 -157.73095255569959
-		 101 -134.28349198875398 109 -119.87292144790536 119 -147.10009475193561 128 -147.09716726432234
-		 141 -137.21982405714769 152 -61.432362255754825 166 64.745990268396611 180 164.16885581743401
-		 194 251.9984688754831 206 343.69800924073985;
-createNode animCurveTA -n "samRoot_ctrl_rotateZ";
-	rename -uid "A3380FE8-4459-8351-4CD9-0B8A55A7ED6C";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  14 0 24 0 34 0 47 0 57 0 83 0 119 0 128 0;
-createNode animCurveTU -n "samRoot_ctrl_visibility";
-	rename -uid "F0987254-48A8-FA90-BE83-03A3F2A50C1F";
-	setAttr ".tan" 9;
-	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  14 1 24 1 34 1 47 1 57 1 83 1 119 1 128 1;
-	setAttr -s 8 ".kot[0:7]"  5 5 5 5 5 5 5 5;
-createNode animCurveTU -n "samRoot_ctrl_scaleX";
-	rename -uid "DDD32F6D-4621-62F2-330B-788AC715601A";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  14 1 24 1 34 1 47 1 57 1 83 1 119 1 128 1;
-createNode animCurveTU -n "samRoot_ctrl_scaleY";
-	rename -uid "E66C1273-4B82-B16F-A880-57A72B192D5C";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  14 1 24 1 34 1 47 1 57 1 83 1 119 1 128 1;
-createNode animCurveTU -n "samRoot_ctrl_scaleZ";
-	rename -uid "30F918B4-4BA3-3A64-0A18-0CA5882F4A13";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  14 1 24 1 34 1 47 1 57 1 83 1 119 1 128 1;
+	setAttr -s 6 ".ktv[0:5]"  1 343.69800924073985 4 343.69800924073985
+		 9 348.43909587132703 12 348.43583091340929 23 359.76628075473269 206 343.69800924073985;
 createNode animCurveTA -n "samHead_ctrl_rotateX";
 	rename -uid "172AFBDF-46B4-72DC-B425-779D6D607CB1";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 28 ".ktv[0:27]"  1 -13.764997387331654 14 -10.495716928086262
-		 20 -8.0726583748583582 24 -27.005037169612212 30 -20.276482747234276 34 -12.49429898840785
-		 37 -10.52777311277254 40 3.4630754513350848 43 0.7605993062022891 47 -3.7789481207909179
-		 52 -10.258052235091554 57 -2.9810123321332007 65 -2.9810123321332007 68 -6.6937767563474901
-		 75 0.8186078552465208 83 2.6400051297106031 88 -17.815258043394007 94 -34.190739867752896
-		 101 -24.553685322090534 109 -23.278826103503178 119 -23.393038605941012 128 -23.195012463401213
-		 141 -22.25833872296678 152 18.734538215058805 166 12.829765592023652 180 11.621645796664387
-		 194 21.336048702995896 206 0.17094261544261291;
+	setAttr -s 6 ".ktv[0:5]"  1 3.6147949394572341 5 15.627645937650772
+		 10 19.123057494466998 14 33.672166948578827 18 31.56434668023773 29 11.950683537328745;
 createNode animCurveTA -n "samHead_ctrl_rotateY";
 	rename -uid "2BF15812-4D11-EC43-D907-4C994780C33E";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 25 ".ktv[0:24]"  1 -40.204973816626534 14 -3.9723409468189499
-		 20 23.833453246936148 24 28.975002557246423 30 11.470674592456433 34 29.334771402135178
-		 43 43.52789173013484 47 45.244154406187604 52 17.77047066385671 57 -23.80293937637623
-		 65 -23.80293937637623 75 24.149921204697389 83 26.565629839591722 88 48.25738867789034
-		 94 7.5276858353595344 101 24.797830162925088 109 22.074058405318294 119 5.5440827824105234
-		 128 5.9917371955659098 141 40.679748931233945 152 29.052030423787937 166 17.009324517607915
-		 180 37.48396936429782 194 60.168960910090142 206 -4.9135707758339153;
+	setAttr -s 6 ".ktv[0:5]"  1 1.9797992059638492 5 2.0702185919859173
+		 10 16.201869810547333 14 35.744426124453398 18 35.247607424550189 29 39.434889470647768;
 createNode animCurveTA -n "samHead_ctrl_rotateZ";
 	rename -uid "D6241F0F-414B-E13B-BDAF-2D9B7EE6D369";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 25 ".ktv[0:24]"  1 -0.02379356047763961 14 -8.2747151665130012
-		 20 -4.4198792446810922 24 -0.96518108711542416 30 -2.0206771074990653 34 1.9315017738956675
-		 43 1.538953505824241 47 -2.6121707822737399 52 -7.7712389293210737 57 -8.5412018041959072
-		 65 -8.5412018041959072 75 5.2470249567978575 83 9.2386425932596978 88 -17.959761321575872
-		 94 -18.315384059979298 101 -2.6534558300859783 109 1.3256481327985445 119 -17.429801169784756
-		 128 -17.944333968844262 141 -21.588867591652665 152 11.724223835591042 166 2.444606734534521
-		 180 7.0933032823771747 194 20.100744725771921 206 -0.511695607354129;
-createNode animCurveTU -n "samHead_ctrl_visibility";
-	rename -uid "0DE60EF7-49D2-6845-A617-A8B3EB4419C9";
-	setAttr ".tan" 9;
-	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  14 1 24 1 34 1 47 1 57 1 65 1 119 1 128 1;
-	setAttr -s 8 ".kot[0:7]"  5 5 5 5 5 5 5 5;
-createNode animCurveTL -n "samHead_ctrl_translateX";
-	rename -uid "8BD149FD-4710-48D1-11B0-D49D4A984B83";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  14 0 24 0 34 0 47 0 57 0 65 0 119 0 128 0;
-createNode animCurveTL -n "samHead_ctrl_translateY";
-	rename -uid "9F371A03-42F6-37C2-1F04-53878AD3455A";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  14 0 24 0 34 0 47 0 57 0 65 0 119 0 128 0;
-createNode animCurveTL -n "samHead_ctrl_translateZ";
-	rename -uid "18999167-45EC-6AA6-8E64-EAA06A56F88A";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  14 0 24 0 34 0 47 0 57 0 65 0 119 0 128 0;
-createNode animCurveTU -n "samHead_ctrl_scaleX";
-	rename -uid "A13F7976-440E-7762-6352-9BBB3396112A";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  14 1 24 1 34 1 47 1 57 1 65 1 119 1 128 1;
-createNode animCurveTU -n "samHead_ctrl_scaleY";
-	rename -uid "AF36AC73-4378-0492-A53B-2FA4C48746AF";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  14 1 24 1 34 1 47 1 57 1 65 1 119 1 128 1;
-createNode animCurveTU -n "samHead_ctrl_scaleZ";
-	rename -uid "4F2D7156-4158-3C7F-B15F-CFA1E9D9C194";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  14 1 24 1 34 1 47 1 57 1 65 1 119 1 128 1;
-createNode animCurveTU -n "samHead_ctrl_samExpression_Happy";
-	rename -uid "59BF427B-40F9-4765-D083-1487FC2A7A3D";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  14 3 24 3 34 3 47 3 57 3 65 3 119 3 128 3;
-createNode animCurveTU -n "samHead_ctrl_samExpressionHelp_Happy";
-	rename -uid "221AC78E-4352-014B-0270-139421596652";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  14 0 24 0 34 0 47 0 57 0 65 0 119 0 128 0;
-createNode animCurveTU -n "samHead_ctrl_samExpression_Shock";
-	rename -uid "59D8A725-4EBD-2563-F5CC-7FA6ACAD9A0F";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  14 0 24 0 34 0 47 0 57 0 65 0 119 0 128 0;
-createNode animCurveTU -n "samHead_ctrl_samExpression_Neutral";
-	rename -uid "AE9604D4-4A2B-FC4E-3AE8-1998BDD61C31";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  14 0 24 0 34 0 47 0 57 0 65 0 119 0 128 0;
-createNode animCurveTU -n "cabinetF_crtl_open";
-	rename -uid "6A2E98D8-488C-4F7F-0C91-4FA26E884828";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 5 ".ktv[0:4]"  1 0 14 15 24 16 34 16 128 16;
-createNode animCurveTL -n "samRoot_ctrl_translateZ";
-	rename -uid "4BFB456B-4113-F275-54A8-0B93F0341377";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 15 ".ktv[0:14]"  1 -305.70865829079884 14 -303.72592114442187
-		 24 -309.62909516747095 34 -309.62909516747095 47 -299.71389268412315 57 -301.23287515905344
-		 65 -298.58117251868856 75 -304.81974692749395 83 -304.81974692749395 91 -296.28214557131315
-		 101 -301.31489373741766 109 -317.1590427746961 119 -301.6757623425579 128 -300.91311165870877
-		 141 -296.98639572256189;
-createNode animCurveTL -n "samRoot_ctrl_translateX";
-	rename -uid "88267D92-438E-3327-80AF-4582E9D40BB2";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 15 ".ktv[0:14]"  1 -154.44655094774456 14 -165.24011726764559
-		 24 -168.12690748275313 34 -168.12690748275313 47 -176.17640759495126 57 -217.45862083549818
-		 65 -254.44545123320793 75 -256.21062158074199 83 -256.21062158074199 91 -258.37284092662816
-		 101 -307.69576283178037 109 -338.66922906190615 119 -357.47964669331049 128 -357.4789855408884
-		 141 -357.42775391599446;
-createNode animCurveTU -n "cabinetE_crtl_OpenDoor";
-	rename -uid "2E0E9510-4CCD-151F-51D7-C49CF55F9CED";
-	setAttr ".tan" 18;
-	setAttr -s 4 ".ktv[0:3]"  24 0 33 12.422759680485683 37 12.422759680485683
-		 128 12.423;
-	setAttr -s 4 ".kit[1:3]"  1 18 18;
-	setAttr -s 4 ".kot[1:3]"  1 18 18;
-	setAttr -s 4 ".ktl[1:3]" no yes yes;
-	setAttr -s 4 ".kix[1:3]"  0.47202811333442335 0.16666666666666674 
-		3.7916666666666661;
-	setAttr -s 4 ".kiy[1:3]"  6.4050219884989703 0 0;
-	setAttr -s 4 ".kox[1:3]"  0.2316942371738453 3.7916666666666661 3.7916666666666661;
-	setAttr -s 4 ".koy[1:3]"  3.7708191375571687 0 0;
-createNode animCurveTU -n "cabinetD_crtl_OpenDoor";
-	rename -uid "34A57E60-426E-D8DE-3191-26924BB28994";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  57 0 65 15 75 17 128 17;
+	setAttr -s 6 ".ktv[0:5]"  1 -0.071217108737222964 5 -1.7796807887261668
+		 10 3.363471136906464 14 20.071658237159383 18 18.748793809246326 29 2.8433265906760106;
 createNode d_openexr -n "d_openexr14";
 	rename -uid "6DF094A0-4120-0972-DE29-4D8E1596E569";
 	setAttr ".cch" no;
@@ -18410,18 +17557,6 @@ createNode d_openexr -n "d_openexr14";
 	setAttr ".compressionlevel" 45;
 	setAttr ".forcepar" 0;
 	setAttr ".metadatacount" 0;
-createNode animCurveTU -n "cabinetC_crtl_OpenDoor";
-	rename -uid "8BE1A54D-4BF2-D63E-E3B6-8797B6C6D320";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 7 ".ktv[0:6]"  75 0 83 13.824730431309902 88 16 91 16 101 12.071262587141746
-		 112 8.5757084559360237 128 7.4184660082210883;
-	setAttr -s 7 ".kot[3:6]"  1 1 18 18;
-	setAttr -s 7 ".ktl[3:6]" no no yes yes;
-	setAttr -s 7 ".kox[3:6]"  0.15830598642893101 0.14273192389953637 
-		0.23501778663430428 1;
-	setAttr -s 7 ".koy[3:6]"  -0.98739010257383242 -0.98976138432449312 
-		-0.97199106990008544 0;
 createNode d_openexr -n "d_openexr15";
 	rename -uid "8489F232-4F98-3302-D8A6-B3A0CC009998";
 	setAttr ".cch" no;
@@ -18450,11 +17585,6 @@ createNode d_openexr -n "d_openexr16";
 	setAttr ".compressionlevel" 45;
 	setAttr ".forcepar" 0;
 	setAttr ".metadatacount" 0;
-createNode animCurveTU -n "cabinetB_crtl_OpenDoor";
-	rename -uid "53F98C68-4B14-4F6E-DE56-FEA3B77BC311";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  109 0 119 17 128 17;
 createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
 	rename -uid "747C37D8-4DD4-F748-F5F3-9AB28906342D";
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
@@ -18470,57 +17600,6 @@ createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
 	setAttr ".tgi[0].ni[2].x" -255.71427917480469;
 	setAttr ".tgi[0].ni[2].y" 980;
 	setAttr ".tgi[0].ni[2].nvs" 1922;
-createNode animCurveTU -n "Shot5_RENDER_visibility";
-	rename -uid "E29CEA82-4E68-C67A-F22C-45B3D176F26F";
-	setAttr ".tan" 9;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  120 1;
-	setAttr ".kot[0]"  5;
-createNode animCurveTU -n "Shot5_RENDER_scaleX";
-	rename -uid "053646EB-483F-A0FB-41AC-D3846FF27F05";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  120 1;
-createNode animCurveTU -n "Shot5_RENDER_scaleY";
-	rename -uid "404CAAED-458E-80C6-ED6F-D3BE94AC8E04";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  120 1;
-createNode animCurveTU -n "Shot5_RENDER_scaleZ";
-	rename -uid "C3F63680-434C-45DE-DC19-6CB6E14F7E2B";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  120 1;
-createNode animCurveTL -n "Shot5_RENDER_translateZ";
-	rename -uid "CE75F8F7-4B64-FEC1-0422-1D90DA6923EF";
-	setAttr ".tan" 2;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 -125.40041693290735 130 -162;
-	setAttr -s 2 ".kit[1]"  18;
-	setAttr -s 2 ".kot[1]"  18;
-createNode animCurveTA -n "Shot5_2_RENDER_rotateY";
-	rename -uid "329E4F57-4C35-48EE-4F26-259DA686DD4C";
-	setAttr ".tan" 1;
-	setAttr -s 2 ".ktv[0:1]"  130 0 220 -360;
-	setAttr -s 2 ".kix[0:1]"  0.91546971055266568 4.692964556937417;
-	setAttr -s 2 ".kiy[0:1]"  -0.78642764782392849 -0.057633270509541035;
-	setAttr -s 2 ".kox[0:1]"  3.2555123216783013 4.6929649833662745;
-	setAttr -s 2 ".koy[0:1]"  -2.7966245567523949 -0.057633308174738565;
-createNode animCurveTA -n "Shot5_2_RENDER_rotateX";
-	rename -uid "AA8566ED-48FC-68DD-1A63-8D93AB5FBEC2";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  130 5 177 10 220 0;
-createNode animCurveTU -n "Shot5_2_RENDERShape_focalLength";
-	rename -uid "26CCC6DC-4F74-D01D-B47B-198916075DD5";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  130 35 220 45;
-createNode animCurveTL -n "Shot5_2_RENDER_translateZ";
-	rename -uid "88CAC0FD-4294-E653-C79B-BB9CE29389D5";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  220 -162;
 createNode animLayer -n "BaseAnimation";
 	rename -uid "C8443F79-48F7-D57A-5831-31A3FA0793E7";
 	setAttr ".ovrd" yes;
@@ -18528,25 +17607,6 @@ createNode animLayer -n "Steps";
 	rename -uid "1990FE5D-453F-5537-1ADE-98B095790FC5";
 	setAttr ".pref" yes;
 	setAttr ".slct" yes;
-createNode animCurveTL -n "samRoot_ctrl_translateY";
-	rename -uid "DEB4865E-41D6-C959-65CD-2FBE6E0A46E3";
-	setAttr ".tan" 18;
-	setAttr -s 16 ".ktv[0:15]"  1 0 20 -1.4658172523961666 27 3.0683225922986148
-		 39 2.7628893834020198 43 0.014279295567251937 49 0.32041056060373152 53 -1.5159284884122464
-		 62 1.6437842124565938 69 -0.91839379510944052 77 0 86 0 92 -1.4541235089232822 100 3.0334825353614843
-		 107 -3.2422083978863609 114 1.6976370152022975 118 -0.006957528750830555;
-	setAttr -s 16 ".kit[6:15]"  1 18 18 18 18 18 18 18 
-		18 18;
-	setAttr -s 16 ".kot[6:15]"  1 18 18 18 18 18 18 18 
-		18 18;
-	setAttr -s 16 ".kix[6:15]"  0.38788660903677863 0.375 0.29166666666666652 
-		0.33333333333333348 0.375 0.25 0.33333333333333348 0.29166666666666607 0.29166666666666696 
-		0.16666666666666696;
-	setAttr -s 16 ".kiy[6:15]"  0.11529404478680604 0 0 0 0 0 0 0 0 0;
-	setAttr -s 16 ".kox[6:15]"  0.47114137156556035 0.29166666666666652 
-		0.33333333333333348 0.375 0.25 0.33333333333333348 0.29166666666666607 0.29166666666666696 
-		0.16666666666666696 0.16666666666666696;
-	setAttr -s 16 ".koy[6:15]"  0.14004040136933327 0 0 0 0 0 0 0 0 0;
 createNode d_openexr -n "d_openexr17";
 	rename -uid "C08FA12E-4BB5-74AA-44C3-5F9BD3EA6B06";
 	setAttr ".cch" no;
@@ -18591,479 +17651,81 @@ createNode animCurveTL -n "circle01_CTL24_translateZ";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 2 ".ktv[0:1]"  1 0 19 0;
-createNode animCurveTL -n "circle01_CTL3_translateX";
-	rename -uid "634243A3-4719-493A-238D-119D71D99F4B";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 -4.9088147893835561e-14 19 -4.9088147893835561e-14;
-createNode animCurveTL -n "circle01_CTL3_translateY";
-	rename -uid "8FC037A9-40C1-74F1-DC60-B9AB078B0E6C";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 1.6968149495311173e-13 19 1.6968149495311173e-13;
-createNode animCurveTL -n "circle01_CTL3_translateZ";
-	rename -uid "3754E4A0-4102-3D66-0AFE-4AA67C5421F0";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 4.9171448663465985e-14 19 4.9171448663465985e-14;
-createNode animCurveTL -n "circle01_CTL4_translateX";
-	rename -uid "66BD6C93-4EAD-1018-A3EA-6596A2E41063";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 0 19 0;
-createNode animCurveTL -n "circle01_CTL4_translateY";
-	rename -uid "7FAF7BD4-4EC2-1D44-488E-0F8B550B355D";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 0 19 0;
-createNode animCurveTL -n "circle01_CTL4_translateZ";
-	rename -uid "7B8D01AB-40EF-A24E-4BA5-4CA5EFB4BBAC";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 0 19 0;
-createNode animCurveTL -n "circle01_CTL5_translateX";
-	rename -uid "CCEC11E1-495D-06F6-3C2C-9F8852272479";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 0 19 0;
-createNode animCurveTL -n "circle01_CTL5_translateY";
-	rename -uid "6072EB89-410D-3F04-3EE5-EE8974A2EBFD";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 0 19 0;
-createNode animCurveTL -n "circle01_CTL5_translateZ";
-	rename -uid "AF39A857-49CA-52E8-4A90-D2B62E1BCB34";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 0 19 0;
-createNode animCurveTL -n "circle01_CTL6_translateX";
-	rename -uid "64042108-462D-CB1D-3BDA-66BB9B876139";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 -7.6285209131672718e-14;
-createNode animCurveTL -n "circle01_CTL6_translateY";
-	rename -uid "AF9B3640-4D49-8AF0-5BDC-A4958C823753";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 1.8146518346541014e-13;
-createNode animCurveTL -n "circle01_CTL6_translateZ";
-	rename -uid "B9959F88-4FDA-45C4-1D9D-EC877A82057D";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 2.9866078458879936e-14;
-createNode animCurveTL -n "circle01_CTL7_translateX";
-	rename -uid "21B1917A-484A-423B-C845-E7A5F7DAB5E5";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 0 19 0;
-createNode animCurveTL -n "circle01_CTL7_translateY";
-	rename -uid "02F3D148-4477-EFCA-2793-8190BABEC3C4";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 0 19 0;
-createNode animCurveTL -n "circle01_CTL7_translateZ";
-	rename -uid "E4E8EA15-4F0E-E8CE-2933-70A17D88B335";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 0 19 0;
-createNode animCurveTL -n "circle01_CTL8_translateX";
-	rename -uid "76FA5108-4A4A-63ED-4233-C9A4F97571FD";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 0 19 0;
-createNode animCurveTL -n "circle01_CTL8_translateY";
-	rename -uid "F88138F0-4395-66AD-0860-339CBFA0B5B1";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 0 19 0;
-createNode animCurveTL -n "circle01_CTL8_translateZ";
-	rename -uid "53E02598-4406-BA1A-E8FA-46AF88225EE1";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 0 19 0;
-createNode animCurveTL -n "circle01_CTL9_translateX";
-	rename -uid "91D9F377-46C2-981B-7164-5FA1B8630507";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 -4.4961161646794753e-14 19 -4.4961161646794753e-14;
-createNode animCurveTL -n "circle01_CTL9_translateY";
-	rename -uid "C7157B1D-42F3-C389-BF7E-80B26E6F9B76";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 1.7282217310837227e-13 19 1.7282217310837227e-13;
-createNode animCurveTL -n "circle01_CTL9_translateZ";
-	rename -uid "D47A3618-4551-2350-8B98-01BCD6ED8F7D";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 5.2012724795075765e-14 19 5.2012724795075765e-14;
-createNode animCurveTL -n "circle01_CTL1_translateX";
-	rename -uid "8CCAD351-4E7E-0EA5-0FAD-4DA9E15E4BD7";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 0 19 0;
-createNode animCurveTL -n "circle01_CTL1_translateY";
-	rename -uid "FFB1C9F3-4E92-C705-DE77-CCBC8A25E9FA";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 0 19 0;
-createNode animCurveTL -n "circle01_CTL1_translateZ";
-	rename -uid "AE606752-406D-A794-92FE-F18E279AE7F7";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 0 19 0;
-createNode animCurveTL -n "circle01_CTL2_translateX";
-	rename -uid "D9D83E9F-4A08-EBE8-C9B6-8E849F6E6A3F";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 0 19 0;
-createNode animCurveTL -n "circle01_CTL2_translateY";
-	rename -uid "5EA5EE3B-42EC-E77A-713F-D98113554384";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 0 19 0;
-createNode animCurveTL -n "circle01_CTL2_translateZ";
-	rename -uid "AA3BB7E0-4CF7-BD7F-F21E-9191A4DFE6DB";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 0 19 0;
-createNode animCurveTU -n "circle01_CTL9_visibility";
-	rename -uid "8043574F-40FC-E529-A445-AC8D1C4453EF";
-	setAttr ".tan" 9;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 1 19 1;
-	setAttr -s 2 ".kot[0:1]"  5 5;
 createNode animCurveTA -n "circle01_CTL9_rotateX";
 	rename -uid "82CD0245-45A2-CE3E-B9B5-46A86C26286C";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  1 0 19 0 24 -10.536967682307868 30 -12.449153116527462;
+	setAttr ".ktv[0]"  30 -12.449153116527462;
 createNode animCurveTA -n "circle01_CTL9_rotateY";
 	rename -uid "7CD83B7A-46A9-E6D5-9239-92A54164FC5C";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  1 13.184710354435984 19 13.184710354435984
-		 24 7.9704220383146751 30 4.3769535263734731;
+	setAttr ".ktv[0]"  30 4.3769535263734731;
 createNode animCurveTA -n "circle01_CTL9_rotateZ";
 	rename -uid "23A259C7-4B2B-87D1-D931-05AB54A32EF5";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  1 58.787965967773403 19 58.787965967773403
-		 24 5.4913131742228556 30 -12.141782426068252;
-createNode animCurveTU -n "circle01_CTL9_scaleX";
-	rename -uid "F089CA60-4DD7-CF9A-CE23-9F8C277C8BC9";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 0.99999999999999967 19 0.99999999999999967;
-createNode animCurveTU -n "circle01_CTL9_scaleY";
-	rename -uid "5951F538-42F8-F022-12E9-BB9E972E563C";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 0.99999999999999978 19 0.99999999999999978;
-createNode animCurveTU -n "circle01_CTL9_scaleZ";
-	rename -uid "1ABDE035-414F-58AE-C14F-F3BD1882E184";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 0.99999999999999956 19 0.99999999999999956;
-createNode animCurveTU -n "circle01_CTL1_visibility";
-	rename -uid "DC4F9BC7-45BB-3DE4-7176-818479781EAC";
-	setAttr ".tan" 9;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 1 19 1;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr ".ktv[0]"  30 -12.141782426068252;
 createNode animCurveTA -n "circle01_CTL1_rotateX";
 	rename -uid "233E2757-4725-430D-FB38-E7A1475AD7DD";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  1 -22.135679126729453 19 -22.135679126729453
-		 24 -18.158694083275197 30 -14.759431854244374;
+	setAttr ".ktv[0]"  30 -14.759431854244374;
 createNode animCurveTA -n "circle01_CTL1_rotateY";
 	rename -uid "D3BEB3C8-4474-C01F-3CDC-7C836E41538E";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  1 1.5902773407317582e-15 19 1.5902773407317582e-15
-		 24 -12.878636425420998 30 -16.684328140601732;
+	setAttr ".ktv[0]"  30 -16.684328140601732;
 createNode animCurveTA -n "circle01_CTL1_rotateZ";
 	rename -uid "1A8C7F81-4BE8-BAF2-6D6F-41B34CC9B34F";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  1 39.654962861374607 19 39.654962861374607
-		 24 5.45633247194964 30 -7.8041947963406813;
-createNode animCurveTU -n "circle01_CTL1_scaleX";
-	rename -uid "3DBC584D-4952-D4EB-D6AF-EF95D5DD39C5";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 1 19 1;
-createNode animCurveTU -n "circle01_CTL1_scaleY";
-	rename -uid "FD6F80C4-4EFC-ECE6-A6F9-77868B9890B0";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 1 19 1;
-createNode animCurveTU -n "circle01_CTL1_scaleZ";
-	rename -uid "167CCFA6-4D63-0360-5251-5DB309C6B046";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 1 19 1;
-createNode animCurveTU -n "circle01_CTL2_visibility";
-	rename -uid "015BE3B0-4464-636E-7A49-11A211E0144B";
-	setAttr ".tan" 9;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 1 19 1;
-	setAttr -s 2 ".kot[0:1]"  5 5;
-createNode animCurveTA -n "circle01_CTL2_rotateX";
-	rename -uid "BF113A60-44FC-54C6-ABD6-5392E34509EA";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 0 19 0;
-createNode animCurveTA -n "circle01_CTL2_rotateY";
-	rename -uid "F82DC608-4D33-A5D5-C888-7D8CAFE83BB7";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 0 19 0;
+	setAttr ".ktv[0]"  30 -7.8041947963406813;
 createNode animCurveTA -n "circle01_CTL2_rotateZ";
 	rename -uid "A0D380BA-415B-A6F4-C106-D389577701B2";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  1 49.563794738862512 19 49.563794738862512
-		 24 4.4144382564739955 30 -9.0712822972835774;
-createNode animCurveTU -n "circle01_CTL2_scaleX";
-	rename -uid "71C52D46-40CA-76B1-9E8A-02AA95400945";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 1 19 1;
-createNode animCurveTU -n "circle01_CTL2_scaleY";
-	rename -uid "64223A9A-4739-3D1D-7179-B2997C154A53";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 1 19 1;
-createNode animCurveTU -n "circle01_CTL2_scaleZ";
-	rename -uid "DE7CF354-44F3-7A83-B143-4C9C59B48856";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 1 19 1;
-createNode animCurveTU -n "circle01_CTL3_visibility";
-	rename -uid "7D62376D-473F-3BA1-F0CF-01AC04CEDC0A";
-	setAttr ".tan" 9;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 1 19 1;
-	setAttr -s 2 ".kot[0:1]"  5 5;
-createNode animCurveTA -n "circle01_CTL3_rotateX";
-	rename -uid "599C3F10-4167-A675-2112-5A91DF5A6553";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 0 19 0;
-createNode animCurveTA -n "circle01_CTL3_rotateY";
-	rename -uid "1601FD50-42CE-2B3F-3F56-72BCD08C286A";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 0 19 0;
+	setAttr ".ktv[0]"  30 -9.0712822972835774;
 createNode animCurveTA -n "circle01_CTL3_rotateZ";
 	rename -uid "0560A473-4F95-05B0-29F9-319693BA294A";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  1 55.133335328525284 19 55.133335328525284
-		 24 4.1966727096035763 30 -11.99082239659899;
-createNode animCurveTU -n "circle01_CTL3_scaleX";
-	rename -uid "9B836B41-48A2-D616-1D1C-6CB074D55C87";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 0.99999999999999967 19 0.99999999999999967;
-createNode animCurveTU -n "circle01_CTL3_scaleY";
-	rename -uid "634BE368-44C4-525B-6D1E-828BC31E7759";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 0.99999999999999978 19 0.99999999999999978;
-createNode animCurveTU -n "circle01_CTL3_scaleZ";
-	rename -uid "07165119-49C3-D86A-5CB9-67BB14A72AA4";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 0.99999999999999956 19 0.99999999999999956;
-createNode animCurveTU -n "circle01_CTL4_visibility";
-	rename -uid "365A8F82-4F40-04C1-8ECA-8EAF74A8F8A2";
-	setAttr ".tan" 9;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 1 19 1;
-	setAttr -s 2 ".kot[0:1]"  5 5;
-createNode animCurveTA -n "circle01_CTL4_rotateX";
-	rename -uid "5BCB384B-4A7F-A61F-2872-53A65F95AAF8";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 0 19 0;
-createNode animCurveTA -n "circle01_CTL4_rotateY";
-	rename -uid "FAA11E45-42D5-A3E5-0B7D-878CE36AA7BF";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 0 19 0;
+	setAttr ".ktv[0]"  30 -11.99082239659899;
 createNode animCurveTA -n "circle01_CTL4_rotateZ";
 	rename -uid "BF29ACE6-4F33-DD2F-A657-119D47FF7650";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  1 25.248441860131447 19 25.248441860131447
-		 24 7.5629287503790827 30 -4.1053453293632449;
-createNode animCurveTU -n "circle01_CTL4_scaleX";
-	rename -uid "A0DE29F9-472B-1999-55BF-FE927FB8456C";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 1 19 1;
-createNode animCurveTU -n "circle01_CTL4_scaleY";
-	rename -uid "FD134876-4404-5329-318A-879417CFAD34";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 1 19 1;
-createNode animCurveTU -n "circle01_CTL4_scaleZ";
-	rename -uid "1EE4BE3D-4511-1233-2C10-ECB5B8D74526";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 1 19 1;
-createNode animCurveTU -n "circle01_CTL5_visibility";
-	rename -uid "A5DB0972-4C72-1098-C933-A29680604EF1";
-	setAttr ".tan" 9;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 1 19 1;
-	setAttr -s 2 ".kot[0:1]"  5 5;
-createNode animCurveTA -n "circle01_CTL5_rotateX";
-	rename -uid "A60BE892-4D40-F760-9C3C-018E08A8088B";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 0 19 0;
-createNode animCurveTA -n "circle01_CTL5_rotateY";
-	rename -uid "D2A6B308-4C9E-962B-FD17-6081C8A168FD";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 0 19 0;
+	setAttr ".ktv[0]"  30 -4.1053453293632449;
 createNode animCurveTA -n "circle01_CTL5_rotateZ";
 	rename -uid "711189E9-488E-BF65-6806-AE83FA6BB461";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  1 49.141060886235252 19 49.141060886235252
-		 24 10.059244153015955 30 -8.0375926036669387;
-createNode animCurveTU -n "circle01_CTL5_scaleX";
-	rename -uid "01678DE8-41FC-6BDB-4951-E79762241208";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 1 19 1;
-createNode animCurveTU -n "circle01_CTL5_scaleY";
-	rename -uid "03F4DBAF-493C-1FAF-410E-569B4AB18F48";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 1 19 1;
-createNode animCurveTU -n "circle01_CTL5_scaleZ";
-	rename -uid "E6A49B91-4C3D-D9C0-EF21-3DBCA5837CEA";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 1 19 1;
-createNode animCurveTU -n "circle01_CTL6_visibility";
-	rename -uid "FC0577BE-4FD7-05D5-CFA7-F0A1507D0192";
-	setAttr ".tan" 9;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 1;
-	setAttr ".kot[0]"  5;
+	setAttr ".ktv[0]"  30 -8.0375926036669387;
 createNode animCurveTA -n "circle01_CTL6_rotateX";
 	rename -uid "029A32F7-47CF-584E-037C-ABB56B1F7E72";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  1 -6.2134513559679876 14 -6.6833266217233964
-		 24 -4.5328802479458314 30 -1.1176478993963357;
+	setAttr ".ktv[0]"  30 -1.1176478993963357;
 createNode animCurveTA -n "circle01_CTL6_rotateY";
 	rename -uid "AE8C3016-4432-791C-364A-BB9DDD090A53";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  1 -2.9753416556823793 14 -1.6645185910258395
-		 24 -5.1898114609481558 30 -6.7957063729706908;
+	setAttr ".ktv[0]"  30 -6.7957063729706908;
 createNode animCurveTA -n "circle01_CTL6_rotateZ";
 	rename -uid "551285B6-49FB-4DD1-425E-60BD9996BA09";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  1 46.34877460975828 14 57.916402373655963
-		 24 23.071548788222771 30 -8.7990084251245122;
-createNode animCurveTU -n "circle01_CTL6_scaleX";
-	rename -uid "D1E6666C-439D-AD2C-C315-81B03ED6A2A2";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 0.99999999999999967;
-createNode animCurveTU -n "circle01_CTL6_scaleY";
-	rename -uid "7DF9CA73-4EBF-8B8D-8DD1-04805EC83632";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 0.99999999999999978;
-createNode animCurveTU -n "circle01_CTL6_scaleZ";
-	rename -uid "EC411710-4E53-A096-61CF-4ABFDA7EFA92";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 0.99999999999999956;
-createNode animCurveTU -n "circle01_CTL7_visibility";
-	rename -uid "00F37C5F-48CB-0A20-4851-BB96D424935F";
-	setAttr ".tan" 9;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 1 19 1;
-	setAttr -s 2 ".kot[0:1]"  5 5;
-createNode animCurveTA -n "circle01_CTL7_rotateX";
-	rename -uid "E09CEC82-43AE-C73F-7258-6E9253070C2D";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 0 19 0;
-createNode animCurveTA -n "circle01_CTL7_rotateY";
-	rename -uid "4D7072AB-4E08-E9CB-2D98-A682B6B10EF9";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 0 19 0;
+	setAttr ".ktv[0]"  30 -8.7990084251245122;
 createNode animCurveTA -n "circle01_CTL7_rotateZ";
 	rename -uid "FB40AE32-4F8B-7C23-8224-B99AB26D2B38";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 5 ".ktv[0:4]"  1 23.669150216843676 14 -0.088216984618041491
-		 19 -0.088216984618041491 24 -12.313428334428863 30 -20.041832774513754;
-createNode animCurveTU -n "circle01_CTL7_scaleX";
-	rename -uid "FF738B28-4927-E4D4-17EF-6BA67A6EE9BA";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 1 19 1;
-createNode animCurveTU -n "circle01_CTL7_scaleY";
-	rename -uid "7F0C3074-4329-295D-1D50-06937137B916";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 1 19 1;
-createNode animCurveTU -n "circle01_CTL7_scaleZ";
-	rename -uid "F71DD24A-48B7-4E46-4885-6E952C4E9227";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 1 19 1;
-createNode animCurveTU -n "circle01_CTL8_visibility";
-	rename -uid "90666776-42DF-5ACD-C511-CAA13F1D37D4";
-	setAttr ".tan" 9;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 1 19 1;
-	setAttr -s 2 ".kot[0:1]"  5 5;
-createNode animCurveTA -n "circle01_CTL8_rotateX";
-	rename -uid "CB87CB51-49A5-AADC-2134-D4AB7E095F17";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 0 19 0;
-createNode animCurveTA -n "circle01_CTL8_rotateY";
-	rename -uid "F5F31C02-4A8A-9800-BA4A-12959E51A8C9";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 0 19 0;
+	setAttr ".ktv[0]"  30 -20.041832774513754;
 createNode animCurveTA -n "circle01_CTL8_rotateZ";
 	rename -uid "54001817-43F7-B699-331D-38983C721294";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  1 43.334462160653082 19 43.334462160653082
-		 24 4.6455701691486917 30 -16.091491998487086;
-createNode animCurveTU -n "circle01_CTL8_scaleX";
-	rename -uid "FB6EB43C-44AA-71C8-EED1-6487793CF90B";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 1 19 1;
-createNode animCurveTU -n "circle01_CTL8_scaleY";
-	rename -uid "D28D190A-45B6-76C5-63DC-A6AC583C4223";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 1 19 1;
-createNode animCurveTU -n "circle01_CTL8_scaleZ";
-	rename -uid "A214EF90-4A02-C2C8-6C4A-A1846DE5A402";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 1 19 1;
+	setAttr ".ktv[0]"  30 -16.091491998487086;
 createNode animCurveTU -n "circle01_CTL23_visibility";
 	rename -uid "14D87F7B-440F-3CC5-1818-829014EE0D00";
 	setAttr ".tan" 9;
@@ -19228,111 +17890,6 @@ createNode animCurveTU -n "circle01_CTL19_scaleZ";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  24 0.99999999999999956;
-createNode animCurveTL -n "circle01_CTL_translateX";
-	rename -uid "0806EB42-410E-78E5-E735-B7B64707DAF0";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 0 34 0;
-createNode animCurveTL -n "circle01_CTL_translateY";
-	rename -uid "8C4E1FA3-4A63-AC64-BA90-19ACA133A572";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 0 34 0;
-createNode animCurveTL -n "circle01_CTL_translateZ";
-	rename -uid "0C027239-4C53-594B-C8B8-4FA3B23175A3";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 0 34 0;
-createNode animCurveTL -n "circle01_CTL12_translateX";
-	rename -uid "A1AC10F4-4ADB-24F5-483D-9AAC84402A16";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 0 34 0;
-createNode animCurveTL -n "circle01_CTL12_translateY";
-	rename -uid "CD3A81AF-4CB0-99D1-405F-7CB7F090E52D";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 0 34 0;
-createNode animCurveTL -n "circle01_CTL12_translateZ";
-	rename -uid "88D53715-406F-1DE4-4411-2495497C6CC5";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 0 34 0;
-createNode animCurveTL -n "circle01_CTL13_translateX";
-	rename -uid "91FBB553-49A9-81A1-7C8C-6098194E89F7";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 0 34 0;
-createNode animCurveTL -n "circle01_CTL13_translateY";
-	rename -uid "9C9998F1-406D-3847-9532-38A93D122E73";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 0 34 0;
-createNode animCurveTL -n "circle01_CTL13_translateZ";
-	rename -uid "E5E6F3B8-420D-39B3-C585-98B24E4B7870";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 0 34 0;
-createNode animCurveTL -n "circle01_CTL14_translateX";
-	rename -uid "8C7C941B-4DE5-C932-4622-DAAE6B7FBE59";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 0 34 0;
-createNode animCurveTL -n "circle01_CTL14_translateY";
-	rename -uid "B50991D2-4500-6D22-6ABB-33A6A62C2E64";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 0 34 0;
-createNode animCurveTL -n "circle01_CTL14_translateZ";
-	rename -uid "E14C3272-47B7-3529-1523-278DFBE28C82";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 0 34 0;
-createNode animCurveTL -n "circle01_CTL15_translateX";
-	rename -uid "F38DD10F-43BD-4991-877A-0EAAE336BB6D";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 0 34 0;
-createNode animCurveTL -n "circle01_CTL15_translateY";
-	rename -uid "C8D6259E-48A7-F597-AE20-94A0F9724BB2";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 0 34 0;
-createNode animCurveTL -n "circle01_CTL15_translateZ";
-	rename -uid "99FCBFD2-4B2A-0A7A-F97F-DC847CB43527";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 0 34 0;
-createNode animCurveTL -n "circle01_CTL16_translateX";
-	rename -uid "5773AB8C-45A4-32B4-D9E2-FB807BB7F8B7";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 0 34 0;
-createNode animCurveTL -n "circle01_CTL16_translateY";
-	rename -uid "FABB768E-49E8-E455-56B3-AA99B27B81A4";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 0 34 0;
-createNode animCurveTL -n "circle01_CTL16_translateZ";
-	rename -uid "4C536E4B-4B6E-B59D-4313-C5A025810A26";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 0 34 0;
-createNode animCurveTL -n "circle01_CTL17_translateX";
-	rename -uid "06A0368A-4BCC-FBCB-0647-9F9D05DCD089";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 0 34 0;
-createNode animCurveTL -n "circle01_CTL17_translateY";
-	rename -uid "A58CB3DD-4C8F-1CAD-B72B-B7B67C20D1CF";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 0 34 0;
-createNode animCurveTL -n "circle01_CTL17_translateZ";
-	rename -uid "28CDCEE1-405C-733D-9B2F-0EBA1D6C53F2";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 0 34 0;
 createNode animCurveTL -n "circle01_CTL18_translateX";
 	rename -uid "3413A36B-4E25-7F14-DBF0-C69ACD6CB9B1";
 	setAttr ".tan" 18;
@@ -19375,36 +17932,6 @@ createNode animCurveTL -n "circle01_CTL11_translateY";
 	setAttr -s 2 ".ktv[0:1]"  22 0 34 0;
 createNode animCurveTL -n "circle01_CTL11_translateZ";
 	rename -uid "C48347A0-479F-972F-38F9-48BCA03B0193";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 0 34 0;
-createNode animCurveTL -n "circle01_CTL10_translateX1";
-	rename -uid "A471CFA9-4D2A-92A4-2C95-2BADDADE3D1E";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 0 34 0;
-createNode animCurveTL -n "circle01_CTL10_translateY1";
-	rename -uid "ED59B84D-4D45-EDA9-0CA2-7CB6D5F157D6";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 0 34 0;
-createNode animCurveTL -n "circle01_CTL10_translateZ1";
-	rename -uid "9EE2F5C8-42E0-0B2A-36B5-7B96D7E9CBCB";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 0 34 0;
-createNode animCurveTL -n "circle01_CTL11_translateX1";
-	rename -uid "A61F87B4-4BB9-6CCB-2BD0-22825A60E770";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 0 34 0;
-createNode animCurveTL -n "circle01_CTL11_translateY1";
-	rename -uid "28864973-456A-11C6-1C7A-6EAA6A096E97";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 0 34 0;
-createNode animCurveTL -n "circle01_CTL11_translateZ1";
-	rename -uid "C5E06594-4158-16E1-AA15-DEA712F0C785";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 2 ".ktv[0:1]"  22 0 34 0;
@@ -19516,335 +18043,36 @@ createNode animCurveTU -n "circle01_CTL11_scaleZ";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 2 ".ktv[0:1]"  22 1 34 1;
-createNode animCurveTU -n "circle01_CTL15_visibility";
-	rename -uid "7AA26BD4-4382-1DE3-11DB-328E7C719BEA";
-	setAttr ".tan" 9;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 1 34 1;
-	setAttr -s 2 ".kot[0:1]"  5 5;
-createNode animCurveTA -n "circle01_CTL15_rotateX";
-	rename -uid "CAF12FC3-4D6E-6C48-B122-A7B2B2CD771C";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 0 34 0;
-createNode animCurveTA -n "circle01_CTL15_rotateY";
-	rename -uid "8D79C6E1-483A-A5F0-24D8-20BE1762F88B";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  22 0 24 -8.4750540045860383 34 -8.4750540045860383;
-createNode animCurveTA -n "circle01_CTL15_rotateZ";
-	rename -uid "F9E9E6B2-4669-9A65-52DF-0C8FAEA73AA5";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  22 0 24 -18.296760415545553 34 -18.296760415545553;
-createNode animCurveTU -n "circle01_CTL15_scaleX";
-	rename -uid "B1D5E7EF-4EED-6F89-01AE-DEA619E977B8";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 1 34 1;
-createNode animCurveTU -n "circle01_CTL15_scaleY";
-	rename -uid "862DB81A-48EF-5044-1D67-6B9D0A3DE6D3";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 1 34 1;
-createNode animCurveTU -n "circle01_CTL15_scaleZ";
-	rename -uid "9F6FEBBA-4644-4BE2-2048-CCA2336516BB";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 1 34 1;
-createNode animCurveTU -n "circle01_CTL16_visibility";
-	rename -uid "B218D944-427E-04B5-2838-109D07D1A81C";
-	setAttr ".tan" 9;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 1 34 1;
-	setAttr -s 2 ".kot[0:1]"  5 5;
-createNode animCurveTA -n "circle01_CTL16_rotateX";
-	rename -uid "8CB10131-40A9-04FD-78E7-2AA13B0826BF";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 0 34 0;
-createNode animCurveTA -n "circle01_CTL16_rotateY";
-	rename -uid "76089B9A-4F84-E7D6-F78F-7390CB96FAB9";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 0 34 0;
-createNode animCurveTA -n "circle01_CTL16_rotateZ";
-	rename -uid "DC7FC3A2-428A-769F-0C98-AD880A27C082";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  22 0 24 -23.876276820884449 34 -23.876276820884449;
-createNode animCurveTU -n "circle01_CTL16_scaleX";
-	rename -uid "F94CF8F2-40E6-5028-6799-C9ABA05C745F";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 1 34 1;
-createNode animCurveTU -n "circle01_CTL16_scaleY";
-	rename -uid "1C654D60-4D8F-3CD5-5C8E-329210147CF0";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 1 34 1;
-createNode animCurveTU -n "circle01_CTL16_scaleZ";
-	rename -uid "9C3DE7F6-4C8C-7F60-BDB3-54A068D6BD63";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 1 34 1;
-createNode animCurveTU -n "circle01_CTL17_visibility";
-	rename -uid "81A05AF8-40BB-EC54-5D71-BFAE0A307577";
-	setAttr ".tan" 9;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 1 34 1;
-	setAttr -s 2 ".kot[0:1]"  5 5;
-createNode animCurveTA -n "circle01_CTL17_rotateX";
-	rename -uid "3F3F8721-4D65-D7EE-182D-7E85D4FC7EDC";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 0 34 0;
-createNode animCurveTA -n "circle01_CTL17_rotateY";
-	rename -uid "C55F788C-470D-130D-4D92-B38524048AEE";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 0 34 0;
-createNode animCurveTA -n "circle01_CTL17_rotateZ";
-	rename -uid "0D57BCE8-4268-E837-CF37-338FBB87A110";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 0 34 0;
-createNode animCurveTU -n "circle01_CTL17_scaleX";
-	rename -uid "70D8100B-4E70-9228-3C85-90B3E7896BC5";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 1 34 1;
-createNode animCurveTU -n "circle01_CTL17_scaleY";
-	rename -uid "A1BDA325-4F21-F768-C0F8-3C8ECABC09B5";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 1 34 1;
-createNode animCurveTU -n "circle01_CTL17_scaleZ";
-	rename -uid "7FD2F608-4283-C530-1D4F-10AF510A5DBD";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 1 34 1;
-createNode animCurveTU -n "circle01_CTL12_visibility";
-	rename -uid "97EEC403-4127-E948-C43D-0EA9C2C63947";
-	setAttr ".tan" 9;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 1 34 1;
-	setAttr -s 2 ".kot[0:1]"  5 5;
-createNode animCurveTA -n "circle01_CTL12_rotateX";
-	rename -uid "704E4785-4B6F-9061-1AD1-DB90B159479C";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 0 34 0;
-createNode animCurveTA -n "circle01_CTL12_rotateY";
-	rename -uid "8924A62E-42F2-6FEE-458E-77925CCC5A9D";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 0 34 0;
 createNode animCurveTA -n "circle01_CTL12_rotateZ";
 	rename -uid "33085FAF-419C-91EB-68EE-5ABC84BDB759";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  22 0 24 -17.116384035757953 34 -17.116384035757953
-		 38 34.222470452900893;
-createNode animCurveTU -n "circle01_CTL12_scaleX";
-	rename -uid "E5D61C0F-4AEC-86F3-AADF-C8A78BC3561B";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 1 34 1;
-createNode animCurveTU -n "circle01_CTL12_scaleY";
-	rename -uid "4D013CA3-4C33-F75A-B2E6-01922176BAA3";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 1 34 1;
-createNode animCurveTU -n "circle01_CTL12_scaleZ";
-	rename -uid "759316F5-4F08-48D3-259F-06B583361F48";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 1 34 1;
-createNode animCurveTU -n "circle01_CTL13_visibility";
-	rename -uid "D9ABF794-49D4-351E-024D-6EA64ACD92AA";
-	setAttr ".tan" 9;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 1 34 1;
-	setAttr -s 2 ".kot[0:1]"  5 5;
-createNode animCurveTA -n "circle01_CTL13_rotateX";
-	rename -uid "9DEC37E9-4C03-82C6-58E1-0B804BDCE370";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 0 34 0;
-createNode animCurveTA -n "circle01_CTL13_rotateY";
-	rename -uid "D4942198-41E1-6BA1-ACB8-3BA228B67C5D";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 0 34 0;
+	setAttr ".ktv[0]"  38 34.222470452900893;
 createNode animCurveTA -n "circle01_CTL13_rotateZ";
 	rename -uid "5025B753-4258-3757-728B-0DB34A08AB98";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  22 0 24 -12.628171206037909 34 -12.628171206037909
-		 38 2.6455175041333754;
-createNode animCurveTU -n "circle01_CTL13_scaleX";
-	rename -uid "6463B81F-4F02-221F-AFA9-2FA4C43BFAB6";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 1 34 1;
-createNode animCurveTU -n "circle01_CTL13_scaleY";
-	rename -uid "CFB4B504-4F1E-7868-62CB-90A1FBADBF21";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 1 34 1;
-createNode animCurveTU -n "circle01_CTL13_scaleZ";
-	rename -uid "3749B98B-4CAC-6513-3CD7-C4A1751F26AD";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 1 34 1;
-createNode animCurveTU -n "circle01_CTL14_visibility";
-	rename -uid "08AA67F9-4A97-B13A-D9F8-49BBCA365833";
-	setAttr ".tan" 9;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 1 34 1;
-	setAttr -s 2 ".kot[0:1]"  5 5;
-createNode animCurveTA -n "circle01_CTL14_rotateX";
-	rename -uid "40E30468-449F-8D23-5E61-A6A206CF684F";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 0 34 0;
-createNode animCurveTA -n "circle01_CTL14_rotateY";
-	rename -uid "4A279651-4F91-4839-67B5-688D24FD0C93";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 0 34 0;
-createNode animCurveTA -n "circle01_CTL14_rotateZ";
-	rename -uid "38988207-4862-3469-01A9-C5A96B485CD0";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  22 0 24 -19.178069607637628 34 -19.178069607637628;
-createNode animCurveTU -n "circle01_CTL14_scaleX";
-	rename -uid "814F6D9C-4CA7-0F89-D215-89B66E40BB92";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 1 34 1;
-createNode animCurveTU -n "circle01_CTL14_scaleY";
-	rename -uid "FCA28C8B-49CB-44EA-7A77-9E8560FD0E69";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 1 34 1;
-createNode animCurveTU -n "circle01_CTL14_scaleZ";
-	rename -uid "57440386-4A2D-2DB8-DC39-2DB99FA00FAF";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 1 34 1;
-createNode animCurveTU -n "circle01_CTL_visibility";
-	rename -uid "E081B9D2-48EE-16B7-7730-12B6B9ACF5A2";
-	setAttr ".tan" 9;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 1 34 1;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr ".ktv[0]"  2 -24.053185220772679;
 createNode animCurveTA -n "circle01_CTL_rotateX";
 	rename -uid "723319C0-4571-A9AA-8043-6A99E7C33DAB";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  22 0 34 0 38 4.4247660520488798;
+	setAttr ".ktv[0]"  38 4.4247660520488798;
 createNode animCurveTA -n "circle01_CTL_rotateY";
 	rename -uid "A166A7E1-4F33-A30F-3635-25B862FBFC9D";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  22 0 24 9.6554929857253615 34 9.6554929857253615
-		 38 8.5905166463542564;
+	setAttr ".ktv[0]"  38 8.5905166463542564;
 createNode animCurveTA -n "circle01_CTL_rotateZ";
 	rename -uid "5FBC6530-4693-DA26-F9BD-0C83E48D46F2";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  22 0 24 -9.0191887764927827 34 -9.0191887764927827
-		 38 18.366811327988664;
-createNode animCurveTU -n "circle01_CTL_scaleX";
-	rename -uid "02896651-43DF-5374-1F2C-6A825ACF1A9F";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 1 34 1;
-createNode animCurveTU -n "circle01_CTL_scaleY";
-	rename -uid "F80D6550-4994-B3F9-C295-0291735F4615";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 1 34 1;
-createNode animCurveTU -n "circle01_CTL_scaleZ";
-	rename -uid "E92BA847-4191-10A5-8F3E-0C8672B96BDD";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 1 34 1;
-createNode animCurveTU -n "circle01_CTL10_visibility1";
-	rename -uid "4DE797C1-4A98-1824-245D-67A2EF368DAE";
-	setAttr ".tan" 9;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 1 34 1;
-	setAttr -s 2 ".kot[0:1]"  5 5;
-createNode animCurveTA -n "circle01_CTL10_rotateX1";
-	rename -uid "D1BD2EF0-4F44-2EE3-9374-97A68D35A314";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 0 34 0;
-createNode animCurveTA -n "circle01_CTL10_rotateY1";
-	rename -uid "55D11800-45AD-51D8-F517-FE8068D02C16";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 0 34 0;
+	setAttr ".ktv[0]"  38 18.366811327988664;
 createNode animCurveTA -n "circle01_CTL10_rotateZ1";
 	rename -uid "8C8687C6-42E1-EAF0-F436-D68B7E436D5F";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  22 0 24 -5.2638113063863958 34 -5.2638113063863958
-		 38 27.346657923709351;
-createNode animCurveTU -n "circle01_CTL10_scaleX1";
-	rename -uid "E78397BC-4531-DE34-E7E2-9AB0EFDBFD94";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 1 34 1;
-createNode animCurveTU -n "circle01_CTL10_scaleY1";
-	rename -uid "80658D03-43D5-761E-8874-BFAE53F22B5C";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 1 34 1;
-createNode animCurveTU -n "circle01_CTL10_scaleZ1";
-	rename -uid "933CDA2E-4EE8-A003-B145-8090249AFD0A";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 1 34 1;
-createNode animCurveTU -n "circle01_CTL11_visibility1";
-	rename -uid "7D67DCF9-4426-69FB-C3F3-2F9C54B4015A";
-	setAttr ".tan" 9;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 1 34 1;
-	setAttr -s 2 ".kot[0:1]"  5 5;
-createNode animCurveTA -n "circle01_CTL11_rotateX1";
-	rename -uid "FDFE3E66-4986-B24E-DA26-E692140ABF6E";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 0 34 0;
-createNode animCurveTA -n "circle01_CTL11_rotateY1";
-	rename -uid "9AA46468-4DEA-99A7-57A8-9C965A592E2E";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 0 34 0;
-createNode animCurveTA -n "circle01_CTL11_rotateZ1";
-	rename -uid "48E19692-48DA-6040-BAEB-579D764B079D";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 0 34 0;
-createNode animCurveTU -n "circle01_CTL11_scaleX1";
-	rename -uid "56568FB2-463A-C96A-33AB-F8B4CEAB600F";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 1 34 1;
-createNode animCurveTU -n "circle01_CTL11_scaleY1";
-	rename -uid "B12E4D80-43DB-62DE-0A00-4FB01916A93B";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 1 34 1;
-createNode animCurveTU -n "circle01_CTL11_scaleZ1";
-	rename -uid "C2A414CD-42D9-8DC7-5963-34BA72B2187C";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  22 1 34 1;
+	setAttr ".ktv[0]"  38 27.346657923709351;
 createNode d_openexr -n "d_openexr18";
 	rename -uid "8D345009-4198-1B44-8A6B-D49F70630AC9";
 	setAttr ".cch" no;
@@ -19887,9 +18115,564 @@ createNode d_openexr -n "d_openexr20";
 	setAttr ".compressionlevel" 45;
 	setAttr ".forcepar" 0;
 	setAttr ".metadatacount" 0;
+createNode d_openexr -n "d_openexr21";
+	rename -uid "91BD129B-49D5-26A8-3043-43AED45177C0";
+	setAttr ".cch" no;
+	setAttr ".fzn" no;
+	setAttr ".ihi" 2;
+	setAttr ".nds" 0;
+	setAttr ".asrgba" yes;
+	setAttr ".autocrop" -type "string" "false";
+	setAttr ".storage" -type "string" "scanline";
+	setAttr ".exrpixeltype" -type "string" "half";
+	setAttr ".compression" -type "string" "zips";
+	setAttr ".compressionlevel" 45;
+	setAttr ".forcepar" 0;
+	setAttr ".metadatacount" 0;
+createNode animCurveTL -n "samWaist_ctrl_translateX";
+	rename -uid "481C9871-4878-D21D-802D-898523CED663";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 0 10 0;
+createNode animCurveTL -n "samWaist_ctrl_translateY";
+	rename -uid "F46DC082-4A67-8168-742B-84AE5232F3D2";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 0 10 0;
+createNode animCurveTL -n "samWaist_ctrl_translateZ";
+	rename -uid "DA92AE46-4892-AF89-50B9-BC8A83E7CF9F";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 0 10 0;
+createNode animCurveTL -n "samBack_ctrl_translateX";
+	rename -uid "ADDA532F-4175-FEA8-FFFA-E4AE644D72D5";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 0 10 0;
+createNode animCurveTL -n "samBack_ctrl_translateY";
+	rename -uid "74CA0689-46BC-612D-AFEF-AB85563F2B42";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 0 10 0;
+createNode animCurveTL -n "samBack_ctrl_translateZ";
+	rename -uid "CAF53758-4CBF-0901-9720-B29D0632B2B6";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 0 10 0;
+createNode animCurveTL -n "samChest_ctrl_translateX";
+	rename -uid "AC9FFEBD-42A5-6143-A672-15986814BBC7";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 0 10 0;
+createNode animCurveTL -n "samChest_ctrl_translateY";
+	rename -uid "DCF7CD40-4609-F182-1ED7-7C952DC5B3AE";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 0 10 0;
+createNode animCurveTL -n "samChest_ctrl_translateZ";
+	rename -uid "5CB5755C-489D-E363-5629-C5B6460CE1D6";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 0 10 0;
+createNode animCurveTL -n "samShoulder_L_ctrl_translateX";
+	rename -uid "20646DE0-43E3-1439-AB42-1A8096DBE13A";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  4 0 10 0;
+createNode animCurveTL -n "samShoulder_L_ctrl_translateY";
+	rename -uid "2B258AA5-48C5-A4C5-DB61-D7965FF5E84D";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  4 0 10 0;
+createNode animCurveTL -n "samShoulder_L_ctrl_translateZ";
+	rename -uid "84C67EE4-4A41-1A57-B794-2CAC57BE41D7";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  4 0 10 0;
+createNode animCurveTL -n "samForearm_L_ctrl_translateX";
+	rename -uid "46191EB6-48FA-9646-7C8A-8CB643F7CF69";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 0 10 0;
+createNode animCurveTL -n "samForearm_L_ctrl_translateY";
+	rename -uid "7D789259-4772-828D-D5A2-F08B79F80F4B";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 0 10 0;
+createNode animCurveTL -n "samForearm_L_ctrl_translateZ";
+	rename -uid "E8CE5A0C-4105-03E2-5422-32BCEFE17D56";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 0 10 0;
+createNode animCurveTL -n "samHand_L_ctrl_translateX";
+	rename -uid "9447A333-44FD-02E8-DABD-05BF4141656F";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 0 10 0;
+createNode animCurveTL -n "samHand_L_ctrl_translateY";
+	rename -uid "5E58FAED-4BB5-EF7C-5D2C-5286E86AB022";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 0 10 0;
+createNode animCurveTL -n "samHand_L_ctrl_translateZ";
+	rename -uid "DB7A9AB0-49A7-1B66-5A5A-1C8AB35AD2C6";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 0 10 0;
+createNode animCurveTL -n "samShoulder_R_ctrl_translateX";
+	rename -uid "05F6865A-473F-8F10-4CBA-B3A6D576BB62";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 0 10 0;
+createNode animCurveTL -n "samShoulder_R_ctrl_translateY";
+	rename -uid "83ADCD03-47AD-DFE9-824A-08BAEBC51030";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 0 10 0;
+createNode animCurveTL -n "samShoulder_R_ctrl_translateZ";
+	rename -uid "9EB45269-46DD-48C8-24CB-C7B9D701F2C0";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 0 10 0;
+createNode animCurveTL -n "samForearm_R_ctrl_translateX";
+	rename -uid "295FA0C0-411C-44DE-E04B-04A1195671F2";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 0 10 0;
+createNode animCurveTL -n "samForearm_R_ctrl_translateY";
+	rename -uid "389FA19C-4C28-29E3-4AC6-6DBA9E142F9B";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 0 10 0;
+createNode animCurveTL -n "samForearm_R_ctrl_translateZ";
+	rename -uid "4F6E0CC2-486C-D84C-CFD9-27A902CB57D7";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 0 10 0;
+createNode animCurveTL -n "samHand_R_ctrl_translateX";
+	rename -uid "D6A28E9D-48DB-4B0A-F4D7-908E41BFDCC4";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "samHand_R_ctrl_translateY";
+	rename -uid "6727381F-4508-A1E0-D742-DF8906F61655";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "samHand_R_ctrl_translateZ";
+	rename -uid "3AF4966A-49C0-CFA3-B47A-0BB0F16495F1";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "samHead_ctrl_translateX";
+	rename -uid "F7B21265-4EBD-B257-F11C-8FA836D330EF";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 0 10 0;
+createNode animCurveTL -n "samHead_ctrl_translateY";
+	rename -uid "28B1C316-4BE0-F7EA-D5C5-E5B970B6A51E";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 0 10 0;
+createNode animCurveTL -n "samHead_ctrl_translateZ";
+	rename -uid "DE6E9A4C-4C0F-6DA7-BE34-F9A378DBB77B";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 0 10 0;
+createNode animCurveTU -n "samWaist_ctrl_visibility";
+	rename -uid "F5EA218E-47B1-CFB4-F133-08AF8A8FDE40";
+	setAttr ".tan" 9;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 1 10 1;
+	setAttr -s 2 ".kot[0:1]"  5 5;
+createNode animCurveTU -n "samWaist_ctrl_scaleX";
+	rename -uid "EDB03F37-471F-E9B6-F065-B2B4F793EFCF";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 1 10 1;
+createNode animCurveTU -n "samWaist_ctrl_scaleY";
+	rename -uid "DDE73C72-49B5-61D1-1760-A4A18E6E6D61";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 1 10 1;
+createNode animCurveTU -n "samWaist_ctrl_scaleZ";
+	rename -uid "17082D85-4540-F316-5BDC-CC82E31B926D";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 1 10 1;
+createNode animCurveTU -n "samBack_ctrl_visibility";
+	rename -uid "0B11198C-4314-B4C5-866A-6FA15C600A00";
+	setAttr ".tan" 9;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 1 10 1;
+	setAttr -s 2 ".kot[0:1]"  5 5;
+createNode animCurveTU -n "samBack_ctrl_scaleX";
+	rename -uid "884A03D1-4998-4C22-6BA8-68B300D2B082";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 1 10 1;
+createNode animCurveTU -n "samBack_ctrl_scaleY";
+	rename -uid "13FDCF7A-4B1C-5E20-5AF6-A1B27F0B7CD9";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 1 10 1;
+createNode animCurveTU -n "samBack_ctrl_scaleZ";
+	rename -uid "DE1802CA-46AA-AC10-D408-69A4B2A89128";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 1 10 1;
+createNode animCurveTU -n "samChest_ctrl_visibility";
+	rename -uid "83A4953B-421D-68BD-913F-08AFDE727C9E";
+	setAttr ".tan" 9;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 1 10 1;
+	setAttr -s 2 ".kot[0:1]"  5 5;
+createNode animCurveTU -n "samChest_ctrl_scaleX";
+	rename -uid "261C5837-464D-C418-3274-5AB716AFF83E";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 1 10 1;
+createNode animCurveTU -n "samChest_ctrl_scaleY";
+	rename -uid "BC884543-4117-EE9E-A02D-418A2AA121BA";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 1 10 1;
+createNode animCurveTU -n "samChest_ctrl_scaleZ";
+	rename -uid "7218A5B0-4773-0870-2231-B88976479850";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 1 10 1;
+createNode animCurveTU -n "samShoulder_L_ctrl_visibility";
+	rename -uid "8B3B2F8D-48B5-76B7-2D48-85B311F7D744";
+	setAttr ".tan" 9;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  4 1 10 1;
+	setAttr -s 2 ".kot[0:1]"  5 5;
+createNode animCurveTU -n "samShoulder_L_ctrl_scaleX";
+	rename -uid "CEA607A3-485C-A77D-2F19-1F8457313D22";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  4 1 10 1;
+createNode animCurveTU -n "samShoulder_L_ctrl_scaleY";
+	rename -uid "530B4AD6-4F3C-18AA-9A77-20AC0F656C27";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  4 1 10 1;
+createNode animCurveTU -n "samShoulder_L_ctrl_scaleZ";
+	rename -uid "E1462391-4F5A-F449-61DA-31B8E4D751BF";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  4 1 10 1;
+createNode animCurveTU -n "samForearm_L_ctrl_visibility";
+	rename -uid "AD96E128-45E0-AC4A-A626-4187563253A0";
+	setAttr ".tan" 9;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 1 10 1;
+	setAttr -s 2 ".kot[0:1]"  5 5;
+createNode animCurveTU -n "samForearm_L_ctrl_scaleX";
+	rename -uid "115A6CC4-452C-155E-95E5-4C807D3690AE";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 1 10 1;
+createNode animCurveTU -n "samForearm_L_ctrl_scaleY";
+	rename -uid "6B59CFA7-414F-769B-68B5-E6B330E4403C";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 1 10 1;
+createNode animCurveTU -n "samForearm_L_ctrl_scaleZ";
+	rename -uid "6EF75E88-485F-C620-CCB7-BCAD37162ECA";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 1 10 1;
+createNode animCurveTU -n "samHand_L_ctrl_visibility";
+	rename -uid "9FC672C4-46AF-B99C-9525-3DB0E950A7EC";
+	setAttr ".tan" 9;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 1 10 1;
+	setAttr -s 2 ".kot[0:1]"  5 5;
+createNode animCurveTU -n "samHand_L_ctrl_scaleX";
+	rename -uid "EBFBF98E-42A2-6E7F-BD11-FDAA46865272";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 1 10 1;
+createNode animCurveTU -n "samHand_L_ctrl_scaleY";
+	rename -uid "2675AADE-4CC6-CA75-3E83-579FEAF49896";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 1 10 1;
+createNode animCurveTU -n "samHand_L_ctrl_scaleZ";
+	rename -uid "B323FC90-487D-1AC0-7002-6AA9F8FFCB25";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 1 10 1;
+createNode animCurveTU -n "samHand_R_ctrl_visibility";
+	rename -uid "16CDCB03-4E73-B3EF-BAC9-F2906E8BE357";
+	setAttr ".tan" 9;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 1;
+	setAttr ".kot[0]"  5;
+createNode animCurveTU -n "samHand_R_ctrl_scaleX";
+	rename -uid "9048ECA2-4AAB-01FB-A46F-3594A72A3427";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 1;
+createNode animCurveTU -n "samHand_R_ctrl_scaleY";
+	rename -uid "A5176808-46E2-0986-1438-D08595A4C992";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 1;
+createNode animCurveTU -n "samHand_R_ctrl_scaleZ";
+	rename -uid "47CDFB8E-4578-CD3F-AA32-5897EBF5D6EB";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 1;
+createNode animCurveTU -n "samForearm_R_ctrl_visibility";
+	rename -uid "9889CBC5-430B-379D-B0C5-088E458B5A2D";
+	setAttr ".tan" 9;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 1 10 1;
+	setAttr -s 2 ".kot[0:1]"  5 5;
+createNode animCurveTU -n "samForearm_R_ctrl_scaleX";
+	rename -uid "0A32D114-43C7-AB71-162D-39A63D37A96B";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 1 10 1;
+createNode animCurveTU -n "samForearm_R_ctrl_scaleY";
+	rename -uid "A0829E9B-4D5E-1B75-AEEC-B58D1A5835AB";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 1 10 1;
+createNode animCurveTU -n "samForearm_R_ctrl_scaleZ";
+	rename -uid "C55FD55B-499B-23CC-875D-1BA8F0F2C09E";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 1 10 1;
+createNode animCurveTU -n "samShoulder_R_ctrl_visibility";
+	rename -uid "BD43D5D0-4811-4FF8-9AC0-65B3396E8970";
+	setAttr ".tan" 9;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 1 10 1;
+	setAttr -s 2 ".kot[0:1]"  5 5;
+createNode animCurveTU -n "samShoulder_R_ctrl_scaleX";
+	rename -uid "20547BF9-439A-41DA-89B2-4DA93543BB87";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 1 10 1;
+createNode animCurveTU -n "samShoulder_R_ctrl_scaleY";
+	rename -uid "A9DADB2F-4AE2-BE42-7C2B-57B15775275B";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 1 10 1;
+createNode animCurveTU -n "samShoulder_R_ctrl_scaleZ";
+	rename -uid "8A6E4E10-4EA6-AC03-13F4-A69838849300";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 1 10 1;
+createNode animCurveTU -n "samHead_ctrl_visibility";
+	rename -uid "08ECEE6B-422D-C4C1-298F-21AC0AE3147B";
+	setAttr ".tan" 9;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 1 10 1;
+	setAttr -s 2 ".kot[0:1]"  5 5;
+createNode animCurveTU -n "samHead_ctrl_scaleX";
+	rename -uid "5A6F05C6-4DA3-058C-4A54-D0B19E8D9EEE";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 1 10 1;
+createNode animCurveTU -n "samHead_ctrl_scaleY";
+	rename -uid "FF92486C-4D74-2B1E-504E-F49E40CF560A";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 1 10 1;
+createNode animCurveTU -n "samHead_ctrl_scaleZ";
+	rename -uid "8D4ED1C5-4101-E623-EE59-D0963F165EB7";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 1 10 1;
+createNode animCurveTU -n "samHead_ctrl_samExpression_Happy";
+	rename -uid "0915330D-46F7-13C2-BF23-2ABF99C5247F";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 3 10 3;
+createNode animCurveTU -n "samHead_ctrl_samExpressionHelp_Happy";
+	rename -uid "89B9C56A-480C-F521-D6CF-C1B1C8575F74";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 0 10 0;
+createNode animCurveTU -n "samHead_ctrl_samExpression_Shock";
+	rename -uid "C589011A-4302-C2BB-DA3C-50853AA7A119";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 0 10 0;
+createNode animCurveTU -n "samHead_ctrl_samExpression_Neutral";
+	rename -uid "97F4A428-43DB-327C-72D7-989BDD341641";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 0 10 0;
+createNode animCurveTA -n "samPelvis_ctrl_rotateX";
+	rename -uid "A3CDE55B-4BDA-726D-9A8E-A4B0A11E3922";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 0 10 0;
+createNode animCurveTA -n "samPelvis_ctrl_rotateY";
+	rename -uid "98B96F78-45C8-795A-2929-D3B9008E15FE";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 0 10 12.836718096072124 29 39.752139301270475;
+createNode animCurveTA -n "samPelvis_ctrl_rotateZ";
+	rename -uid "34BC9F21-446F-BC54-C1A5-5D8053A442EE";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 0 10 0;
+createNode animCurveTU -n "samPelvis_ctrl_visibility";
+	rename -uid "40758377-4716-2D52-5295-9E85721AA788";
+	setAttr ".tan" 9;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 1 10 1;
+	setAttr -s 2 ".kot[0:1]"  5 5;
+createNode animCurveTL -n "samPelvis_ctrl_translateX";
+	rename -uid "A8C432CE-4B1E-28A2-7617-DBA3F688C5B7";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 0 10 -7.6453852231652535;
+createNode animCurveTL -n "samPelvis_ctrl_translateY";
+	rename -uid "99B44F0D-417F-9DA6-8E8A-CE87FF175E30";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 4 ".ktv[0:3]"  1 0 5 2.4241739598635896 10 0 17 -1.273495593083112;
+createNode animCurveTL -n "samPelvis_ctrl_translateZ";
+	rename -uid "B2715A41-4F40-1406-7D19-5E9309E94741";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 0 10 2.2359554542183879;
+createNode animCurveTU -n "samPelvis_ctrl_scaleX";
+	rename -uid "ACBCE9AE-41F1-BBDE-074F-31BEDD523C8E";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 1 10 1;
+createNode animCurveTU -n "samPelvis_ctrl_scaleY";
+	rename -uid "C5ABDFE1-46F3-045F-9838-09A2575EBCED";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 1 10 1;
+createNode animCurveTU -n "samPelvis_ctrl_scaleZ";
+	rename -uid "326817C5-434D-CCEA-8407-FCB3E34A2017";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 1 10 1;
+createNode animCurveTA -n "samRoot_ctrl_rotateX";
+	rename -uid "CAD2C403-4170-6D36-2BAB-CE9057BF7C6C";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 0 4 0 12 0;
+createNode animCurveTA -n "samRoot_ctrl_rotateZ";
+	rename -uid "7101A7B1-4C22-920C-A75D-DDAA81D0C78C";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 0 4 0 12 0;
+createNode animCurveTU -n "samRoot_ctrl_visibility";
+	rename -uid "8C3C2DE8-41F0-0836-C9EE-BA824D9B96E7";
+	setAttr ".tan" 9;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 1 4 1 12 1;
+	setAttr -s 3 ".kot[0:2]"  5 5 5;
+createNode animCurveTL -n "samRoot_ctrl_translateX";
+	rename -uid "3FE25ED1-43EF-87AE-3E13-2593DBCAAA5E";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 -305.26246995127434 4 -305.26246995127434
+		 12 -305.26246995127434;
+createNode animCurveTL -n "samRoot_ctrl_translateY";
+	rename -uid "4F386551-4AE5-09E3-6707-87AE77C2BC84";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 -0.0069575287508021333 4 -0.0069575287508021333
+		 12 -0.0069575287508021333;
+createNode animCurveTL -n "samRoot_ctrl_translateZ";
+	rename -uid "485FEE8B-4C54-1ACF-D46B-CF94DFD53CCF";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 -339.4146988364069 4 -339.4146988364069
+		 12 -339.4146988364069;
+createNode animCurveTU -n "samRoot_ctrl_scaleX";
+	rename -uid "E7A689C8-43F3-1C29-9EC8-19ABDB8E4A5A";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 1 4 1 12 1;
+createNode animCurveTU -n "samRoot_ctrl_scaleY";
+	rename -uid "6D84075F-487F-DFDC-E150-07B15F6C742B";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 1 4 1 12 1;
+createNode animCurveTU -n "samRoot_ctrl_scaleZ";
+	rename -uid "2123408F-451B-3583-333E-3D8ED9B4F50D";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1 1 4 1 12 1;
+createNode animCurveTL -n "samFoot_L_ctrl_translateX";
+	rename -uid "6D8BF535-4468-0131-9798-C08BFE60CA8B";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 0 11 3.2986108746360006;
+createNode animCurveTL -n "samFoot_L_ctrl_translateY";
+	rename -uid "1C1DB975-45F3-6EA2-A5A0-ECBCB7505210";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTL -n "samFoot_L_ctrl_translateZ";
+	rename -uid "DA9B3E87-48C3-801E-E041-CAB3C31EABEA";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1 0 11 -3.9613151363528556;
+createNode animCurveTU -n "samFoot_L_ctrl_visibility";
+	rename -uid "E480B9EE-4A14-4ED5-EA2C-20AE0B60164E";
+	setAttr ".tan" 9;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 1;
+	setAttr ".kot[0]"  5;
+createNode animCurveTA -n "samFoot_L_ctrl_rotateX";
+	rename -uid "80BAED33-4E00-74FB-5772-9184759DC0BA";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTA -n "samFoot_L_ctrl_rotateY";
+	rename -uid "133C9A1F-4340-8051-E35B-6AA07EB20E15";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTA -n "samFoot_L_ctrl_rotateZ";
+	rename -uid "4E7028D6-4C78-88DC-D73B-34ACA2D03A47";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTU -n "samFoot_L_ctrl_scaleX";
+	rename -uid "A44DE5C0-47E0-EBFD-4BDB-688B2F5FE182";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 1;
+createNode animCurveTU -n "samFoot_L_ctrl_scaleY";
+	rename -uid "47CD676A-42DE-85E0-885E-B4B24D775B34";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 1;
+createNode animCurveTU -n "samFoot_L_ctrl_scaleZ";
+	rename -uid "F359E2C5-4ADD-B6F0-C833-25810C029F65";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 1;
+createNode animCurveTU -n "samFoot_L_ctrl_peelHeel";
+	rename -uid "547CCF38-43C8-B45A-6165-69AD77737FEB";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
+createNode animCurveTU -n "samFoot_L_ctrl_toeTap";
+	rename -uid "B2E8F33B-42A4-CBB5-77A0-EC927EC4731C";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  1 0;
 select -ne :time1;
-	setAttr ".o" 1;
-	setAttr ".unw" 1;
+	setAttr ".o" 13;
+	setAttr ".unw" 13;
 select -ne :hardwareRenderingGlobals;
 	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
@@ -19908,7 +18691,7 @@ select -ne :postProcessList1;
 select -ne :defaultRenderUtilityList1;
 	setAttr -s 97 ".u";
 select -ne :defaultRenderingList1;
-	setAttr -s 304 ".r";
+	setAttr -s 305 ".r";
 select -ne :lightList1;
 	setAttr -s 8 ".l";
 select -ne :defaultTextureList1;
@@ -19951,12 +18734,7 @@ select -ne :defaultHideFaceDataSet;
 select -ne :ikSystem;
 	setAttr -s 4 ".sol";
 connectAttr "Geo.di" "KitchenBench_finalRN.phl[1]";
-connectAttr "cabinetB_crtl_OpenDoor.o" "KitchenCabinets_finalRN.phl[3]";
-connectAttr "cabinetC_crtl_OpenDoor.o" "KitchenCabinets_finalRN.phl[4]";
-connectAttr "cabinetD_crtl_OpenDoor.o" "KitchenCabinets_finalRN.phl[5]";
-connectAttr "KitchenCabinets_finalRN.phl[6]" "KitchenCabinets_finalRN.phl[7]";
-connectAttr "cabinetE_crtl_OpenDoor.o" "KitchenCabinets_finalRN.phl[8]";
-connectAttr "cabinetF_crtl_open.o" "KitchenCabinets_finalRN.phl[9]";
+connectAttr "KitchenCabinets_finalRN.phl[3]" "KitchenCabinets_finalRN.phl[4]";
 connectAttr "Geo.di" "TV_finalRN.phl[1]";
 connectAttr "Geo.di" "dinningtable_finalRN.phl[1]";
 connectAttr "Geo.di" "coffee_table_finalRN.phl[15]";
@@ -19981,378 +18759,229 @@ connectAttr "samRoot_ctrl_scaleX.o" "characterSam_RIG_finalRN.phl[7]";
 connectAttr "samRoot_ctrl_scaleY.o" "characterSam_RIG_finalRN.phl[8]";
 connectAttr "samRoot_ctrl_scaleZ.o" "characterSam_RIG_finalRN.phl[9]";
 connectAttr "samRoot_ctrl_visibility.o" "characterSam_RIG_finalRN.phl[10]";
-connectAttr "samWaist_ctrl_translateX.o" "characterSam_RIG_finalRN.phl[11]";
-connectAttr "samWaist_ctrl_translateY.o" "characterSam_RIG_finalRN.phl[12]";
-connectAttr "samWaist_ctrl_translateZ.o" "characterSam_RIG_finalRN.phl[13]";
-connectAttr "samWaist_ctrl_rotateX.o" "characterSam_RIG_finalRN.phl[14]";
-connectAttr "samWaist_ctrl_rotateY.o" "characterSam_RIG_finalRN.phl[15]";
-connectAttr "samWaist_ctrl_rotateZ.o" "characterSam_RIG_finalRN.phl[16]";
-connectAttr "samWaist_ctrl_scaleX.o" "characterSam_RIG_finalRN.phl[17]";
-connectAttr "samWaist_ctrl_scaleY.o" "characterSam_RIG_finalRN.phl[18]";
-connectAttr "samWaist_ctrl_scaleZ.o" "characterSam_RIG_finalRN.phl[19]";
-connectAttr "samWaist_ctrl_visibility.o" "characterSam_RIG_finalRN.phl[20]";
-connectAttr "samBack_ctrl_translateX.o" "characterSam_RIG_finalRN.phl[21]";
-connectAttr "samBack_ctrl_translateY.o" "characterSam_RIG_finalRN.phl[22]";
-connectAttr "samBack_ctrl_translateZ.o" "characterSam_RIG_finalRN.phl[23]";
-connectAttr "samBack_ctrl_rotateY.o" "characterSam_RIG_finalRN.phl[24]";
-connectAttr "samBack_ctrl_rotateX.o" "characterSam_RIG_finalRN.phl[25]";
-connectAttr "samBack_ctrl_rotateZ.o" "characterSam_RIG_finalRN.phl[26]";
-connectAttr "samBack_ctrl_scaleX.o" "characterSam_RIG_finalRN.phl[27]";
-connectAttr "samBack_ctrl_scaleY.o" "characterSam_RIG_finalRN.phl[28]";
-connectAttr "samBack_ctrl_scaleZ.o" "characterSam_RIG_finalRN.phl[29]";
-connectAttr "samBack_ctrl_visibility.o" "characterSam_RIG_finalRN.phl[30]";
-connectAttr "samChest_ctrl_translateX.o" "characterSam_RIG_finalRN.phl[31]";
-connectAttr "samChest_ctrl_translateY.o" "characterSam_RIG_finalRN.phl[32]";
-connectAttr "samChest_ctrl_translateZ.o" "characterSam_RIG_finalRN.phl[33]";
-connectAttr "samChest_ctrl_rotateY.o" "characterSam_RIG_finalRN.phl[34]";
-connectAttr "samChest_ctrl_rotateX.o" "characterSam_RIG_finalRN.phl[35]";
-connectAttr "samChest_ctrl_rotateZ.o" "characterSam_RIG_finalRN.phl[36]";
-connectAttr "samChest_ctrl_scaleX.o" "characterSam_RIG_finalRN.phl[37]";
-connectAttr "samChest_ctrl_scaleY.o" "characterSam_RIG_finalRN.phl[38]";
-connectAttr "samChest_ctrl_scaleZ.o" "characterSam_RIG_finalRN.phl[39]";
-connectAttr "samChest_ctrl_visibility.o" "characterSam_RIG_finalRN.phl[40]";
-connectAttr "samHead_ctrl_samExpression_Happy.o" "characterSam_RIG_finalRN.phl[41]"
+connectAttr "samPelvis_ctrl_translateX.o" "characterSam_RIG_finalRN.phl[11]";
+connectAttr "samPelvis_ctrl_translateY.o" "characterSam_RIG_finalRN.phl[12]";
+connectAttr "samPelvis_ctrl_translateZ.o" "characterSam_RIG_finalRN.phl[13]";
+connectAttr "samPelvis_ctrl_rotateX.o" "characterSam_RIG_finalRN.phl[14]";
+connectAttr "samPelvis_ctrl_rotateY.o" "characterSam_RIG_finalRN.phl[15]";
+connectAttr "samPelvis_ctrl_rotateZ.o" "characterSam_RIG_finalRN.phl[16]";
+connectAttr "samPelvis_ctrl_scaleX.o" "characterSam_RIG_finalRN.phl[17]";
+connectAttr "samPelvis_ctrl_scaleY.o" "characterSam_RIG_finalRN.phl[18]";
+connectAttr "samPelvis_ctrl_scaleZ.o" "characterSam_RIG_finalRN.phl[19]";
+connectAttr "samPelvis_ctrl_visibility.o" "characterSam_RIG_finalRN.phl[20]";
+connectAttr "samWaist_ctrl_translateX.o" "characterSam_RIG_finalRN.phl[21]";
+connectAttr "samWaist_ctrl_translateY.o" "characterSam_RIG_finalRN.phl[22]";
+connectAttr "samWaist_ctrl_translateZ.o" "characterSam_RIG_finalRN.phl[23]";
+connectAttr "samWaist_ctrl_rotateX.o" "characterSam_RIG_finalRN.phl[24]";
+connectAttr "samWaist_ctrl_rotateY.o" "characterSam_RIG_finalRN.phl[25]";
+connectAttr "samWaist_ctrl_rotateZ.o" "characterSam_RIG_finalRN.phl[26]";
+connectAttr "samWaist_ctrl_scaleX.o" "characterSam_RIG_finalRN.phl[27]";
+connectAttr "samWaist_ctrl_scaleY.o" "characterSam_RIG_finalRN.phl[28]";
+connectAttr "samWaist_ctrl_scaleZ.o" "characterSam_RIG_finalRN.phl[29]";
+connectAttr "samWaist_ctrl_visibility.o" "characterSam_RIG_finalRN.phl[30]";
+connectAttr "samBack_ctrl_translateX.o" "characterSam_RIG_finalRN.phl[31]";
+connectAttr "samBack_ctrl_translateY.o" "characterSam_RIG_finalRN.phl[32]";
+connectAttr "samBack_ctrl_translateZ.o" "characterSam_RIG_finalRN.phl[33]";
+connectAttr "samBack_ctrl_rotateY.o" "characterSam_RIG_finalRN.phl[34]";
+connectAttr "samBack_ctrl_rotateX.o" "characterSam_RIG_finalRN.phl[35]";
+connectAttr "samBack_ctrl_rotateZ.o" "characterSam_RIG_finalRN.phl[36]";
+connectAttr "samBack_ctrl_scaleX.o" "characterSam_RIG_finalRN.phl[37]";
+connectAttr "samBack_ctrl_scaleY.o" "characterSam_RIG_finalRN.phl[38]";
+connectAttr "samBack_ctrl_scaleZ.o" "characterSam_RIG_finalRN.phl[39]";
+connectAttr "samBack_ctrl_visibility.o" "characterSam_RIG_finalRN.phl[40]";
+connectAttr "samChest_ctrl_translateX.o" "characterSam_RIG_finalRN.phl[41]";
+connectAttr "samChest_ctrl_translateY.o" "characterSam_RIG_finalRN.phl[42]";
+connectAttr "samChest_ctrl_translateZ.o" "characterSam_RIG_finalRN.phl[43]";
+connectAttr "samChest_ctrl_rotateY.o" "characterSam_RIG_finalRN.phl[44]";
+connectAttr "samChest_ctrl_rotateX.o" "characterSam_RIG_finalRN.phl[45]";
+connectAttr "samChest_ctrl_rotateZ.o" "characterSam_RIG_finalRN.phl[46]";
+connectAttr "samChest_ctrl_scaleX.o" "characterSam_RIG_finalRN.phl[47]";
+connectAttr "samChest_ctrl_scaleY.o" "characterSam_RIG_finalRN.phl[48]";
+connectAttr "samChest_ctrl_scaleZ.o" "characterSam_RIG_finalRN.phl[49]";
+connectAttr "samChest_ctrl_visibility.o" "characterSam_RIG_finalRN.phl[50]";
+connectAttr "samHead_ctrl_samExpression_Happy.o" "characterSam_RIG_finalRN.phl[51]"
 		;
-connectAttr "samHead_ctrl_samExpressionHelp_Happy.o" "characterSam_RIG_finalRN.phl[42]"
+connectAttr "samHead_ctrl_samExpressionHelp_Happy.o" "characterSam_RIG_finalRN.phl[52]"
 		;
-connectAttr "samHead_ctrl_samExpression_Shock.o" "characterSam_RIG_finalRN.phl[43]"
+connectAttr "samHead_ctrl_samExpression_Shock.o" "characterSam_RIG_finalRN.phl[53]"
 		;
-connectAttr "samHead_ctrl_samExpression_Neutral.o" "characterSam_RIG_finalRN.phl[44]"
+connectAttr "samHead_ctrl_samExpression_Neutral.o" "characterSam_RIG_finalRN.phl[54]"
 		;
-connectAttr "samHead_ctrl_translateX.o" "characterSam_RIG_finalRN.phl[45]";
-connectAttr "samHead_ctrl_translateY.o" "characterSam_RIG_finalRN.phl[46]";
-connectAttr "samHead_ctrl_translateZ.o" "characterSam_RIG_finalRN.phl[47]";
-connectAttr "samHead_ctrl_rotateY.o" "characterSam_RIG_finalRN.phl[48]";
-connectAttr "samHead_ctrl_rotateX.o" "characterSam_RIG_finalRN.phl[49]";
-connectAttr "samHead_ctrl_rotateZ.o" "characterSam_RIG_finalRN.phl[50]";
-connectAttr "samHead_ctrl_scaleX.o" "characterSam_RIG_finalRN.phl[51]";
-connectAttr "samHead_ctrl_scaleY.o" "characterSam_RIG_finalRN.phl[52]";
-connectAttr "samHead_ctrl_scaleZ.o" "characterSam_RIG_finalRN.phl[53]";
-connectAttr "samHead_ctrl_visibility.o" "characterSam_RIG_finalRN.phl[54]";
-connectAttr "samShoulder_R_ctrl_translateX.o" "characterSam_RIG_finalRN.phl[55]"
+connectAttr "samHead_ctrl_translateX.o" "characterSam_RIG_finalRN.phl[55]";
+connectAttr "samHead_ctrl_translateY.o" "characterSam_RIG_finalRN.phl[56]";
+connectAttr "samHead_ctrl_translateZ.o" "characterSam_RIG_finalRN.phl[57]";
+connectAttr "samHead_ctrl_rotateY.o" "characterSam_RIG_finalRN.phl[58]";
+connectAttr "samHead_ctrl_rotateX.o" "characterSam_RIG_finalRN.phl[59]";
+connectAttr "samHead_ctrl_rotateZ.o" "characterSam_RIG_finalRN.phl[60]";
+connectAttr "samHead_ctrl_scaleX.o" "characterSam_RIG_finalRN.phl[61]";
+connectAttr "samHead_ctrl_scaleY.o" "characterSam_RIG_finalRN.phl[62]";
+connectAttr "samHead_ctrl_scaleZ.o" "characterSam_RIG_finalRN.phl[63]";
+connectAttr "samHead_ctrl_visibility.o" "characterSam_RIG_finalRN.phl[64]";
+connectAttr "samShoulder_R_ctrl_translateX.o" "characterSam_RIG_finalRN.phl[65]"
 		;
-connectAttr "samShoulder_R_ctrl_translateY.o" "characterSam_RIG_finalRN.phl[56]"
+connectAttr "samShoulder_R_ctrl_translateY.o" "characterSam_RIG_finalRN.phl[66]"
 		;
-connectAttr "samShoulder_R_ctrl_translateZ.o" "characterSam_RIG_finalRN.phl[57]"
+connectAttr "samShoulder_R_ctrl_translateZ.o" "characterSam_RIG_finalRN.phl[67]"
 		;
-connectAttr "samShoulder_R_ctrl_rotateY.o" "characterSam_RIG_finalRN.phl[58]";
-connectAttr "samShoulder_R_ctrl_rotateX.o" "characterSam_RIG_finalRN.phl[59]";
-connectAttr "samShoulder_R_ctrl_rotateZ.o" "characterSam_RIG_finalRN.phl[60]";
-connectAttr "samShoulder_R_ctrl_scaleX.o" "characterSam_RIG_finalRN.phl[61]";
-connectAttr "samShoulder_R_ctrl_scaleY.o" "characterSam_RIG_finalRN.phl[62]";
-connectAttr "samShoulder_R_ctrl_scaleZ.o" "characterSam_RIG_finalRN.phl[63]";
-connectAttr "samShoulder_R_ctrl_visibility.o" "characterSam_RIG_finalRN.phl[64]"
+connectAttr "samShoulder_R_ctrl_rotateY.o" "characterSam_RIG_finalRN.phl[68]";
+connectAttr "samShoulder_R_ctrl_rotateX.o" "characterSam_RIG_finalRN.phl[69]";
+connectAttr "samShoulder_R_ctrl_rotateZ.o" "characterSam_RIG_finalRN.phl[70]";
+connectAttr "samShoulder_R_ctrl_scaleX.o" "characterSam_RIG_finalRN.phl[71]";
+connectAttr "samShoulder_R_ctrl_scaleY.o" "characterSam_RIG_finalRN.phl[72]";
+connectAttr "samShoulder_R_ctrl_scaleZ.o" "characterSam_RIG_finalRN.phl[73]";
+connectAttr "samShoulder_R_ctrl_visibility.o" "characterSam_RIG_finalRN.phl[74]"
 		;
-connectAttr "samForearm_R_ctrl_translateX.o" "characterSam_RIG_finalRN.phl[65]";
-connectAttr "samForearm_R_ctrl_translateY.o" "characterSam_RIG_finalRN.phl[66]";
-connectAttr "samForearm_R_ctrl_translateZ.o" "characterSam_RIG_finalRN.phl[67]";
-connectAttr "samForearm_R_ctrl_rotateY.o" "characterSam_RIG_finalRN.phl[68]";
-connectAttr "samForearm_R_ctrl_rotateX.o" "characterSam_RIG_finalRN.phl[69]";
-connectAttr "samForearm_R_ctrl_rotateZ.o" "characterSam_RIG_finalRN.phl[70]";
-connectAttr "samForearm_R_ctrl_scaleX.o" "characterSam_RIG_finalRN.phl[71]";
-connectAttr "samForearm_R_ctrl_scaleY.o" "characterSam_RIG_finalRN.phl[72]";
-connectAttr "samForearm_R_ctrl_scaleZ.o" "characterSam_RIG_finalRN.phl[73]";
-connectAttr "samForearm_R_ctrl_visibility.o" "characterSam_RIG_finalRN.phl[74]";
-connectAttr "samHand_R_ctrl_translateX.o" "characterSam_RIG_finalRN.phl[75]";
-connectAttr "samHand_R_ctrl_translateY.o" "characterSam_RIG_finalRN.phl[76]";
-connectAttr "samHand_R_ctrl_translateZ.o" "characterSam_RIG_finalRN.phl[77]";
-connectAttr "samHand_R_ctrl_rotateX.o" "characterSam_RIG_finalRN.phl[78]";
-connectAttr "samHand_R_ctrl_rotateY.o" "characterSam_RIG_finalRN.phl[79]";
-connectAttr "samHand_R_ctrl_rotateZ.o" "characterSam_RIG_finalRN.phl[80]";
-connectAttr "samHand_R_ctrl_scaleX.o" "characterSam_RIG_finalRN.phl[81]";
-connectAttr "samHand_R_ctrl_scaleY.o" "characterSam_RIG_finalRN.phl[82]";
-connectAttr "samHand_R_ctrl_scaleZ.o" "characterSam_RIG_finalRN.phl[83]";
-connectAttr "samHand_R_ctrl_visibility.o" "characterSam_RIG_finalRN.phl[84]";
-connectAttr "circle01_CTL19_translateX.o" "characterSam_RIG_finalRN.phl[85]";
-connectAttr "circle01_CTL19_translateY.o" "characterSam_RIG_finalRN.phl[86]";
-connectAttr "circle01_CTL19_translateZ.o" "characterSam_RIG_finalRN.phl[87]";
-connectAttr "circle01_CTL19_rotateX.o" "characterSam_RIG_finalRN.phl[88]";
-connectAttr "circle01_CTL19_rotateY.o" "characterSam_RIG_finalRN.phl[89]";
-connectAttr "circle01_CTL19_rotateZ.o" "characterSam_RIG_finalRN.phl[90]";
-connectAttr "circle01_CTL19_scaleX.o" "characterSam_RIG_finalRN.phl[91]";
-connectAttr "circle01_CTL19_scaleY.o" "characterSam_RIG_finalRN.phl[92]";
-connectAttr "circle01_CTL19_scaleZ.o" "characterSam_RIG_finalRN.phl[93]";
-connectAttr "circle01_CTL19_visibility.o" "characterSam_RIG_finalRN.phl[94]";
-connectAttr "circle01_CTL23_translateX.o" "characterSam_RIG_finalRN.phl[95]";
-connectAttr "circle01_CTL23_translateY.o" "characterSam_RIG_finalRN.phl[96]";
-connectAttr "circle01_CTL23_translateZ.o" "characterSam_RIG_finalRN.phl[97]";
-connectAttr "circle01_CTL23_rotateX.o" "characterSam_RIG_finalRN.phl[98]";
-connectAttr "circle01_CTL23_rotateY.o" "characterSam_RIG_finalRN.phl[99]";
-connectAttr "circle01_CTL23_rotateZ.o" "characterSam_RIG_finalRN.phl[100]";
-connectAttr "circle01_CTL23_scaleX.o" "characterSam_RIG_finalRN.phl[101]";
-connectAttr "circle01_CTL23_scaleY.o" "characterSam_RIG_finalRN.phl[102]";
-connectAttr "circle01_CTL23_scaleZ.o" "characterSam_RIG_finalRN.phl[103]";
-connectAttr "circle01_CTL23_visibility.o" "characterSam_RIG_finalRN.phl[104]";
-connectAttr "circle01_CTL24_translateX.o" "characterSam_RIG_finalRN.phl[105]";
-connectAttr "circle01_CTL24_translateY.o" "characterSam_RIG_finalRN.phl[106]";
-connectAttr "circle01_CTL24_translateZ.o" "characterSam_RIG_finalRN.phl[107]";
-connectAttr "circle01_CTL24_rotateX.o" "characterSam_RIG_finalRN.phl[108]";
-connectAttr "circle01_CTL24_rotateY.o" "characterSam_RIG_finalRN.phl[109]";
-connectAttr "circle01_CTL24_rotateZ.o" "characterSam_RIG_finalRN.phl[110]";
-connectAttr "circle01_CTL24_scaleX.o" "characterSam_RIG_finalRN.phl[111]";
-connectAttr "circle01_CTL24_scaleY.o" "characterSam_RIG_finalRN.phl[112]";
-connectAttr "circle01_CTL24_scaleZ.o" "characterSam_RIG_finalRN.phl[113]";
-connectAttr "circle01_CTL24_visibility.o" "characterSam_RIG_finalRN.phl[114]";
-connectAttr "circle01_CTL6_translateX.o" "characterSam_RIG_finalRN.phl[115]";
-connectAttr "circle01_CTL6_translateY.o" "characterSam_RIG_finalRN.phl[116]";
-connectAttr "circle01_CTL6_translateZ.o" "characterSam_RIG_finalRN.phl[117]";
-connectAttr "circle01_CTL6_rotateZ.o" "characterSam_RIG_finalRN.phl[118]";
-connectAttr "circle01_CTL6_rotateY.o" "characterSam_RIG_finalRN.phl[119]";
-connectAttr "circle01_CTL6_rotateX.o" "characterSam_RIG_finalRN.phl[120]";
-connectAttr "circle01_CTL6_scaleX.o" "characterSam_RIG_finalRN.phl[121]";
-connectAttr "circle01_CTL6_scaleY.o" "characterSam_RIG_finalRN.phl[122]";
-connectAttr "circle01_CTL6_scaleZ.o" "characterSam_RIG_finalRN.phl[123]";
-connectAttr "circle01_CTL6_visibility.o" "characterSam_RIG_finalRN.phl[124]";
-connectAttr "circle01_CTL7_translateX.o" "characterSam_RIG_finalRN.phl[125]";
-connectAttr "circle01_CTL7_translateY.o" "characterSam_RIG_finalRN.phl[126]";
-connectAttr "circle01_CTL7_translateZ.o" "characterSam_RIG_finalRN.phl[127]";
+connectAttr "samForearm_R_ctrl_translateX.o" "characterSam_RIG_finalRN.phl[75]";
+connectAttr "samForearm_R_ctrl_translateY.o" "characterSam_RIG_finalRN.phl[76]";
+connectAttr "samForearm_R_ctrl_translateZ.o" "characterSam_RIG_finalRN.phl[77]";
+connectAttr "samForearm_R_ctrl_rotateY.o" "characterSam_RIG_finalRN.phl[78]";
+connectAttr "samForearm_R_ctrl_rotateX.o" "characterSam_RIG_finalRN.phl[79]";
+connectAttr "samForearm_R_ctrl_rotateZ.o" "characterSam_RIG_finalRN.phl[80]";
+connectAttr "samForearm_R_ctrl_scaleX.o" "characterSam_RIG_finalRN.phl[81]";
+connectAttr "samForearm_R_ctrl_scaleY.o" "characterSam_RIG_finalRN.phl[82]";
+connectAttr "samForearm_R_ctrl_scaleZ.o" "characterSam_RIG_finalRN.phl[83]";
+connectAttr "samForearm_R_ctrl_visibility.o" "characterSam_RIG_finalRN.phl[84]";
+connectAttr "samHand_R_ctrl_translateX.o" "characterSam_RIG_finalRN.phl[85]";
+connectAttr "samHand_R_ctrl_translateY.o" "characterSam_RIG_finalRN.phl[86]";
+connectAttr "samHand_R_ctrl_translateZ.o" "characterSam_RIG_finalRN.phl[87]";
+connectAttr "samHand_R_ctrl_rotateX.o" "characterSam_RIG_finalRN.phl[88]";
+connectAttr "samHand_R_ctrl_rotateY.o" "characterSam_RIG_finalRN.phl[89]";
+connectAttr "samHand_R_ctrl_rotateZ.o" "characterSam_RIG_finalRN.phl[90]";
+connectAttr "samHand_R_ctrl_scaleX.o" "characterSam_RIG_finalRN.phl[91]";
+connectAttr "samHand_R_ctrl_scaleY.o" "characterSam_RIG_finalRN.phl[92]";
+connectAttr "samHand_R_ctrl_scaleZ.o" "characterSam_RIG_finalRN.phl[93]";
+connectAttr "samHand_R_ctrl_visibility.o" "characterSam_RIG_finalRN.phl[94]";
+connectAttr "circle01_CTL19_translateX.o" "characterSam_RIG_finalRN.phl[95]";
+connectAttr "circle01_CTL19_translateY.o" "characterSam_RIG_finalRN.phl[96]";
+connectAttr "circle01_CTL19_translateZ.o" "characterSam_RIG_finalRN.phl[97]";
+connectAttr "circle01_CTL19_rotateX.o" "characterSam_RIG_finalRN.phl[98]";
+connectAttr "circle01_CTL19_rotateY.o" "characterSam_RIG_finalRN.phl[99]";
+connectAttr "circle01_CTL19_rotateZ.o" "characterSam_RIG_finalRN.phl[100]";
+connectAttr "circle01_CTL19_scaleX.o" "characterSam_RIG_finalRN.phl[101]";
+connectAttr "circle01_CTL19_scaleY.o" "characterSam_RIG_finalRN.phl[102]";
+connectAttr "circle01_CTL19_scaleZ.o" "characterSam_RIG_finalRN.phl[103]";
+connectAttr "circle01_CTL19_visibility.o" "characterSam_RIG_finalRN.phl[104]";
+connectAttr "circle01_CTL23_translateX.o" "characterSam_RIG_finalRN.phl[105]";
+connectAttr "circle01_CTL23_translateY.o" "characterSam_RIG_finalRN.phl[106]";
+connectAttr "circle01_CTL23_translateZ.o" "characterSam_RIG_finalRN.phl[107]";
+connectAttr "circle01_CTL23_rotateX.o" "characterSam_RIG_finalRN.phl[108]";
+connectAttr "circle01_CTL23_rotateY.o" "characterSam_RIG_finalRN.phl[109]";
+connectAttr "circle01_CTL23_rotateZ.o" "characterSam_RIG_finalRN.phl[110]";
+connectAttr "circle01_CTL23_scaleX.o" "characterSam_RIG_finalRN.phl[111]";
+connectAttr "circle01_CTL23_scaleY.o" "characterSam_RIG_finalRN.phl[112]";
+connectAttr "circle01_CTL23_scaleZ.o" "characterSam_RIG_finalRN.phl[113]";
+connectAttr "circle01_CTL23_visibility.o" "characterSam_RIG_finalRN.phl[114]";
+connectAttr "circle01_CTL24_translateX.o" "characterSam_RIG_finalRN.phl[115]";
+connectAttr "circle01_CTL24_translateY.o" "characterSam_RIG_finalRN.phl[116]";
+connectAttr "circle01_CTL24_translateZ.o" "characterSam_RIG_finalRN.phl[117]";
+connectAttr "circle01_CTL24_rotateX.o" "characterSam_RIG_finalRN.phl[118]";
+connectAttr "circle01_CTL24_rotateY.o" "characterSam_RIG_finalRN.phl[119]";
+connectAttr "circle01_CTL24_rotateZ.o" "characterSam_RIG_finalRN.phl[120]";
+connectAttr "circle01_CTL24_scaleX.o" "characterSam_RIG_finalRN.phl[121]";
+connectAttr "circle01_CTL24_scaleY.o" "characterSam_RIG_finalRN.phl[122]";
+connectAttr "circle01_CTL24_scaleZ.o" "characterSam_RIG_finalRN.phl[123]";
+connectAttr "circle01_CTL24_visibility.o" "characterSam_RIG_finalRN.phl[124]";
+connectAttr "circle01_CTL6_rotateZ.o" "characterSam_RIG_finalRN.phl[125]";
+connectAttr "circle01_CTL6_rotateY.o" "characterSam_RIG_finalRN.phl[126]";
+connectAttr "circle01_CTL6_rotateX.o" "characterSam_RIG_finalRN.phl[127]";
 connectAttr "circle01_CTL7_rotateZ.o" "characterSam_RIG_finalRN.phl[128]";
-connectAttr "circle01_CTL7_rotateX.o" "characterSam_RIG_finalRN.phl[129]";
-connectAttr "circle01_CTL7_rotateY.o" "characterSam_RIG_finalRN.phl[130]";
-connectAttr "circle01_CTL7_scaleX.o" "characterSam_RIG_finalRN.phl[131]";
-connectAttr "circle01_CTL7_scaleY.o" "characterSam_RIG_finalRN.phl[132]";
-connectAttr "circle01_CTL7_scaleZ.o" "characterSam_RIG_finalRN.phl[133]";
-connectAttr "circle01_CTL7_visibility.o" "characterSam_RIG_finalRN.phl[134]";
-connectAttr "circle01_CTL8_translateX.o" "characterSam_RIG_finalRN.phl[135]";
-connectAttr "circle01_CTL8_translateY.o" "characterSam_RIG_finalRN.phl[136]";
-connectAttr "circle01_CTL8_translateZ.o" "characterSam_RIG_finalRN.phl[137]";
-connectAttr "circle01_CTL8_rotateZ.o" "characterSam_RIG_finalRN.phl[138]";
-connectAttr "circle01_CTL8_rotateX.o" "characterSam_RIG_finalRN.phl[139]";
-connectAttr "circle01_CTL8_rotateY.o" "characterSam_RIG_finalRN.phl[140]";
-connectAttr "circle01_CTL8_scaleX.o" "characterSam_RIG_finalRN.phl[141]";
-connectAttr "circle01_CTL8_scaleY.o" "characterSam_RIG_finalRN.phl[142]";
-connectAttr "circle01_CTL8_scaleZ.o" "characterSam_RIG_finalRN.phl[143]";
-connectAttr "circle01_CTL8_visibility.o" "characterSam_RIG_finalRN.phl[144]";
-connectAttr "circle01_CTL3_translateX.o" "characterSam_RIG_finalRN.phl[145]";
-connectAttr "circle01_CTL3_translateY.o" "characterSam_RIG_finalRN.phl[146]";
-connectAttr "circle01_CTL3_translateZ.o" "characterSam_RIG_finalRN.phl[147]";
-connectAttr "circle01_CTL3_rotateZ.o" "characterSam_RIG_finalRN.phl[148]";
-connectAttr "circle01_CTL3_rotateX.o" "characterSam_RIG_finalRN.phl[149]";
-connectAttr "circle01_CTL3_rotateY.o" "characterSam_RIG_finalRN.phl[150]";
-connectAttr "circle01_CTL3_scaleX.o" "characterSam_RIG_finalRN.phl[151]";
-connectAttr "circle01_CTL3_scaleY.o" "characterSam_RIG_finalRN.phl[152]";
-connectAttr "circle01_CTL3_scaleZ.o" "characterSam_RIG_finalRN.phl[153]";
-connectAttr "circle01_CTL3_visibility.o" "characterSam_RIG_finalRN.phl[154]";
-connectAttr "circle01_CTL4_translateX.o" "characterSam_RIG_finalRN.phl[155]";
-connectAttr "circle01_CTL4_translateY.o" "characterSam_RIG_finalRN.phl[156]";
-connectAttr "circle01_CTL4_translateZ.o" "characterSam_RIG_finalRN.phl[157]";
-connectAttr "circle01_CTL4_rotateZ.o" "characterSam_RIG_finalRN.phl[158]";
-connectAttr "circle01_CTL4_rotateX.o" "characterSam_RIG_finalRN.phl[159]";
-connectAttr "circle01_CTL4_rotateY.o" "characterSam_RIG_finalRN.phl[160]";
-connectAttr "circle01_CTL4_scaleX.o" "characterSam_RIG_finalRN.phl[161]";
-connectAttr "circle01_CTL4_scaleY.o" "characterSam_RIG_finalRN.phl[162]";
-connectAttr "circle01_CTL4_scaleZ.o" "characterSam_RIG_finalRN.phl[163]";
-connectAttr "circle01_CTL4_visibility.o" "characterSam_RIG_finalRN.phl[164]";
-connectAttr "circle01_CTL5_translateX.o" "characterSam_RIG_finalRN.phl[165]";
-connectAttr "circle01_CTL5_translateY.o" "characterSam_RIG_finalRN.phl[166]";
-connectAttr "circle01_CTL5_translateZ.o" "characterSam_RIG_finalRN.phl[167]";
-connectAttr "circle01_CTL5_rotateZ.o" "characterSam_RIG_finalRN.phl[168]";
-connectAttr "circle01_CTL5_rotateX.o" "characterSam_RIG_finalRN.phl[169]";
-connectAttr "circle01_CTL5_rotateY.o" "characterSam_RIG_finalRN.phl[170]";
-connectAttr "circle01_CTL5_scaleX.o" "characterSam_RIG_finalRN.phl[171]";
-connectAttr "circle01_CTL5_scaleY.o" "characterSam_RIG_finalRN.phl[172]";
-connectAttr "circle01_CTL5_scaleZ.o" "characterSam_RIG_finalRN.phl[173]";
-connectAttr "circle01_CTL5_visibility.o" "characterSam_RIG_finalRN.phl[174]";
-connectAttr "circle01_CTL9_translateX.o" "characterSam_RIG_finalRN.phl[175]";
-connectAttr "circle01_CTL9_translateY.o" "characterSam_RIG_finalRN.phl[176]";
-connectAttr "circle01_CTL9_translateZ.o" "characterSam_RIG_finalRN.phl[177]";
-connectAttr "circle01_CTL9_rotateZ.o" "characterSam_RIG_finalRN.phl[178]";
-connectAttr "circle01_CTL9_rotateX.o" "characterSam_RIG_finalRN.phl[179]";
-connectAttr "circle01_CTL9_rotateY.o" "characterSam_RIG_finalRN.phl[180]";
-connectAttr "circle01_CTL9_scaleX.o" "characterSam_RIG_finalRN.phl[181]";
-connectAttr "circle01_CTL9_scaleY.o" "characterSam_RIG_finalRN.phl[182]";
-connectAttr "circle01_CTL9_scaleZ.o" "characterSam_RIG_finalRN.phl[183]";
-connectAttr "circle01_CTL9_visibility.o" "characterSam_RIG_finalRN.phl[184]";
-connectAttr "circle01_CTL1_translateX.o" "characterSam_RIG_finalRN.phl[185]";
-connectAttr "circle01_CTL1_translateY.o" "characterSam_RIG_finalRN.phl[186]";
-connectAttr "circle01_CTL1_translateZ.o" "characterSam_RIG_finalRN.phl[187]";
-connectAttr "circle01_CTL1_rotateZ.o" "characterSam_RIG_finalRN.phl[188]";
-connectAttr "circle01_CTL1_rotateX.o" "characterSam_RIG_finalRN.phl[189]";
-connectAttr "circle01_CTL1_rotateY.o" "characterSam_RIG_finalRN.phl[190]";
-connectAttr "circle01_CTL1_scaleX.o" "characterSam_RIG_finalRN.phl[191]";
-connectAttr "circle01_CTL1_scaleY.o" "characterSam_RIG_finalRN.phl[192]";
-connectAttr "circle01_CTL1_scaleZ.o" "characterSam_RIG_finalRN.phl[193]";
-connectAttr "circle01_CTL1_visibility.o" "characterSam_RIG_finalRN.phl[194]";
-connectAttr "circle01_CTL2_translateX.o" "characterSam_RIG_finalRN.phl[195]";
-connectAttr "circle01_CTL2_translateY.o" "characterSam_RIG_finalRN.phl[196]";
-connectAttr "circle01_CTL2_translateZ.o" "characterSam_RIG_finalRN.phl[197]";
-connectAttr "circle01_CTL2_rotateZ.o" "characterSam_RIG_finalRN.phl[198]";
-connectAttr "circle01_CTL2_rotateX.o" "characterSam_RIG_finalRN.phl[199]";
-connectAttr "circle01_CTL2_rotateY.o" "characterSam_RIG_finalRN.phl[200]";
-connectAttr "circle01_CTL2_scaleX.o" "characterSam_RIG_finalRN.phl[201]";
-connectAttr "circle01_CTL2_scaleY.o" "characterSam_RIG_finalRN.phl[202]";
-connectAttr "circle01_CTL2_scaleZ.o" "characterSam_RIG_finalRN.phl[203]";
-connectAttr "circle01_CTL2_visibility.o" "characterSam_RIG_finalRN.phl[204]";
-connectAttr "samShoulder_L_ctrl_translateX.o" "characterSam_RIG_finalRN.phl[205]"
+connectAttr "circle01_CTL8_rotateZ.o" "characterSam_RIG_finalRN.phl[129]";
+connectAttr "circle01_CTL3_rotateZ.o" "characterSam_RIG_finalRN.phl[130]";
+connectAttr "circle01_CTL4_rotateZ.o" "characterSam_RIG_finalRN.phl[131]";
+connectAttr "circle01_CTL5_rotateZ.o" "characterSam_RIG_finalRN.phl[132]";
+connectAttr "circle01_CTL9_rotateZ.o" "characterSam_RIG_finalRN.phl[133]";
+connectAttr "circle01_CTL9_rotateX.o" "characterSam_RIG_finalRN.phl[134]";
+connectAttr "circle01_CTL9_rotateY.o" "characterSam_RIG_finalRN.phl[135]";
+connectAttr "circle01_CTL1_rotateZ.o" "characterSam_RIG_finalRN.phl[136]";
+connectAttr "circle01_CTL1_rotateX.o" "characterSam_RIG_finalRN.phl[137]";
+connectAttr "circle01_CTL1_rotateY.o" "characterSam_RIG_finalRN.phl[138]";
+connectAttr "circle01_CTL2_rotateZ.o" "characterSam_RIG_finalRN.phl[139]";
+connectAttr "samShoulder_L_ctrl_translateX.o" "characterSam_RIG_finalRN.phl[140]"
 		;
-connectAttr "samShoulder_L_ctrl_translateY.o" "characterSam_RIG_finalRN.phl[206]"
+connectAttr "samShoulder_L_ctrl_translateY.o" "characterSam_RIG_finalRN.phl[141]"
 		;
-connectAttr "samShoulder_L_ctrl_translateZ.o" "characterSam_RIG_finalRN.phl[207]"
+connectAttr "samShoulder_L_ctrl_translateZ.o" "characterSam_RIG_finalRN.phl[142]"
 		;
-connectAttr "samShoulder_L_ctrl_rotateX.o" "characterSam_RIG_finalRN.phl[208]";
-connectAttr "samShoulder_L_ctrl_rotateY.o" "characterSam_RIG_finalRN.phl[209]";
-connectAttr "samShoulder_L_ctrl_rotateZ.o" "characterSam_RIG_finalRN.phl[210]";
-connectAttr "samShoulder_L_ctrl_scaleX.o" "characterSam_RIG_finalRN.phl[211]";
-connectAttr "samShoulder_L_ctrl_scaleY.o" "characterSam_RIG_finalRN.phl[212]";
-connectAttr "samShoulder_L_ctrl_scaleZ.o" "characterSam_RIG_finalRN.phl[213]";
-connectAttr "samShoulder_L_ctrl_visibility.o" "characterSam_RIG_finalRN.phl[214]"
+connectAttr "samShoulder_L_ctrl_rotateX.o" "characterSam_RIG_finalRN.phl[143]";
+connectAttr "samShoulder_L_ctrl_rotateY.o" "characterSam_RIG_finalRN.phl[144]";
+connectAttr "samShoulder_L_ctrl_rotateZ.o" "characterSam_RIG_finalRN.phl[145]";
+connectAttr "samShoulder_L_ctrl_scaleX.o" "characterSam_RIG_finalRN.phl[146]";
+connectAttr "samShoulder_L_ctrl_scaleY.o" "characterSam_RIG_finalRN.phl[147]";
+connectAttr "samShoulder_L_ctrl_scaleZ.o" "characterSam_RIG_finalRN.phl[148]";
+connectAttr "samShoulder_L_ctrl_visibility.o" "characterSam_RIG_finalRN.phl[149]"
 		;
-connectAttr "samForearm_L_ctrl_translateX.o" "characterSam_RIG_finalRN.phl[215]"
+connectAttr "samForearm_L_ctrl_translateX.o" "characterSam_RIG_finalRN.phl[150]"
 		;
-connectAttr "samForearm_L_ctrl_translateY.o" "characterSam_RIG_finalRN.phl[216]"
+connectAttr "samForearm_L_ctrl_translateY.o" "characterSam_RIG_finalRN.phl[151]"
 		;
-connectAttr "samForearm_L_ctrl_translateZ.o" "characterSam_RIG_finalRN.phl[217]"
+connectAttr "samForearm_L_ctrl_translateZ.o" "characterSam_RIG_finalRN.phl[152]"
 		;
-connectAttr "samForearm_L_ctrl_rotateY.o" "characterSam_RIG_finalRN.phl[218]";
-connectAttr "samForearm_L_ctrl_rotateX.o" "characterSam_RIG_finalRN.phl[219]";
-connectAttr "samForearm_L_ctrl_rotateZ.o" "characterSam_RIG_finalRN.phl[220]";
-connectAttr "samForearm_L_ctrl_scaleX.o" "characterSam_RIG_finalRN.phl[221]";
-connectAttr "samForearm_L_ctrl_scaleY.o" "characterSam_RIG_finalRN.phl[222]";
-connectAttr "samForearm_L_ctrl_scaleZ.o" "characterSam_RIG_finalRN.phl[223]";
-connectAttr "samForearm_L_ctrl_visibility.o" "characterSam_RIG_finalRN.phl[224]"
+connectAttr "samForearm_L_ctrl_rotateY.o" "characterSam_RIG_finalRN.phl[153]";
+connectAttr "samForearm_L_ctrl_rotateX.o" "characterSam_RIG_finalRN.phl[154]";
+connectAttr "samForearm_L_ctrl_rotateZ.o" "characterSam_RIG_finalRN.phl[155]";
+connectAttr "samForearm_L_ctrl_scaleX.o" "characterSam_RIG_finalRN.phl[156]";
+connectAttr "samForearm_L_ctrl_scaleY.o" "characterSam_RIG_finalRN.phl[157]";
+connectAttr "samForearm_L_ctrl_scaleZ.o" "characterSam_RIG_finalRN.phl[158]";
+connectAttr "samForearm_L_ctrl_visibility.o" "characterSam_RIG_finalRN.phl[159]"
 		;
-connectAttr "samHand_L_ctrl_translateX.o" "characterSam_RIG_finalRN.phl[225]";
-connectAttr "samHand_L_ctrl_translateY.o" "characterSam_RIG_finalRN.phl[226]";
-connectAttr "samHand_L_ctrl_translateZ.o" "characterSam_RIG_finalRN.phl[227]";
-connectAttr "samHand_L_ctrl_rotateZ.o" "characterSam_RIG_finalRN.phl[228]";
-connectAttr "samHand_L_ctrl_rotateX.o" "characterSam_RIG_finalRN.phl[229]";
-connectAttr "samHand_L_ctrl_rotateY.o" "characterSam_RIG_finalRN.phl[230]";
-connectAttr "samHand_L_ctrl_scaleX.o" "characterSam_RIG_finalRN.phl[231]";
-connectAttr "samHand_L_ctrl_scaleY.o" "characterSam_RIG_finalRN.phl[232]";
-connectAttr "samHand_L_ctrl_scaleZ.o" "characterSam_RIG_finalRN.phl[233]";
-connectAttr "samHand_L_ctrl_visibility.o" "characterSam_RIG_finalRN.phl[234]";
-connectAttr "circle01_CTL15_translateX.o" "characterSam_RIG_finalRN.phl[235]";
-connectAttr "circle01_CTL15_translateY.o" "characterSam_RIG_finalRN.phl[236]";
-connectAttr "circle01_CTL15_translateZ.o" "characterSam_RIG_finalRN.phl[237]";
-connectAttr "circle01_CTL15_rotateX.o" "characterSam_RIG_finalRN.phl[238]";
-connectAttr "circle01_CTL15_rotateY.o" "characterSam_RIG_finalRN.phl[239]";
-connectAttr "circle01_CTL15_rotateZ.o" "characterSam_RIG_finalRN.phl[240]";
-connectAttr "circle01_CTL15_scaleX.o" "characterSam_RIG_finalRN.phl[241]";
-connectAttr "circle01_CTL15_scaleY.o" "characterSam_RIG_finalRN.phl[242]";
-connectAttr "circle01_CTL15_scaleZ.o" "characterSam_RIG_finalRN.phl[243]";
-connectAttr "circle01_CTL15_visibility.o" "characterSam_RIG_finalRN.phl[244]";
-connectAttr "circle01_CTL16_translateX.o" "characterSam_RIG_finalRN.phl[245]";
-connectAttr "circle01_CTL16_translateY.o" "characterSam_RIG_finalRN.phl[246]";
-connectAttr "circle01_CTL16_translateZ.o" "characterSam_RIG_finalRN.phl[247]";
-connectAttr "circle01_CTL16_rotateX.o" "characterSam_RIG_finalRN.phl[248]";
-connectAttr "circle01_CTL16_rotateY.o" "characterSam_RIG_finalRN.phl[249]";
-connectAttr "circle01_CTL16_rotateZ.o" "characterSam_RIG_finalRN.phl[250]";
-connectAttr "circle01_CTL16_scaleX.o" "characterSam_RIG_finalRN.phl[251]";
-connectAttr "circle01_CTL16_scaleY.o" "characterSam_RIG_finalRN.phl[252]";
-connectAttr "circle01_CTL16_scaleZ.o" "characterSam_RIG_finalRN.phl[253]";
-connectAttr "circle01_CTL16_visibility.o" "characterSam_RIG_finalRN.phl[254]";
-connectAttr "circle01_CTL17_translateX.o" "characterSam_RIG_finalRN.phl[255]";
-connectAttr "circle01_CTL17_translateY.o" "characterSam_RIG_finalRN.phl[256]";
-connectAttr "circle01_CTL17_translateZ.o" "characterSam_RIG_finalRN.phl[257]";
-connectAttr "circle01_CTL17_rotateX.o" "characterSam_RIG_finalRN.phl[258]";
-connectAttr "circle01_CTL17_rotateY.o" "characterSam_RIG_finalRN.phl[259]";
-connectAttr "circle01_CTL17_rotateZ.o" "characterSam_RIG_finalRN.phl[260]";
-connectAttr "circle01_CTL17_scaleX.o" "characterSam_RIG_finalRN.phl[261]";
-connectAttr "circle01_CTL17_scaleY.o" "characterSam_RIG_finalRN.phl[262]";
-connectAttr "circle01_CTL17_scaleZ.o" "characterSam_RIG_finalRN.phl[263]";
-connectAttr "circle01_CTL17_visibility.o" "characterSam_RIG_finalRN.phl[264]";
-connectAttr "circle01_CTL12_translateX.o" "characterSam_RIG_finalRN.phl[265]";
-connectAttr "circle01_CTL12_translateY.o" "characterSam_RIG_finalRN.phl[266]";
-connectAttr "circle01_CTL12_translateZ.o" "characterSam_RIG_finalRN.phl[267]";
-connectAttr "circle01_CTL12_rotateX.o" "characterSam_RIG_finalRN.phl[268]";
-connectAttr "circle01_CTL12_rotateY.o" "characterSam_RIG_finalRN.phl[269]";
-connectAttr "circle01_CTL12_rotateZ.o" "characterSam_RIG_finalRN.phl[270]";
-connectAttr "circle01_CTL12_scaleX.o" "characterSam_RIG_finalRN.phl[271]";
-connectAttr "circle01_CTL12_scaleY.o" "characterSam_RIG_finalRN.phl[272]";
-connectAttr "circle01_CTL12_scaleZ.o" "characterSam_RIG_finalRN.phl[273]";
-connectAttr "circle01_CTL12_visibility.o" "characterSam_RIG_finalRN.phl[274]";
-connectAttr "circle01_CTL13_translateX.o" "characterSam_RIG_finalRN.phl[275]";
-connectAttr "circle01_CTL13_translateY.o" "characterSam_RIG_finalRN.phl[276]";
-connectAttr "circle01_CTL13_translateZ.o" "characterSam_RIG_finalRN.phl[277]";
-connectAttr "circle01_CTL13_rotateX.o" "characterSam_RIG_finalRN.phl[278]";
-connectAttr "circle01_CTL13_rotateY.o" "characterSam_RIG_finalRN.phl[279]";
-connectAttr "circle01_CTL13_rotateZ.o" "characterSam_RIG_finalRN.phl[280]";
-connectAttr "circle01_CTL13_scaleX.o" "characterSam_RIG_finalRN.phl[281]";
-connectAttr "circle01_CTL13_scaleY.o" "characterSam_RIG_finalRN.phl[282]";
-connectAttr "circle01_CTL13_scaleZ.o" "characterSam_RIG_finalRN.phl[283]";
-connectAttr "circle01_CTL13_visibility.o" "characterSam_RIG_finalRN.phl[284]";
-connectAttr "circle01_CTL14_translateX.o" "characterSam_RIG_finalRN.phl[285]";
-connectAttr "circle01_CTL14_translateY.o" "characterSam_RIG_finalRN.phl[286]";
-connectAttr "circle01_CTL14_translateZ.o" "characterSam_RIG_finalRN.phl[287]";
-connectAttr "circle01_CTL14_rotateX.o" "characterSam_RIG_finalRN.phl[288]";
-connectAttr "circle01_CTL14_rotateY.o" "characterSam_RIG_finalRN.phl[289]";
-connectAttr "circle01_CTL14_rotateZ.o" "characterSam_RIG_finalRN.phl[290]";
-connectAttr "circle01_CTL14_scaleX.o" "characterSam_RIG_finalRN.phl[291]";
-connectAttr "circle01_CTL14_scaleY.o" "characterSam_RIG_finalRN.phl[292]";
-connectAttr "circle01_CTL14_scaleZ.o" "characterSam_RIG_finalRN.phl[293]";
-connectAttr "circle01_CTL14_visibility.o" "characterSam_RIG_finalRN.phl[294]";
-connectAttr "circle01_CTL_translateX.o" "characterSam_RIG_finalRN.phl[295]";
-connectAttr "circle01_CTL_translateY.o" "characterSam_RIG_finalRN.phl[296]";
-connectAttr "circle01_CTL_translateZ.o" "characterSam_RIG_finalRN.phl[297]";
-connectAttr "circle01_CTL_rotateX.o" "characterSam_RIG_finalRN.phl[298]";
-connectAttr "circle01_CTL_rotateY.o" "characterSam_RIG_finalRN.phl[299]";
-connectAttr "circle01_CTL_rotateZ.o" "characterSam_RIG_finalRN.phl[300]";
-connectAttr "circle01_CTL_scaleX.o" "characterSam_RIG_finalRN.phl[301]";
-connectAttr "circle01_CTL_scaleY.o" "characterSam_RIG_finalRN.phl[302]";
-connectAttr "circle01_CTL_scaleZ.o" "characterSam_RIG_finalRN.phl[303]";
-connectAttr "circle01_CTL_visibility.o" "characterSam_RIG_finalRN.phl[304]";
-connectAttr "circle01_CTL10_translateX1.o" "characterSam_RIG_finalRN.phl[305]";
-connectAttr "circle01_CTL10_translateY1.o" "characterSam_RIG_finalRN.phl[306]";
-connectAttr "circle01_CTL10_translateZ1.o" "characterSam_RIG_finalRN.phl[307]";
-connectAttr "circle01_CTL10_rotateX1.o" "characterSam_RIG_finalRN.phl[308]";
-connectAttr "circle01_CTL10_rotateY1.o" "characterSam_RIG_finalRN.phl[309]";
-connectAttr "circle01_CTL10_rotateZ1.o" "characterSam_RIG_finalRN.phl[310]";
-connectAttr "circle01_CTL10_scaleX1.o" "characterSam_RIG_finalRN.phl[311]";
-connectAttr "circle01_CTL10_scaleY1.o" "characterSam_RIG_finalRN.phl[312]";
-connectAttr "circle01_CTL10_scaleZ1.o" "characterSam_RIG_finalRN.phl[313]";
-connectAttr "circle01_CTL10_visibility1.o" "characterSam_RIG_finalRN.phl[314]";
-connectAttr "circle01_CTL11_translateX1.o" "characterSam_RIG_finalRN.phl[315]";
-connectAttr "circle01_CTL11_translateY1.o" "characterSam_RIG_finalRN.phl[316]";
-connectAttr "circle01_CTL11_translateZ1.o" "characterSam_RIG_finalRN.phl[317]";
-connectAttr "circle01_CTL11_rotateX1.o" "characterSam_RIG_finalRN.phl[318]";
-connectAttr "circle01_CTL11_rotateY1.o" "characterSam_RIG_finalRN.phl[319]";
-connectAttr "circle01_CTL11_rotateZ1.o" "characterSam_RIG_finalRN.phl[320]";
-connectAttr "circle01_CTL11_scaleX1.o" "characterSam_RIG_finalRN.phl[321]";
-connectAttr "circle01_CTL11_scaleY1.o" "characterSam_RIG_finalRN.phl[322]";
-connectAttr "circle01_CTL11_scaleZ1.o" "characterSam_RIG_finalRN.phl[323]";
-connectAttr "circle01_CTL11_visibility1.o" "characterSam_RIG_finalRN.phl[324]";
-connectAttr "circle01_CTL18_translateX.o" "characterSam_RIG_finalRN.phl[325]";
-connectAttr "circle01_CTL18_translateY.o" "characterSam_RIG_finalRN.phl[326]";
-connectAttr "circle01_CTL18_translateZ.o" "characterSam_RIG_finalRN.phl[327]";
-connectAttr "circle01_CTL18_rotateX.o" "characterSam_RIG_finalRN.phl[328]";
-connectAttr "circle01_CTL18_rotateY.o" "characterSam_RIG_finalRN.phl[329]";
-connectAttr "circle01_CTL18_rotateZ.o" "characterSam_RIG_finalRN.phl[330]";
-connectAttr "circle01_CTL18_scaleX.o" "characterSam_RIG_finalRN.phl[331]";
-connectAttr "circle01_CTL18_scaleY.o" "characterSam_RIG_finalRN.phl[332]";
-connectAttr "circle01_CTL18_scaleZ.o" "characterSam_RIG_finalRN.phl[333]";
-connectAttr "circle01_CTL18_visibility.o" "characterSam_RIG_finalRN.phl[334]";
-connectAttr "circle01_CTL10_translateX.o" "characterSam_RIG_finalRN.phl[335]";
-connectAttr "circle01_CTL10_translateY.o" "characterSam_RIG_finalRN.phl[336]";
-connectAttr "circle01_CTL10_translateZ.o" "characterSam_RIG_finalRN.phl[337]";
-connectAttr "circle01_CTL10_rotateX.o" "characterSam_RIG_finalRN.phl[338]";
-connectAttr "circle01_CTL10_rotateY.o" "characterSam_RIG_finalRN.phl[339]";
-connectAttr "circle01_CTL10_rotateZ.o" "characterSam_RIG_finalRN.phl[340]";
-connectAttr "circle01_CTL10_scaleX.o" "characterSam_RIG_finalRN.phl[341]";
-connectAttr "circle01_CTL10_scaleY.o" "characterSam_RIG_finalRN.phl[342]";
-connectAttr "circle01_CTL10_scaleZ.o" "characterSam_RIG_finalRN.phl[343]";
-connectAttr "circle01_CTL10_visibility.o" "characterSam_RIG_finalRN.phl[344]";
-connectAttr "circle01_CTL11_translateX.o" "characterSam_RIG_finalRN.phl[345]";
-connectAttr "circle01_CTL11_translateY.o" "characterSam_RIG_finalRN.phl[346]";
-connectAttr "circle01_CTL11_translateZ.o" "characterSam_RIG_finalRN.phl[347]";
-connectAttr "circle01_CTL11_rotateX.o" "characterSam_RIG_finalRN.phl[348]";
-connectAttr "circle01_CTL11_rotateY.o" "characterSam_RIG_finalRN.phl[349]";
-connectAttr "circle01_CTL11_rotateZ.o" "characterSam_RIG_finalRN.phl[350]";
-connectAttr "circle01_CTL11_scaleX.o" "characterSam_RIG_finalRN.phl[351]";
-connectAttr "circle01_CTL11_scaleY.o" "characterSam_RIG_finalRN.phl[352]";
-connectAttr "circle01_CTL11_scaleZ.o" "characterSam_RIG_finalRN.phl[353]";
-connectAttr "circle01_CTL11_visibility.o" "characterSam_RIG_finalRN.phl[354]";
-connectAttr "Shot5_RENDER_translateX.o" "Shot5_RENDER.tx" -l on;
-connectAttr "Shot5_RENDER_translateZ.o" "Shot5_RENDER.tz" -l on;
-connectAttr "Shot5_RENDER_rotateY.o" "Shot5_RENDER.ry" -l on;
-connectAttr "Shot5_RENDER_rotateZ.o" "Shot5_RENDER.rz" -l on;
-connectAttr "Shot5_RENDER_visibility.o" "Shot5_RENDER.v";
-connectAttr "Shot5_RENDER_scaleX.o" "Shot5_RENDER.sx";
-connectAttr "Shot5_RENDER_scaleY.o" "Shot5_RENDER.sy";
-connectAttr "Shot5_RENDER_scaleZ.o" "Shot5_RENDER.sz";
-connectAttr "Shot5_2_RENDER_translateZ.o" "Shot5_2_RENDER.tz" -l on;
-connectAttr "Shot5_2_RENDER_rotateX.o" "Shot5_2_RENDER.rx" -l on;
-connectAttr "Shot5_2_RENDER_rotateY.o" "Shot5_2_RENDER.ry" -l on;
-connectAttr "Shot5_2_RENDERShape_focalLength.o" "Shot5_2_RENDERShape.fl";
+connectAttr "samHand_L_ctrl_translateX.o" "characterSam_RIG_finalRN.phl[160]";
+connectAttr "samHand_L_ctrl_translateY.o" "characterSam_RIG_finalRN.phl[161]";
+connectAttr "samHand_L_ctrl_translateZ.o" "characterSam_RIG_finalRN.phl[162]";
+connectAttr "samHand_L_ctrl_rotateZ.o" "characterSam_RIG_finalRN.phl[163]";
+connectAttr "samHand_L_ctrl_rotateX.o" "characterSam_RIG_finalRN.phl[164]";
+connectAttr "samHand_L_ctrl_rotateY.o" "characterSam_RIG_finalRN.phl[165]";
+connectAttr "samHand_L_ctrl_scaleX.o" "characterSam_RIG_finalRN.phl[166]";
+connectAttr "samHand_L_ctrl_scaleY.o" "characterSam_RIG_finalRN.phl[167]";
+connectAttr "samHand_L_ctrl_scaleZ.o" "characterSam_RIG_finalRN.phl[168]";
+connectAttr "samHand_L_ctrl_visibility.o" "characterSam_RIG_finalRN.phl[169]";
+connectAttr "circle01_CTL12_rotateZ.o" "characterSam_RIG_finalRN.phl[170]";
+connectAttr "circle01_CTL13_rotateZ.o" "characterSam_RIG_finalRN.phl[171]";
+connectAttr "circle01_CTL_rotateX.o" "characterSam_RIG_finalRN.phl[172]";
+connectAttr "circle01_CTL_rotateY.o" "characterSam_RIG_finalRN.phl[173]";
+connectAttr "circle01_CTL_rotateZ.o" "characterSam_RIG_finalRN.phl[174]";
+connectAttr "circle01_CTL10_rotateZ1.o" "characterSam_RIG_finalRN.phl[175]";
+connectAttr "circle01_CTL18_translateX.o" "characterSam_RIG_finalRN.phl[176]";
+connectAttr "circle01_CTL18_translateY.o" "characterSam_RIG_finalRN.phl[177]";
+connectAttr "circle01_CTL18_translateZ.o" "characterSam_RIG_finalRN.phl[178]";
+connectAttr "circle01_CTL18_rotateX.o" "characterSam_RIG_finalRN.phl[179]";
+connectAttr "circle01_CTL18_rotateY.o" "characterSam_RIG_finalRN.phl[180]";
+connectAttr "circle01_CTL18_rotateZ.o" "characterSam_RIG_finalRN.phl[181]";
+connectAttr "circle01_CTL18_scaleX.o" "characterSam_RIG_finalRN.phl[182]";
+connectAttr "circle01_CTL18_scaleY.o" "characterSam_RIG_finalRN.phl[183]";
+connectAttr "circle01_CTL18_scaleZ.o" "characterSam_RIG_finalRN.phl[184]";
+connectAttr "circle01_CTL18_visibility.o" "characterSam_RIG_finalRN.phl[185]";
+connectAttr "circle01_CTL10_translateX.o" "characterSam_RIG_finalRN.phl[186]";
+connectAttr "circle01_CTL10_translateY.o" "characterSam_RIG_finalRN.phl[187]";
+connectAttr "circle01_CTL10_translateZ.o" "characterSam_RIG_finalRN.phl[188]";
+connectAttr "circle01_CTL10_rotateX.o" "characterSam_RIG_finalRN.phl[189]";
+connectAttr "circle01_CTL10_rotateY.o" "characterSam_RIG_finalRN.phl[190]";
+connectAttr "circle01_CTL10_rotateZ.o" "characterSam_RIG_finalRN.phl[191]";
+connectAttr "circle01_CTL10_scaleX.o" "characterSam_RIG_finalRN.phl[192]";
+connectAttr "circle01_CTL10_scaleY.o" "characterSam_RIG_finalRN.phl[193]";
+connectAttr "circle01_CTL10_scaleZ.o" "characterSam_RIG_finalRN.phl[194]";
+connectAttr "circle01_CTL10_visibility.o" "characterSam_RIG_finalRN.phl[195]";
+connectAttr "circle01_CTL11_translateX.o" "characterSam_RIG_finalRN.phl[196]";
+connectAttr "circle01_CTL11_translateY.o" "characterSam_RIG_finalRN.phl[197]";
+connectAttr "circle01_CTL11_translateZ.o" "characterSam_RIG_finalRN.phl[198]";
+connectAttr "circle01_CTL11_rotateX.o" "characterSam_RIG_finalRN.phl[199]";
+connectAttr "circle01_CTL11_rotateY.o" "characterSam_RIG_finalRN.phl[200]";
+connectAttr "circle01_CTL11_rotateZ.o" "characterSam_RIG_finalRN.phl[201]";
+connectAttr "circle01_CTL11_scaleX.o" "characterSam_RIG_finalRN.phl[202]";
+connectAttr "circle01_CTL11_scaleY.o" "characterSam_RIG_finalRN.phl[203]";
+connectAttr "circle01_CTL11_scaleZ.o" "characterSam_RIG_finalRN.phl[204]";
+connectAttr "circle01_CTL11_visibility.o" "characterSam_RIG_finalRN.phl[205]";
+connectAttr "samFoot_L_ctrl_peelHeel.o" "characterSam_RIG_finalRN.phl[206]";
+connectAttr "samFoot_L_ctrl_toeTap.o" "characterSam_RIG_finalRN.phl[207]";
+connectAttr "samFoot_L_ctrl_translateX.o" "characterSam_RIG_finalRN.phl[208]";
+connectAttr "samFoot_L_ctrl_translateY.o" "characterSam_RIG_finalRN.phl[209]";
+connectAttr "samFoot_L_ctrl_translateZ.o" "characterSam_RIG_finalRN.phl[210]";
+connectAttr "samFoot_L_ctrl_visibility.o" "characterSam_RIG_finalRN.phl[211]";
+connectAttr "samFoot_L_ctrl_rotateX.o" "characterSam_RIG_finalRN.phl[212]";
+connectAttr "samFoot_L_ctrl_rotateY.o" "characterSam_RIG_finalRN.phl[213]";
+connectAttr "samFoot_L_ctrl_rotateZ.o" "characterSam_RIG_finalRN.phl[214]";
+connectAttr "samFoot_L_ctrl_scaleX.o" "characterSam_RIG_finalRN.phl[215]";
+connectAttr "samFoot_L_ctrl_scaleY.o" "characterSam_RIG_finalRN.phl[216]";
+connectAttr "samFoot_L_ctrl_scaleZ.o" "characterSam_RIG_finalRN.phl[217]";
 connectAttr "Geo.di" "backWall_geo.do";
 connectAttr "transformGeometry1.og" "backWall_geoShape.i";
 connectAttr "polyTweakUV7.uvtk[0]" "backWall_geoShape.uvst[0].uvtw";
@@ -20403,6 +19032,7 @@ connectAttr "d_openexr16.msg" "rmanDefaultBakeDisplay15.displayType";
 connectAttr "d_openexr17.msg" "rmanDefaultBakeDisplay16.displayType";
 connectAttr "d_openexr19.msg" "rmanDefaultBakeDisplay17.displayType";
 connectAttr "d_openexr20.msg" "rmanDefaultBakeDisplay18.displayType";
+connectAttr "d_openexr21.msg" "rmanDefaultBakeDisplay19.displayType";
 relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" "floor_geoSG.message" ":defaultLightSet.message";
@@ -20584,6 +19214,7 @@ connectAttr "d_openexr17.msg" ":defaultRenderingList1.r" -na;
 connectAttr "d_openexr18.msg" ":defaultRenderingList1.r" -na;
 connectAttr "d_openexr19.msg" ":defaultRenderingList1.r" -na;
 connectAttr "d_openexr20.msg" ":defaultRenderingList1.r" -na;
+connectAttr "d_openexr21.msg" ":defaultRenderingList1.r" -na;
 connectAttr "HumanBody:ReflectionMap.msg" ":defaultTextureList1.tx" -na;
 connectAttr "HumanBody2:ReflectionMap.msg" ":defaultTextureList1.tx" -na;
 connectAttr "bowl_geoShape.iog.og[0]" ":initialShadingGroup.dsm" -na;
@@ -20595,4 +19226,4 @@ connectAttr "groupId18.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId19.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId20.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId28.msg" ":initialShadingGroup.gn" -na;
-// End of Shot5_2.ma
+// End of Shot7.ma
